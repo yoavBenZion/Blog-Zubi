@@ -18,15 +18,15 @@ shachar
 }
 
 .wrapper >div:nth-child(3n-2){
-    background: yellow;
+    background: #fff;
 }
 
 .wrapper >div:nth-child(3n-1){
-    background: green;
+    background: #BBBCBF;
 }
 
 .wrapper >div:nth-child(3n){
-    background: pink;
+    background: #F9FCFF;
 }
 
 .wrapper > div:hover {
