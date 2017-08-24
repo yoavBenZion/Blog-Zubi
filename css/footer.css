@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  font-family: "Alef Hebrew",
+               sans-serif;
+  font-size: 1.3rem;
+}
+
+footer ul > li {
+  list-style: none;
+  padding-top: 10px;
+  background-color: #2C3233;
+}
+footer ul > li:nth-child(odd) {
+  color: #93A2A8;
+}
+
+footer ul > li:nth-child(even) {
+  color: #E2DDE7;
+}
+
+footer ul > li:hover {
+  background-color: darkgreen;
+  font-size: 1.5rem;
+  color: #E2DD11;
+}
+
+
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows:minmax(50px, auto);
+  margin-right: -40px;
+/*  grid-gap: 0.5em;*/
+}
+
+.about,
+.footer-bottem {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about {
+  border-bottom: 1px dotted black;
+}
+.footer-bottem {
+  border-top: 0.5px solid grey;
+  font-size: 1rem;
+}
+
