@@ -6,20 +6,38 @@ header{
     grid-template-columns: 10fr 1fr;
     background-color: black;
     color:yellow;
-    font-weight: bold;
-    font-size: 1.5vw;
-    padding: 2vh 1vw 2vh 1vw;
+    font-size: 1.8vw;
+    height:3.5vw;
 
 }
-nav>span{
+
+nav>ul{
     list-style-type: none;
+    margin:0;
+    padding: 0.1vh 0;
+    box-sizing: border-box;
+}
+
+nav>ul>li{
+    float:right;
+    margin:0;
+    padding: 0.6vw 0 0 0;
+    padding-left:1vw;
+
 
 }
-nav>span>a{
+nav>ul>li>a{
+    padding: 0.4vw 0 0 0;
     color:yellow;
     text-decoration: none;
 
+
+}
+nav>ul>li>a:hover{
+    border-top: 0.7vw solid red;
+    transition: all .1s ease-in-out;
 }
 header>.logo{
+    padding: 0.6vw 0 0 0;
     text-align: center;
 }
