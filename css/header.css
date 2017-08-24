@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    background-color: black;
+    color:yellow;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 2vh 1vw 2vh 1vw;
+
+}
+nav>span{
+    list-style-type: none;
+
+}
+nav>span>a{
+    color:yellow;
+    text-decoration: none;
+
+}
+header>.logo{
+    text-align: center;
+}
