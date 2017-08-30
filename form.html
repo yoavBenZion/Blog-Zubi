@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:700" rel="stylesheet">
+    <title>form</title>
+</head>
+<body>
+ 
+    <div class="hi" dir="rtl">
+        רוצה לקבל את המאמרים שלנו למייל?
+    </div>
+    <div class="trapez"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class=pacman></div>
+    <div class=burst-1></div>
+    <div class=burst-2></div>
+    <div class=burst-3></div>
+    <div class=burst-4></div>
+    <div class=burst-5></div>
+    <div class=burst-6>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form class="formi">
+
+            Name:<br>
+            <input type="text" name="chen"><br> Em@il:
+            <br>
+            <input type="text" name="Em@il" value=""><br>
+            <br>
+            <input type="submit" value="Submit" class="sub">
+
+        </form>
+    </div>
+    <style>
+        body {
+            background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
+            background-size: cover;
+            
+        }
+        .hi {
+            background-color: black;
+            color: white;
+            height: 50px;
+            border:1px solid black;
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            width: 28%;
+            position: fixed;
+            margin-top: 25px;
+            right: 120px;
+            font-size: 1.6em;
+            font-family: 'Heebo', sans-serif;
+            
+        }
+        
+        .trapez {
+            border-bottom: 50px solid black;
+            border-left: 50px solid transparent;
+            border-right: 0px solid transparent;
+            max-height: 25px;
+            width: 13%;
+            margin-left: 850px;
+            padding: 12.5px;
+            max-width: 55px;
+        }
+        
+        .formi {
+            background-color: black;
+            color: white;
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .sub {
+            color: black;
+            background-color: white;
+        }
+        
+        .pacman {
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border-right: 60px solid transparent;
+            border-top: 60px solid black;
+            border-left: 60px solid black;
+            border-bottom: 60px solid black;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            margin-left: 85px;
+        }
+        /* ****star number 1**** */
+        
+        .burst-1 {
+            display: inline-block;
+            background: black;
+            width: 20px;
+            position: relative;
+            text-align: center;
+            -webkit-transform: rotate(20deg);
+            -moz-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -o-transform: rotate(20eg);
+            height: 20px;
+            margin-bottom: 45px;
+        }
+        
+        .burst-1:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: black;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        /* *** star number 2 */
+        
+        .burst-2 {
+            display: inline-block;
+            background: black;
+            width: 30px;
+            position: relative;
+            text-align: center;
+            -webkit-transform: rotate(20deg);
+            -moz-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -o-transform: rotate(20eg);
+            height: 31px;
+            margin-bottom: 40px;
+            margin-left: 25px;
+        }
+        
+        .burst-2:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 31px;
+            width: 31px;
+            background: black;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        /* ***star number 3**** */
+        
+        .burst-3 {
+            display: inline-block;
+            background: black;
+            width: 60px;
+            position: relative;
+            text-align: center;
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30eg);
+            height: 60px;
+            margin-bottom: 27px;
+            margin-left: 40px;
+        }
+        
+        .burst-3:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 60px;
+            background: black;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        
+        .burst-4 {
+            display: inline-block;
+            background: black;
+            width: 110px;
+            position: relative;
+            text-align: center;
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg);
+            -ms-transform: rotate(40deg);
+            -o-transform: rotate(40eg);
+            height: 110px;
+            margin-bottom: 5px;
+            margin-left: 68px;
+        }
+        
+        .burst-4:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 110px;
+            width: 110px;
+            background: black;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        
+        .burst-5 {
+            display: inline-block;
+            background: black;
+            width: 200px;
+            position: relative;
+            text-align: center;
+            -webkit-transform: rotate(20deg);
+            -moz-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -o-transform: rotate(20eg);
+            height: 200px;
+            margin-bottom: -40px;
+            margin-left: 68px;
+            
+        }
+        
+        .burst-5:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 200px;
+            background: black;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        
+        .burst-6 {
+            background: black;
+            width: 310px;
+            height: 310px;
+            position: relative;
+            text-align: center;
+            margin-left: 955px;
+            margin-top: -220px;
+        }
+        
+        .burst-6:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 310px;
+            width: 310px;
+            background: black;
+            background: rgba(1, 1, 1, 0.5);
+        }
+        
+        .burst-6:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 310px;
+            width: 310px;
+            background: black;
+            background: rgba(1, 1, 1, 0.5);
+        }
+        
+        .burst-6:before {
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+        }
+        
+        .burst-6:after {
+            -webkit-transform: rotate(60deg);
+            -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+            -o-transform: rotate(60deg);
+        }
+    </style>
+</body>
+
+</html>
