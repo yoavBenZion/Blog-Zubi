@@ -6,9 +6,7 @@ header{
     grid-template-columns: 10fr 1fr;
     background-color: black;
     color:#fff;
-    font-size: 1.8vw;
-    height:3.5vw;
-
+    font-size: 1.2rem;
 }
 
 nav>ul{
@@ -32,8 +30,8 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover{
-    border-top: 0.7vw solid #fff;
-    transition: all .1s ease-in-out;
+    border-top: 5px solid #fff;
+    transition: all .5s ease-in-out;
 }
 header>.logo{
     padding: 0.6vw 0 0 0;
