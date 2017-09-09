@@ -18,7 +18,7 @@ footer ul {
 footer ul > li {
   list-style: none;
   padding: 10px;
-  background-color: #29C3FF;
+/*  background-color: #29C3FF;*/
 }
 footer ul > li:nth-child(odd) {
   color: #93A2A8;
