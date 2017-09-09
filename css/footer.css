@@ -8,10 +8,17 @@ footer {
   font-size: 1.3rem;
 }
 
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0;
+  justify-content: space-evenly;
+}
+
 footer ul > li {
   list-style: none;
-  padding-top: 10px;
-  background-color: #2C3233;
+  padding: 10px;
+  background-color: #29C3FF;
 }
 footer ul > li:nth-child(odd) {
   color: #93A2A8;
@@ -22,19 +29,24 @@ footer ul > li:nth-child(even) {
 }
 
 footer ul > li:hover {
-  background-color: darkgreen;
-  font-size: 1.5rem;
+  background-color: #fff;
+/*  flex: 1;*/
+/*  font-size: 1.5rem;*/
   color: #E2DD11;
+/*  background-repeat: no-repeat;*/
 }
 
-
+/*
 footer ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows:minmax(50px, auto);
   margin-right: -40px;
-/*  grid-gap: 0.5em;*/
+ grid-gap: 0.5em;
 }
+*/
+
+
 
 .about,
 .footer-bottem {

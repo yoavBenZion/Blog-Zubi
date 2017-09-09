@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="he">
   <head>
-    <meta charset="UTF-8">
-    <title>החופרים</title>
+  <meta charset="UTF-8">
+  <title>החופרים</title>
 
-    <link rel="stylesheet" href="css/grid.css" type="text/css">
-    <link rel="stylesheet" href="css/header.css" type="text/css">
-     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-  </head>
-   <body dir="rtl">
-   <header>
+  <link rel="stylesheet" href="css/grid.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body dir="rtl">
+  <header>
     <nav>
       <ul>
-          <li><a href="index.html" target="_blank">ראשי</a></li>
-          <li><a href="about.html" target="_blank">עלינו</a></li>
-         <li><a href="index.html" target="_blank">מאמרים</a></li>
-          <li><a href="index.html" target="_blank">צור קשר</a></li>
-          <li><a href="index.html" target="_blank">הרשמה</a></li>
+        <li><a href="index.html" target="_blank">ראשי</a></li>
+        <li><a href="about.html" target="_blank">עלינו</a></li>
+        <li><a href="index.html" target="_blank">מאמרים</a></li>
+        <li><a href="index.html" target="_blank">צור קשר</a></li>
+        <li><a href="index.html" target="_blank">הרשמה</a></li>
       </ul>
     </nav>
     <div class="logo">החופרים</div>
-   </header>
-   <article class="main">
+  </header>
+  <article class="main">
     <div class="wrapper">
-     <div class="box1 article ">Operator's</div>
-     <div class="box2">ICON</div>
-     <div class="box3">פנורמה</div>
-     <div class="box4">icon/blog</div>
-     <div class="box5">פנורמה</div>
-     <div class="box6">מאמר</div>
-     <div class="box7">מאמר</div>
-     <div class="box8">icon/blog</div>
-     <div class="box9">מאמר</div>
-     <div class="box10">icon/blog</div>
-     <div class="box11">פנורמה</div>
-     <div class="box12">icon/blog</div>
-     <div class="box13">פנורמה</div>
+      <div class="box1 article ">Operator's</div>
+      <div class="box2">ICON</div>
+      <div class="box3">פנורמה</div>
+      <div class="box4">icon/blog</div>
+      <div class="box5">פנורמה</div>
+      <div class="box6">מאמר</div>
+      <div class="box7">מאמר</div>
+      <div class="box8">icon/blog</div>
+      <div class="box9">מאמר</div>
+      <div class="box10">icon/blog</div>
+      <div class="box11">פנורמה</div>
+      <div class="box12">icon/blog</div>
+      <div class="box13">פנורמה</div>
     </div>
-   </article>
+  </article>
 
-   <footer>
+  <footer>
     <div class="about">עלינו :</div>
-    <p> חולמים בהקיץ על קוד,<br>
-     חופרים עד השעות הקטנות של הלילה בconsole.<br>
-     ומאמינים שהעולם נוצר ע"י evnet target <br>
-     ב DOM .
-     </p>
-     <ul>
-       <li>מאור</li>
-       <li>שחר</li>
-       <li>יואב</li>
-       <li>חן</li>
-     </ul>
-     <div class="footer-bottem" dir="ltr">&copy; All righets reserved </div>
-   </footer>
+    <p> חולמים בהקיץ על קוד,<br> חופרים עד השעות הקטנות של הלילה בconsole.<br> ומאמינים שהעולם נוצר ע"י evnet target <br> ב DOM .
+    </p>
+    <ul>
+      <li>מאור</li>
+      <li>שחר</li>
+      <li class="box">
+      <a class="button" href="#popup1">
+      יואב
+      </a>
+      </li>
+      <li>חן</li>
+    </ul>
+    </div>
 
-  </body>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Here i am</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <ul>
+           <li><a id="stack" class="col3" href="https://stackoverflow.com/users/8386160/yoav-b?tab=profile" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottem" dir="ltr">&copy; All righets reserved </div>
+  </footer>
+
+</body>
 </html>
