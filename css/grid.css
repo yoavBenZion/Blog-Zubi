@@ -23,16 +23,14 @@
     border: 1px solid #000;
 }
 
-.wrapper > div:hover {
-  background: #222;
-/*  font-size: 2.5rem;*/
-  color: #888;
-  font-weight: bolder;
-  text-align: center;
-}
 
 .box1{
-    grid-area: box1;  
+    grid-area: box1;
+    background-color: black; /* fallback color */
+    background-image: url("../img/code-img.jpg");
+    background-position: center;
+    background-size: cover;
+
 }
 
 .box2{
@@ -50,22 +48,37 @@
 .box5{
     grid-area: box5;
     }
-
+/*article*/
 .box6{
     grid-area: box6;
-    }
+    background-color: black; /* fallback color */
+    background-image: url("../img/code-img.jpg");
+    background-position: center;
+    background-size: cover;
 
+}
+/*hoisting*/
 .box7{
     grid-area: box7;
-    }
+    background-color: #0b5daf; /* fallback color */
+    background-image: url("../img/hoisting.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .box8{
     grid-area: box8;
     }
+/*dom box*/
 
 .box9{
     grid-area: box9;
-    }
+    background-color: #f0db4f;
+    background-image: url("../img/javascript.png");
+    background-position: center;
+    background-size: cover;
+
+}
 
 .box10{
     grid-area: box10;
@@ -82,3 +95,19 @@
 .box13{
     grid-area: box13;
     }
+
+.hover-zoom {
+    float: left;
+    margin: 0;
+
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hover-zoom:hover {
+    background-size: 125%;
+
+}
