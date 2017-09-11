@@ -1,11 +1,66 @@
-.article{
-  background-color: #9EFF5E;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+div>span{
+  font-family: 'Roboto', sans-serif;
+}
+.box1{
+  background-color: black; /* fallback color */
+  background-image: url("../img/code-img.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+}
+.box6{
+  background-color: black; /* fallback color */
+  background-image: url("../img/code-img.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+}
+/*hoisting*/
+.box7{
+
+  background-color: #0b5daf; /* fallback color */
+  background-image: url("../img/hoisting.jpg");
+
+
+}
+/*dom box*/
+.box9{
+
+  background-color: #f0db4f;
+  background-image: url("../img/javascript.png");
+  background-position: center;
+  background-size: cover;
+
+
+}
 .icon{
   background-color: #57F0FF;
 }
 
 .panorama{
   background-color: #47ED8C;
+}
+.article{
+  font-size: 3em;
+  color:white;
+}
+.hover-zoom {
+  float: left;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hover-zoom:hover {
+  background-size: 125%;
+
 }
