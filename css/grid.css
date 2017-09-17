@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .main{
-    background: #999;
+    background: lightgrey;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .wrapper{
     display: grid; 
     direction: ltr;
     grid-auto-rows:minmax(150px, auto);
-/*    grid-gap:1em;       */
+/*    grid-gap:1em;*/
     
   grid-template-areas: 
       "box3 box3 box3 box2 box2 box1 box1"
@@ -15,57 +18,94 @@
       "box6 box6 box9 box9 box4 box7 box7"
       "box10 box10 box9 box9 box8 box7 box7"
       "box13 box13 box13 box12 box11 box11 box11"
-        ;  
+        ;
+
 }
 
 .wrapper > div{
     padding: 1em;
-    border: 1px solid #000;
+    color:white;
+    font-size:1em;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border: 10px solid white;
+
+
+}
+/*article boxes*/
+.box1 span, .box6 span, .box7 span,.box9 span{
+    position: relative;
+    bottom:-10%;
+    font-size:5em;
+
 }
 
+/*panorama boxes*/
+.box3 span, .box5 span, .box11 span,.box13 span, .box10 span{
+    position: relative;
+    bottom:-10%;
+    font-size:2em;
+}
+.js{
+    color:#f0db4f;
+
+}
+.jquery{
+    color:#0868ab;
+}
 
 .box1{
     grid-area: box1;
-    background-color: black; /* fallback color */
-    background-image: url("../img/code-img.jpg");
-    background-position: center;
-    background-size: cover;
+
 
 }
-
+.box1 span{
+    display: block;
+}
+.box1 span:last-child{
+    font-size: 1.5em;
+}
 .box2{
     grid-area: box2;
     }
 
 .box3{
     grid-area: box3;
-    }
 
+    }
+.box3 span{
+    display: block;
+
+}
+.box3 span:last-child{
+    font-size: 1.5em;
+}
 .box4{
     grid-area: box4;
     }
 
 .box5{
     grid-area: box5;
-    }
+
+}
 /*article*/
 .box6{
     grid-area: box6;
-    background-color: black; /* fallback color */
-    background-image: url("../img/code-img.jpg");
-    background-position: center;
-    background-size: cover;
 
 }
 /*hoisting*/
-.box7{
+.box7 {
     grid-area: box7;
-    background-color: #0b5daf; /* fallback color */
-    background-image: url("../img/hoisting.jpg");
-    background-position: center;
-    background-size: cover;
 }
-
+.box7 span {
+    grid-area: box7;
+    display: block;
+    font-size: 2.5em;
+}
+.box7 span:last-child {
+    font-size: 5em;
+}
 .box8{
     grid-area: box8;
     }
@@ -73,16 +113,24 @@
 
 .box9{
     grid-area: box9;
-    background-color: #f0db4f;
-    background-image: url("../img/javascript.png");
-    background-position: center;
-    background-size: cover;
-
+}
+.box9 span{
+    display: block;
+}
+.box9 span:last-child{
+    font-size: 1.5em;
 }
 
 .box10{
     grid-area: box10;
     }
+.box10 span:last-child{
+    font-size: 1.5em;
+    }
+
+.box10 span{
+    display: block;
+}
 
 .box11{
     grid-area: box11;
