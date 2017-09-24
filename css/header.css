@@ -11,9 +11,11 @@ header{
 
 nav>ul{
     list-style-type: none;
-    margin:0;
-    padding: 0.1vh 1vw;
+    margin: 0;
+    padding: 5px 10px;
     box-sizing: border-box;
+    height: 50px;
+
 }
 
 nav>ul>li{
@@ -34,6 +36,6 @@ nav>ul>li>a:hover{
     transition: all .5s ease-in-out;
 }
 header>.logo{
-    padding: 0.6vw 0 0 0;
+    padding: 10px 5px;
     text-align: center;
 }

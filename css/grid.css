@@ -33,10 +33,12 @@
 
 
 }
+
 /*article boxes*/
 .box1 span, .box6 span, .box7 span,.box9 span{
     position: relative;
     bottom:-10%;
+    display: block;
     font-size:5em;
 
 }
@@ -47,6 +49,7 @@
     bottom:-10%;
     font-size:2em;
 }
+
 .js{
     color:#f0db4f;
 
@@ -60,11 +63,39 @@
 
 
 }
+
+.photo{
+    width:2rem;
+    border-radius: 100%;
+}
+
+.calander{
+    padding-right: 5px;
+    top: 3px;
+    width: 1.2rem;
+    position: relative;
+
+}
 .box1 span{
     display: block;
 }
-.box1 span:last-child{
+.box1 span:nth-child(2){
     font-size: 1.5em;
+}
+
+.box1 .date-container{
+    float: right;
+    display: inline;
+    top: 80px;
+
+
+}
+.box1 .date-container .date{
+    display: inline;
+    font-size: 1rem;
+    bottom:0;
+    padding-right: 5px;
+    top:-10px;
 }
 .box2{
     grid-area: box2;
@@ -78,9 +109,21 @@
     display: block;
 
 }
-.box3 span:last-child{
-    font-size: 1.5em;
+
+.box3 .date-container{
+    float: right;
+    display: inline;
+
+
 }
+.box3 .date-container .date{
+    display: inline;
+    font-size: 1rem;
+    bottom:0;
+    padding-right: 5px;
+    top:-10px;
+}
+
 .box4{
     grid-area: box4;
     }
@@ -94,6 +137,27 @@
     grid-area: box6;
 
 }
+
+.box6 .article{
+    display: block;
+}
+.box6 .js{
+    font-size: 2.5em;
+}
+.box6 .date-container{
+    float: right;
+    display: inline;
+    top:40px;
+
+
+}
+.box6 .date-container .date{
+    display: inline;
+    font-size: 1rem;
+    bottom:0;
+    padding-right: 5px;
+    top:-10px;
+}
 /*hoisting*/
 .box7 {
     grid-area: box7;
@@ -103,9 +167,25 @@
     display: block;
     font-size: 2.5em;
 }
-.box7 span:last-child {
+.box7 span:nth-child(2) {
     font-size: 5em;
 }
+
+.box7 .date-container{
+    float: right;
+    display: inline;
+    top: 80px;
+
+
+}
+.box7 .date-container .date{
+    display: inline;
+    font-size: 1rem;
+    bottom:0;
+    padding-right: 5px;
+    top:-10px;
+}
+
 .box8{
     grid-area: box8;
     }
@@ -117,8 +197,22 @@
 .box9 span{
     display: block;
 }
-.box9 span:last-child{
+.box9 span:nth-child(2){
     font-size: 1.5em;
+}
+.box9 .date-container{
+    float: right;
+    display: inline;
+    top: 60px;
+
+
+}
+.box9 .date-container .date{
+    display: inline;
+    font-size: 1rem;
+    bottom:0;
+    padding-right: 5px;
+    top:-10px;
 }
 
 .box10{
