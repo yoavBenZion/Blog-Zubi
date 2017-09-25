@@ -1,41 +1,12 @@
-body{
-    margin: 0;
-}
-header{
-    display: grid;
-    grid-template-columns: 10fr 1fr;
-    background-color: black;
-    color:#fff;
-    font-size: 1.2rem;
+.logo img{
+    width:50px;
 }
 
-nav>ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    height: 50px;
-
+.navbar{
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 1px 1px 5px lightgrey;
 }
 
-nav>ul>li{
-    float:right;
-    margin:0;
-    padding: 0.6vw 0 0 0;
-    padding-left:1vw;
-}
-
-nav>ul>li>a{
-    padding: 0.4vw 0 0 0;
-    color:#fff;
-    text-decoration: none;
-}
-
-nav>ul>li>a:hover{
-    border-top: 5px solid #fff;
-    transition: all .5s ease-in-out;
-}
-header>.logo{
-    padding: 10px 5px;
-    text-align: center;
+.navbar-light .navbar-toggler{
+    border-color:transparent ;
 }
