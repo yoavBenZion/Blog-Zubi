@@ -107,7 +107,7 @@ RESPONSIVE Layout -Tablet - 2 article box
 RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 *****************************************************/
 
-@media screen and (min-device-width:900px) {
+@media (min-width:900px) {
   .wrapper{
     display: grid; 
     direction: ltr;
