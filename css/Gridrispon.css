@@ -106,10 +106,8 @@ RESPONSIVE Layout -Tablet - 2 article box
 RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 *****************************************************/
 
-@media only screen and (min-width:900px) {
-  
-  
-.wrapper{
+@media screen and (min-device-width:900px) {
+  .wrapper{
     display: grid; 
     direction: ltr;
     grid-auto-rows:minmax(150px, auto);
@@ -459,8 +457,11 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 }
 .hover-zoom:hover {
     background-size: 125%;
-
 }
 
+  .photo {
+  display: inline;
+}
+  
 }
 
