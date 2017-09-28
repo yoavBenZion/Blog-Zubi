@@ -218,6 +218,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 }
 .box2{
     grid-area: box2;
+    background: url(../img/css-style-300x1541.png);
+    background-size: cover;
+
 
     }
 
@@ -360,6 +363,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
 .box8{
     grid-area: box8;
+    background: url(../img/giphy.gif);
+    background-size: cover;
     }
 /*dom box*/
 
@@ -427,15 +432,25 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
 .box11{
     grid-area: box11;
+    background: url(../img/coding-1841550_1920.jpg);
+    background-size: cover;
     }
 
 .box12{
     grid-area: box12;
+    background: url(../img/giphy2.gif);
+    background-size: cover;
+
     }
 
 .box13{
     grid-area: box13;
+    background-color: #3d5b99;
     }
+
+.box13 .quote{
+    font-size: 1.25em;
+}
 
 
 .hover-zoom:hover {
