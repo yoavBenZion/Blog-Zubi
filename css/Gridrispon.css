@@ -18,7 +18,7 @@ RESPONSIVE Layout -Mobile - 1 article box
 
 
 /*Desktop Resizing - Small*/
-@media (min-width: 290px) and (max-width: 479px) {
+@media (max-width: 479px) {
   
   .wrapper{
       display: grid; 
