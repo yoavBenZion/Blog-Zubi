@@ -18,7 +18,7 @@ RESPONSIVE Layout -Mobile - 1 article box
 
 
 /*Desktop Resizing - Small*/
-@media (min-width: 290px) and (max-width: 479px),(min-device-width: 290px) and (max-device-width: 479px) {
+@media (min-width: 290px) and (max-width: 479px) {
   
   .wrapper{
       display: grid; 
@@ -266,7 +266,7 @@ RESPONSIVE Layout -Tablet - 2 article box
 
 
 /*Desktop Resizing - Medium*/
-@media (min-width: 480px) and (max-width: 899px),(min-device-width: 480px) and (max-device-width: 899px) {
+@media (min-width: 480px) and (max-width: 899px){
   .wrapper{
       display: grid; 
       direction: ltr;
