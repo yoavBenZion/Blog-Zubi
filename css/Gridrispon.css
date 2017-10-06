@@ -36,8 +36,10 @@ RESPONSIVE Layout -Mobile - 1 article box
       box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 
   }
-    .box1 span, .box6 span, .box7 span,.box9 span{
 
+    .box1 span,.box3 span,.box5 span, .box6 span, .box7 span,.box9 span,.box10 span,.box11 span{
+        position: relative;
+        bottom: -20%;
         display: block;
     }
 
@@ -93,6 +95,32 @@ RESPONSIVE Layout -Mobile - 1 article box
         font-size:3em;
     }
     .box3-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+    .box5{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box5-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/guy-2618928_1920.jpg);
+        background-size: cover;
+    }
+    .box5-title span:first-child{
+        font-size:3em;
+    }
+    .box5-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
@@ -171,6 +199,58 @@ RESPONSIVE Layout -Mobile - 1 article box
         font-size:3em;
     }
     .box9-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+    .box10{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box10-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/code-944499_1280.jpg);
+        background-size: cover;
+    }
+    .box10-title span:first-child{
+        font-size:3em;
+    }
+    .box10-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+    .box11{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box11-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/coding-1841550_1920.jpg);
+        background-size: cover;
+    }
+    .box11-title span:first-child{
+        font-size:3em;
+    }
+    .box11-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
@@ -204,8 +284,9 @@ RESPONSIVE Layout -Tablet - 2 article box
       box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 
   }
-    .box1 span, .box6 span, .box7 span,.box9 span{
-
+    .box1 span,.box3 span,.box5 span, .box6 span, .box7 span,.box9 span,.box10 span,.box11 span{
+        position: relative;
+        bottom: -20%;
         display: block;
     }
 
@@ -261,6 +342,32 @@ RESPONSIVE Layout -Tablet - 2 article box
         font-size:3em;
     }
     .box3-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+    .box5{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box5-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/guy-2618928_1920.jpg);
+        background-size: cover;
+    }
+    .box5-title span:first-child{
+        font-size:3em;
+    }
+    .box5-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
@@ -339,6 +446,59 @@ RESPONSIVE Layout -Tablet - 2 article box
         font-size:3em;
     }
     .box9-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+
+    .box10{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box10-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/code-944499_1280.jpg);
+        background-size: cover;
+    }
+    .box10-title span:first-child{
+        font-size:3em;
+    }
+    .box10-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        padding-right: 1rem;
+        background-color: #d5bfa8;
+
+
+    }
+    .box11{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 87% 13%;
+
+
+    }
+    .box11-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 1rem;
+        background: url(../img/coding-1841550_1920.jpg);
+        background-size: cover;
+    }
+    .box11-title span:first-child{
+        font-size:3em;
+    }
+    .box11-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
@@ -396,6 +556,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     font-size:2em;
 }
 
+.box5-date-container,.box10-date-container,.box11-date-container{
+    display: none;
+}
 
 .jquery{
     color:#0868ab;
