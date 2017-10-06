@@ -15,27 +15,7 @@
 RESPONSIVE Layout -Mobile - 1 article box
 *****************************************/
 
-/*Mobile Devices*/
- @media (min-device-width:290px) and (max-device-width: 479px) {
 
-  .wrapper{
-      display: grid; 
-      direction: ltr;
-      grid-auto-rows:750px;
-      grid-gap:4em;
-
-  }
-  .wrapper > div{
-      color:white;
-      font-size:1em;
-      font-weight: bolder;
-      text-align: center;
-      text-shadow: 1px 1px 1px gray;
-      background: rgba(211, 211, 211, 0.85);
-      box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
-
-  }
-}
 
 /*Desktop Resizing - Small*/
 @media (min-width: 290px) and (max-width: 479px) {
@@ -56,31 +36,15 @@ RESPONSIVE Layout -Mobile - 1 article box
       box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 
   }
+
+
+
 }
 /*****************************************
 RESPONSIVE Layout -Tablet - 2 article box
 *****************************************/
 
-/*Tablet Devices*/
-@media (min-device-width:480px) and (max-device-width: 899px) { 
-  .wrapper{
-      display: grid; 
-      direction: ltr;
-      grid-auto-rows:750px;
-      grid-template-columns:1fr 1fr;
-      grid-gap:4em;
-  }
-  
-  .wrapper > div{
-      color:white;
-      font-size:1em;
-      font-weight: bolder;
-      text-align: center;
-      text-shadow: 1px 1px 1px gray;
-      background: rgba(211, 211, 211, 0.85);
-      box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
-  }
-}
+
 /*Desktop Resizing - Medium*/
 @media (min-width: 480px) and (max-width: 899px) {
   .wrapper{
