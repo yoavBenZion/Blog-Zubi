@@ -351,6 +351,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .fa-twitter {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -363,6 +364,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .fa-github {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -375,6 +377,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .fa-codepen {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -387,6 +390,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .fa-linkedin {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -400,6 +404,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   .fa-stack-overflow {
 /*      padding:10px 9px;*/
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -821,7 +826,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
 RESPONSIVE Layout -DeskTop and Big Fucking Screens
 **************************************************/
 
-@media (min-width:1200px) {
+@media (min-width:900px) {
   .button {
     font-size: 1em;
     color: #000;
@@ -854,7 +859,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 450px;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -947,6 +952,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
   .fa-facebook {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -958,7 +964,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
       background-color: #3d5b99;
   }
   .fa-twitter {
-      padding:10px 12px;
+      padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -971,6 +978,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
   .fa-github {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -983,6 +991,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
   .fa-codepen {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -995,6 +1004,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
   .fa-linkedin {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -1006,7 +1016,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
       background-color: #0073a4;
   }
   .fa-stack-overflow {
-      padding:10px 9px;
+      padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
