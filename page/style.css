@@ -60,7 +60,6 @@ h2 {
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-   /* grid-column-gap: 0.1em;*/
    grid-auto-rows: minmax(100px, auto)
 
 }
@@ -68,8 +67,6 @@ h2 {
     padding: 1em;
     justify-content: center;
     overflow: hidden;
-    
-    
 }
 .grid box1 ::after {
     content: "";
@@ -87,8 +84,6 @@ h2 {
     border-image-width: 100%;
     -webkit-filter: opacity(.2);
     filter: opacity(.2);
-    
-    
 }
 
 .imgbox2 { 
@@ -378,8 +373,8 @@ h2 {
         animation: electronic 2s infinite linear;
     }
     .menufade{
-        top: 5vh;
-        right: 17vw;  
+        top: 1vh;
+        right: 12vw;  
     }
 
 /*image css*/
@@ -389,3 +384,93 @@ h2 {
     margin-right: auto
    
 }
+@media(min-width: 290px) and (max-width: 720px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;    
+    }
+    .grid box1 ::after {
+        background:none;
+    }
+    .imgbox2 { 
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1px; 
+        top: 0;
+    }
+    box1{
+       /* position: relative;*/
+       text-align: center;
+       margin-top: 55%;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       padding: 1px; 
+       top: 0;
+      
+       
+    }
+    .grid box1 {
+        padding: 1em;
+        justify-content: center;
+     }
+
+ H1{
+    font-family: 'IM Fell Great Primer', serif;
+    text-shadow: 20px;
+    box-shadow: 200px;
+    position: relative;
+    top: 0;
+    font-family: Tangerine;
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 7px 7px 7px #aaa;
+    margin-left: auto;
+    color: #625D56;
+    }
+
+    .ex1{
+        max-width: 100%;
+    }
+    .cd-nav-trigger {
+        position: fixed;
+        z-index: 3;
+        left: 85%;
+        top: 1px;
+        height: 35px;
+        width: 35px;
+        background-color: #808284;
+        border-radius: 50%;
+        /* image replacement */
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        -webkit-transition: -webkit-transform 0.5s;
+        -moz-transition: -moz-transform 0.5s;
+        transition: transform 0.5s;
+      }
+      .biliboard {
+        width: 100%;
+        text-align: center;
+        top: 0;
+        background: linear-gradient(to right, rgb(30, 19, 12), rgb(77, 79, 77));
+        font: 8px open, tahoma;
+        border-radius: 45px;
+        text-shadow: 2px 2px 2px #4E4B4B;
+        margin: 0;
+        left: 45%;
+        padding: 10px;
+        right: 12%;
+        margin-top: 13px;
+    }
+    .cd-nav-trigger.open {
+        /* rotate trigger when navigation becomes visible */
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(90deg);
