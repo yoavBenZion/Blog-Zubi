@@ -65,7 +65,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .popup .content {
     max-height: 30%;
-    overflow: auto;
+/*    overflow: auto;*/
     text-align: center;
   }
 
@@ -109,7 +109,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
       list-style: none;
   }
   .footer-social-icons {
-      width: 350px;
+/*      width: 350px;*/
       display:block;
       margin: 0 auto;
   }
@@ -117,7 +117,10 @@ RESPONSIVE Layout -Mobile - Small PopUp
       color: #fff;
   }
   ul.social-icons {
-      margin: 10px;
+/*      margin: 10px;*/
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 
@@ -309,7 +312,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
       list-style: none;
   }
   .footer-social-icons {
-      width: 350px;
+/*      width: 350px;*/
       display:block;
       margin: 0 auto;
   }
@@ -317,7 +320,10 @@ RESPONSIVE Layout -Mobile - Small PopUp
       color: #fff;
   }
   ul.social-icons {
-      margin: 10px;
+ /* margin: 10px;*/
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 
@@ -332,6 +338,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
   }
   .fa-facebook {
       padding:10px 14px;
+      width: 46px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -343,7 +350,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
       background-color: #3d5b99;
   }
   .fa-twitter {
-      padding:10px 12px;
+      padding:10px 14px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
@@ -391,7 +398,8 @@ RESPONSIVE Layout -Mobile - Small PopUp
       background-color: #0073a4;
   }
   .fa-stack-overflow {
-      padding:10px 9px;
+/*      padding:10px 9px;*/
+      padding:10px 14px;
       -o-transition:.5s;
       -ms-transition:.5s;
       -moz-transition:.5s;
