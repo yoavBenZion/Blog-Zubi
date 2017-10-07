@@ -11,6 +11,14 @@
   display: none;
 }
 
+a.article_link {
+  text-decoration: none;
+}
+
+a.article_link:hover {
+  color: #fff;
+}
+
 /*****************************************
 RESPONSIVE Layout -Mobile - 1 article box
 *****************************************/
@@ -579,9 +587,6 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     padding-top: 1rem;
     background: url(../img/code-img.jpg);
     background-size: cover;
-
-
-
 }
 .box1-title span:first-child{
     font-size: 4.5rem;
