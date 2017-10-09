@@ -5,9 +5,14 @@
 /*social icon in Small Footer*/
 
 footer {
-  width: 400px;
-  margin: -75px auto 0;
+  width: 250px;
+  margin: -100px auto 0;
 }
+
+.footer_txt {
+  direction: rtl;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -34,10 +39,10 @@ h6 {
 
 .avatar {
   border-radius: 50%;
-  float: right;
-  width: 150px;
-  height: 120px;
-  margin: 5px auto;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 ul {
 /*    padding:0;*/
@@ -61,7 +66,7 @@ ul.social-icons {
 .social-icons li {
     vertical-align: top;
     display: inline;
-    height: 50px;
+    height: 20px;
 }
 .social-icons a {
     color: #fff;
@@ -69,7 +74,7 @@ ul.social-icons {
 }
 .fa-facebook {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -82,7 +87,7 @@ ul.social-icons {
 }
 .fa-twitter {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -95,7 +100,7 @@ ul.social-icons {
 }
 .fa-github {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -108,7 +113,7 @@ ul.social-icons {
 }
 .fa-codepen {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -121,7 +126,7 @@ ul.social-icons {
 }
 .fa-linkedin {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -134,7 +139,7 @@ ul.social-icons {
 }
 .fa-stack-overflow {
     padding:10px 14px;
-    width: 46px;
+    width: 40px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -144,4 +149,16 @@ ul.social-icons {
 }
 .fa-stack-overflow:hover {
     background-color: #e25714;
+}
+  
+@media(min-width: 460px) and (max-width: 720px){
+  
+  footer {
+  width: 350px;
+  margin: -100px auto 0;
+}
+  
+  .fa {
+    
+  }
 }
