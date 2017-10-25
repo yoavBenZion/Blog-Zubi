@@ -1,3 +1,11 @@
-This is the Zubi project maintanted by the Zubi team
+This is the Dev-Tips blog project, maintanted by the Diggers team.
 
-https://yoavbenzion.github.io/Blog-Zubi/
+Chen Ginsberg
+
+Maor Bachar
+
+Shachar Regev
+
+Yoav Benzion
+
+https://yoavbenzion.github.io/Dev-Tips/

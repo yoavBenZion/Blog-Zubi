@@ -6,7 +6,26 @@
     padding: 1em;
     background: #f3f3f3;
 }
+@font-face {
+    font-family: 'assistant-v1-hebrew-regular';
+    src: url("./fonts/assistant-v1-hebrew-regular.ttf");
+}
 
+.logo img{
+    width:50px;
+}
+
+.navbar{
+    font-family: 'assistant-v1-hebrew-regular', sans-serif;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 1px 1px 5px lightgrey;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler{
+    border-color:transparent ;
+}
 .photo {
   display: none;
 }
@@ -22,7 +41,11 @@ a.article_link:hover {
 /*****************************************
 RESPONSIVE Layout -Mobile - 1 article box
 *****************************************/
-
+.sib-container{
+    display: block;
+    position: absolute;
+    margin: 0 50%;
+}
 
 
 /*Desktop Resizing - Small*/
@@ -289,6 +312,9 @@ RESPONSIVE Layout -Tablet - 2 article box
 
 /*Desktop Resizing - Medium*/
 @media (min-width: 750px) and (max-width: 1199px){
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 2rem;
+    }
   .wrapper{
       display: grid; 
       direction: ltr;
@@ -553,6 +579,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 *****************************************************/
 
 @media (min-width:1200px) {
+   .navbar-expand-sm .navbar-nav .nav-link {
+       padding-right: 2rem;
+   }
   .wrapper{
     display: grid; 
     direction: ltr;
@@ -913,7 +942,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 }
 .box12{
     grid-area: box12;
-    background: url(../img/giphy2.gif);
+    background: url(../img/lorem-ipsum-filler-text.jpg);
     background-size: cover;
 
     }
