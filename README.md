@@ -1,1 +1,3 @@
-This is teh Zubi project maintanted by the Zubi team
+This is the Zubi project maintanted by the Zubi team
+
+https://yoavbenzion.github.io/Blog-Zubi/
