@@ -69,7 +69,9 @@
                                 filter: opacity(.2);
                             }
                             .ex1 {
-                                width: 90%;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto
                             }
                             .imgbox2 {
                                 min-height: 100%;
