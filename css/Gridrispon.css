@@ -601,6 +601,19 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 .jquery{
     color:#0868ab;
 }
+    .photo{
+        width:2rem;
+        border-radius: 100%;
+        top:5px;
+        position: relative;
+    }
+
+    .calander{
+        padding-right: 5px;
+        width: 1.2rem;
+        position: relative;
+
+    }
 
 .box1{
     grid-area: box1;
@@ -626,19 +639,6 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     border-top: dotted 1px grey;
     padding-right: 1rem;
     background-color: #d5bfa8;
-
-}
-.photo{
-    width:2rem;
-    border-radius: 100%;
-    top:5px;
-    position: relative;
-}
-
-.calander{
-    padding-right: 5px;
-    width: 1.2rem;
-    position: relative;
 
 }
 
