@@ -1,7 +1,6 @@
                                 .header1 {
                                     padding: 10px;
                                     font-family: 'Karla', sans-serif;
-                                    box-shadow: 200px;
                                     font-family: Tangerine;
                                     font-weight: 900;
                                     font-size: 3.9em;
@@ -28,7 +27,7 @@
                                     margin-left: auto;
                                     color: #46434A;
                                 }
-                            }
+
                             main {
                                 text-align: center;
                             }
@@ -413,8 +412,6 @@
 
                                 .header1 {
                                     font-family: 'Karla', sans-serif;
-                                    text-shadow: 20px;
-                                    box-shadow: 200px;
                                     position: relative;
                                     top: 0;
                                     font-family: Tangerine;
@@ -472,7 +469,7 @@
 
                                 footer {
                                     text-align: center;
-                                    font-family: font-family: 'Roboto', sans-serif;
+                                    font-family:'Roboto', sans-serif;
                                 }
 
                                 .miner {
@@ -484,3 +481,4 @@
                                 .imgbox2 {
                                     min-height: 0;
                                 }
+                            }
