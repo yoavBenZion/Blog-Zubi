@@ -5,8 +5,6 @@
 
 .footer_txt {
     direction: rtl;
-    font-family: monospace;
-    text-align: center;
 }
 
 a {
@@ -168,15 +166,10 @@ ul.social-icons {
     background-color: #e25714;
 }
 
-@media(min-width: 290px) and (max-width: 720px) {
+@media(min-width: 460px) and (max-width: 720px) {
     footer {
         width: 350px;
-        text-align: center;
+        margin: -100px auto 0;
     }
     .fa {}
-}
-
-ul.social-icons {
-    margin: 0 auto;
-    width: 66%;
 }

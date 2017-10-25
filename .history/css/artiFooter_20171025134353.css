@@ -168,15 +168,9 @@ ul.social-icons {
     background-color: #e25714;
 }
 
-@media(min-width: 290px) and (max-width: 720px) {
+@media(min-width: 460px) and (max-width: 720px) {
     footer {
         width: 350px;
-        text-align: center;
     }
     .fa {}
-}
-
-ul.social-icons {
-    margin: 0 auto;
-    width: 66%;
 }

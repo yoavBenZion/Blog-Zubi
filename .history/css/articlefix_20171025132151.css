@@ -362,16 +362,6 @@
                                 margin-left: auto;
                                 margin-right: auto
                             }
-                            /* .miner {
-                                width: 21.3%;
-                                position: relative;
-                                left: 11.3%;
-                            } */
-                            /* .footerName {
-                                font-family: monospace;
-                                font-size: 1.4em;
-                                margin-left: 8.1%;
-                            } */
                             /* *****RESPONSIVE***** */
                             @media(min-width: 290px) and (max-width: 720px) {
                                 .grid {

@@ -62,3 +62,14 @@ footer ul {
   font-size: 1rem;
 }
 
+.miner {
+  width: 21.3%;
+  position: relative;
+  left: 11.3%;
+}
+
+.footerName {
+  font-family: monospace;
+  font-size: 1.4em;
+  margin-left: 8.1%;
+}

@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
 footer {
   background-color: #eee;
   text-align: center;
-  font-family: "Alef Hebrew", sans-serif;
+  font-family: "Alef Hebrew",
+               sans-serif;
   font-size: 1.3rem;
 }
 
@@ -13,28 +15,26 @@ footer ul {
   justify-content: space-evenly;
 }
 
-footer ul>li {
+footer ul > li {
   list-style: none;
   padding: 10px;
-  /*  background-color: #29C3FF;*/
+/*  background-color: #29C3FF;*/
 }
-
-footer ul>li:nth-child(odd) {
+footer ul > li:nth-child(odd) {
   color: #93A2A8;
 }
 
-footer ul>li:nth-child(even) {
+footer ul > li:nth-child(even) {
   color: #E2DDE7;
 }
 
-footer ul>li:hover {
+footer ul > li:hover {
   background-color: #fff;
-  /*  flex: 1;*/
-  /*  font-size: 1.5rem;*/
+/*  flex: 1;*/
+/*  font-size: 1.5rem;*/
   color: #E2DD11;
-  /*  background-repeat: no-repeat;*/
+/*  background-repeat: no-repeat;*/
 }
-
 
 /*
 footer ul {
@@ -46,6 +46,8 @@ footer ul {
 }
 */
 
+
+
 .about,
 .footer-bottem {
   text-align: center;
@@ -56,7 +58,6 @@ footer ul {
 .about {
   border-bottom: 1px dotted black;
 }
-
 .footer-bottem {
   border-top: 0.5px solid grey;
   font-size: 1rem;
