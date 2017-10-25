@@ -67,7 +67,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row:1/2;
         padding-top: 1rem;
-        background: url(../img/code-img.jpg);
+        background: url(../img/gears-1236578_1280.jpg);
         background-size: cover;
         height:100%;
 
@@ -328,7 +328,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row:1/2;
         padding-top: 1rem;
-        background: url(../img/code-img.jpg);
+        background: url(../img/gears-1236578_1280.jpg);
         background-size: cover;
         height:100%;
 
@@ -626,7 +626,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     grid-column: 1/2;
     grid-row:1/2;
     padding-top: 1rem;
-    background: url(../img/code-img.jpg);
+    background: url(../img/gears-1236578_1280.jpg);
     background-size: cover;
     height:100%;
 }
