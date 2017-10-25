@@ -716,6 +716,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box4 a{
         grid-row:1/2;
         height: 100%;
+        min-width: 125px;
         display: block;
     }
 .box5{
@@ -832,6 +833,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 .box8 a{
     display: block;
     height:100%;
+    min-width: 125px;
 }
 /*dom box*/
 
@@ -918,6 +920,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 .box12 a{
     display: block;
     height: 100%;
+    min-width: 125px;
 }
 
 .box13{
