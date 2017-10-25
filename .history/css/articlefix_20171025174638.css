@@ -1,6 +1,6 @@
                                 .header1 {
                                     padding: 10px;
-                                    font-family: 'Karla', sans-serif;
+                                    font-family: 'Roboto', sans-serif;
                                     box-shadow: 200px;
                                     font-family: Tangerine;
                                     font-weight: 900;
@@ -17,7 +17,7 @@
                                     top: 400px;
                                     margin-left: 5%;
                                     padding: 10px;
-                                    font-family: 'Karla', sans-serif;
+                                    font-family: 'Roboto', sans-serif;
                                 }
 
                                 .header2 {
@@ -226,7 +226,7 @@
                                 top: 8.8%;
                                 right: 15%;
                                 list-style-type: none;
-                                font-family: 'Karla', sans-serif;
+                                font-family: 'Bellefair', serif;
                                 font-size: 2em;
                                 z-index: 99;
                                 font-size: 3em;
@@ -412,7 +412,7 @@
                                 }
 
                                 .header1 {
-                                    font-family: 'Karla', sans-serif;
+                                    font-family: 'Roboto', sans-serif;
                                     text-shadow: 20px;
                                     box-shadow: 200px;
                                     position: relative;
