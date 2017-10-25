@@ -26,7 +26,7 @@ RESPONSIVE Layout -Mobile - 1 article box
 
 
 /*Desktop Resizing - Small*/
-@media (min-width: 290px) and (max-width: 679px) {
+@media (min-width: 290px) and (max-width: 749px) {
   
   .wrapper{
       display: grid; 
@@ -288,7 +288,7 @@ RESPONSIVE Layout -Tablet - 2 article box
 
 
 /*Desktop Resizing - Medium*/
-@media (min-width: 680px) and (max-width: 969px){
+@media (min-width: 750px) and (max-width: 1199px){
   .wrapper{
       display: grid; 
       direction: ltr;
@@ -552,7 +552,7 @@ RESPONSIVE Layout -Tablet - 2 article box
 RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 *****************************************************/
 
-@media (min-width:970px) {
+@media (min-width:1200px) {
   .wrapper{
     display: grid; 
     direction: ltr;
