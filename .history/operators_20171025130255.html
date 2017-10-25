@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/articlefix.css">
+    <link rel="stylesheet" type="text/css" href="css/artifooter.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="grid">
+        <box1>
+            <div class="mediabackground"></div>
+            <background-image: url( "")>
+                <h1 class="header1">Operator's</h1>
+                <h2 class="header2">המנגנון שיתמרן לכם את הקוד</h2>
+                <hr>
+                <p class="p1" dir="rtl">
+                    בפוסט זה אתייחס לשני מנגנוני יעול שנכתבים תחת לולאת IF ויכולים להיות ההבדל הדק שבין 5 שורות קוד מגושמות שיכולות לגרום לקוד
+                    לקרוס לבין שורת קוד אחת שתציל את הקוד שלכם מקריסה ותייעל את קצב העבודה שלכם.
+                </p>
+
+                <p class="p1" dir="rtl">
+                    לפני שנתחיל, מהו BOOLEAN? ערך שמסתכם בשתי צורות: True/False.
+                    <br> ישנם מספר ערכים בוליאנים אשר נותנים לנו תשובת False:
+                    <ul class="p1" dir="rtl">
+                        <li>False</li>
+                        <li>Null</li>
+                        <li>Undefined</li>
+                        <li>NaN </li>
+                        <li>" "</li>
+                        <li>' '</li>
+                        <li>0</li>
+                    </ul>
+                    <p class="p1" dir="rtl">
+                        ומספר ערכים בוליאנים לTRUE:
+                        <ul class="p1" dir="rtl">
+                            <li>True</li>
+                            <li>כל מספר מלבד 0</li>
+                            <li>כל מחרוזת (STRING) שהיא לא ריקה</li>
+                            <li>NaN </li>
+                            <li>כל סוג של מערך (ARRAY []) אפילו אם הוא ריק</li>
+                            <li>כל סוג של אובייקט (OBJECT {}) אפילו אם הוא ריק</li>
+                        </ul>
+                        <p class="p1" dir="rtl">
+                            לפני שנבין מה עושים עם כל אלו חשוב שנבין שכל מחרוזת שנרצה להמיר לערך בוליאני נעשה זאת על-ידי שימוש בנוסחאת converting to
+                            boolean:
+                            <br> 'string'!
+                            <br>'string'!!
+                            <br>Boolean('מחרוזת')
+                            <br>(false)
+                            <br>(true)
+                            <br> ** מחרוזת שלפניה יהיה ! תהיה FALSE
+                            <br> ** מחרוזת שלפניה יהיו !! תישלח כFALSE ותחזור כTRUE
+                            <br> ** מחרוזת בתוך (מחרוזת) עם המילה BOOLEAN לפניה תחזור כTRUE
+                        </p>
+                        <hr>
+                        <p class="p1" dir="rtl">
+                            אז למה OPERATOR? המנגנון נותן לכם את האפשרות לרשום את הקוד בצורה הרבה יותר פשוטה, הרבה יותר יעילה למחשב לקריאת הקוד וכמובן
+                            תציל את הקוד שלכם מלקרוס כשלא הגיע הערך.
+                            <br> המנגנונים הללו משתמשים בערכים בוליאנים (Booleans) אך להבדיל מפונקציה פשוטה שתגרום לקוד שלכם
+                            לקרוס במידה ולא קיבלתם ערך, המנגנונים הללו יתנו לנו את האפשרות לקבל "או או (||)" או "גם וגם (&&)"
+                            וכך לשמור על הקוד פעיל. אסביר... לדוגמא, נכתוב את הפונקציה הבאה:
+                            <img class="ex1" center src="img/operator1.JPG">
+                            <br> בפונקציה הזו ביקשנו להחזיר את שם המשתמש אם המשתמש ביצע Login למערכת. את אותה פונקציה נוכל לכתוב
+                            עם GUARD OPERATOR (&&):
+                            <img class="ex1" src="img/operator2.JPG">
+                            <br> מה זה נותן לנו? הGUARD הוא מנגנון שמבצע שתי פעולות שונות על-ידי שתי משתנים שונים בתלות בין השניים.
+                            <br> במידה ובקשה א' (לדוגמא; חיבור למערכת) מתקבלת אז יעבור המנגנון לבקשה ב' (לדוגמא; החזרת שם המשתמש)
+                            ולכן נקבל True.
+                            <br> במידה והמשתמש לא היה מתחבר למערכת(ז"א שהערך שLOGIN היה מקבל FALSE) המנגנון לא היה עובר לבקשה
+                            ב' ולכן היינו מקבלים תוצאת False.
+                            <br> התנהגות המנגנון היא תלותית. הוא מתחיל בקבלת תשובה מהמשתנה השמאלי שהצבנו ובמידה וקיבלנו ערך False
+                            כל הפונקציה תחזיר False.
+                            <br> במידה וקיבל תשובה True מהערך השמאלי, רק אז יעבור לערך הימני ובמידה ויקבל תשובה חיובית גם מן
+                            המשתנה הימני הפונקציה תיתן לנו True.
+                            <br> בין שני המשתנים תמיד יוצב הסימן שיוצר את מנגנון הפונקציה ואת התלות שביניהם.
+                            <br>
+
+                        </p>
+                        <hr>
+                        <p class="p1" dir="rtl">
+                            מנגנון נוסף שנדון בו הוא ה: Default OperatOR (||):
+                            <br> לעומת מנגנון ה &&, המנגנון ה'דיפולטיבי' (מסומן על-ידי ||) הוא מנגנון א-תלותי
+                            <br> שבו אנו נציב שני ערכים או יותר ואנו נקבל את הערך הראשון אשר מתקבל כTRUE כאשר המנגנון מתחיל את
+                            קריאת הבקשה מצד שמאל. נדגים:
+                            <br>
+                            <img class="ex1" src="img/operator3.JPG">
+                            <br> הגדרנו ערך שם וביקשנו שייתן לנו ערך א' (NAME),
+                            <br> הצבנו את סימון המנגנון || ורשמנו שבמידה ולא מתקבל true, יתקבל ערך ב' (שיציג על המסך No name
+                            assigned).
+                            <br> יכולנו להציב כמה ערכים שנרצה במנגנון. התועלת של אפשרות זו היא לתת לקוד שלכם כמה שיותר אפשרויות
+                            על-מנת שיקבל מצב TRUE ולא יקרה מצב שבו נקבל false או undefined..
+                            <br> שילוב בין השניים:
+                            <br> דבר אחרון שחשוב מאוד להבין לגבי שני המנגנונים הללו הוא שניתן לשלב ביניהם. לדוגמא:
+                            <br>
+                            <img class="ex1" src="img/operato4.JPG">
+                            <br> בדוגמא העליונה הוגדרו 3 משתנים a,b,c
+                            <br> לאחר מכן פתחנו לולאת IF שבה בתחילה הצבנו את a ו-b בתלות תחת מנגנון guard.
+                            <br> לאחר מכן הצבנו את מנגנון OR כנגד משתנה c (משול לסדר פעולות חשבוניות שבו "()" יהיו קודמות לכפל
+                            וחילוק).
+                            <br> זאת-אומרת, שאם במנגנון הGUARD שתי המשתנים היו TRUE, מנגנון הOR היה מקבל את התשובה הראשונה אך
+                            מכיוון שאחד המשתנים False, מנגנון הOR עבר לתשובה השנייה וקיבלנו את התוצאה הרצויה ב Console.
+                            <br> ברוכים הבאים לעולם המנגנונים...
+                        </p>
+                        <hr>
+
+        </box1>
+        <box2>
+            <a href="#cd-nav" class="cd-nav-trigger">
+                <span class="cd-nav-icon"></span>
+                <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                    <circle class="circle" fill="transparent" stroke="#66788f" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157"
+                        stroke-dashoffset="157"></circle>
+                </svg>
+            </a>
+            <ul class="menufade">
+                <a href="#" class="biliboard electronic">לעמוד הראשי</a>
+                <a href="#" class="biliboard repeating">עלינו</a>
+                <a href="#" class="biliboard">צור קשר</a>
+                <a href="#" class="biliboard radial">הרשמה</a>
+            </ul>
+            <img class="imgbox2" src="img/gears-1236578_1280.jpg">
+
+        </box2>
+    </div>
+    <!--Arti Footer - Copy Paste from here-->
+    <footer>
+        <img src="img/MINER.JPG" class="miner">
+        <p class="footerName">Hello World! my name is Chen Ginsberg - Front End Developer</p>
+        <h4 class="footerName">Feel free to contact me</h4>
+        <ul class="social-icons">
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-codepen"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-icon">
+                    <i class="fa fa-stack-overflow"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
