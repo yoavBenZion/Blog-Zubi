@@ -1,3 +1,4 @@
+
 H1{
     top: 100px; 
     margin-left: 25%;
@@ -89,7 +90,7 @@ h2 {
     max-width: 180vw;
     max-height: 100vh;
     position: fixed;
-    min-width: 40%;
+    min-width: 50%;
     border: 2.5px solid black;    
 }
 /*animator nav*/
@@ -400,7 +401,7 @@ h2 {
         left: 0;
         padding: 1px; 
         top: 0;
-        max-height: 45%;    }
+    }
     box1{
        /* position: relative;*/
        text-align: center;
