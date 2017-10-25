@@ -662,7 +662,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 }
 .box2{
     grid-area: box2;
-    background: url(../img/css-style-300x1541.png);
+    background: url(../img/chess-982260_1920.jpg);
     background-size: cover;
     grid-template-rows: 100%;
     }
@@ -735,7 +735,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 85% 15%;
-    background: url(../img/code-2620118_1920.jpg);
+    background: url(../img/giphy5.gif);
     background-size: cover;
 }
 
@@ -827,7 +827,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
 .box8{
     grid-area: box8;
-    background: url(../img/giphy.gif);
+    background: url(../img/giphy4.gif);
     background-size: cover;
     }
 .box8 a{
@@ -842,7 +842,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 85% 15%;
-    background: url(../img/technology-1283624_1920.png);
+    background: url(../img/plasma-ball-2282449_1920.jpg);
     background-size: cover;
 }
 .box9-title{
