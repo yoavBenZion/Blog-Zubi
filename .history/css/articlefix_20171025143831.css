@@ -351,8 +351,8 @@
                                 animation: electronic 2s infinite linear;
                             }
                             .menufade {
-                                top: 8.8%;
-                                right: 16.2%;
+                                top: 8.8vh;
+                                right: 12vw;
                             }
                             /*image css*/
                             .ex1 {

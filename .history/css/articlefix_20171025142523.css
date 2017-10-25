@@ -29,6 +29,7 @@
                                     color: #46434A;
                                 }
                             }
+                            em;
                             main {
                                 text-align: center;
                             }
@@ -69,10 +70,12 @@
                                 filter: opacity(.2);
                             }
                             .imgbox2 {
-                                min-height: 100%;
-                                position: fixed;
-                                max-width: 100%;
-                                border: 2.5px solid black;
+                                .imgbox2 {
+                                    max-width: 100%;
+                                    min-height: 100%;
+                                    position: fixed;
+                                    border: 2.5px solid black;
+                                }
                             }
                             /*animator nav*/
                             .cd-nav-trigger {
@@ -220,8 +223,8 @@
                             /*animator nav until here*/
                             .menufade {
                                 position: fixed;
-                                top: 8.8%;
-                                right: 15%;
+                                margin-left: 20%;
+                                top: 40vh;
                                 list-style-type: none;
                                 font-family: 'Bellefair', serif;
                                 font-size: 2em;
@@ -351,8 +354,8 @@
                                 animation: electronic 2s infinite linear;
                             }
                             .menufade {
-                                top: 8.8%;
-                                right: 16.2%;
+                                top: 8.8vh;
+                                right: 12vw;
                             }
                             /*image css*/
                             .ex1 {
