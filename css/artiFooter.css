@@ -3,6 +3,11 @@
 
 /*social icon in Small Footer*/
 
+footer {
+/*  width: 250px;*/
+/*  margin: -100px auto 0;*/
+}
+
 .footer_txt {
     direction: rtl;
     font-family: monospace;
@@ -46,7 +51,7 @@ h6 {
 }
 
 ul {
-    /*    padding:0;*/
+/*        padding:0;*/
     margin: 0;
     list-style: none;
 }
@@ -63,8 +68,10 @@ ul {
 }
 
 ul.social-icons {
-    margin: 10px;
+    float: right;
+    margin: 0 auto;
     margin-left: 13.8%;
+    align-content: center;
 }
 
 .social-icons li {
@@ -168,15 +175,18 @@ ul.social-icons {
     background-color: #e25714;
 }
 
-@media(min-width: 290px) and (max-width: 720px) {
+@media(min-width: 720px) {
+  
+/*
     footer {
-        width: 350px;
-        text-align: center;
+        width: 250px;
+        margin: auto 0;
     }
-    .fa {}
+*/
+    ul.social-icons {
+      float: right;
+      padding-left: 0;
+    }
 }
 
-ul.social-icons {
-    margin: 0 auto;
-    width: 66%;
-}
+
