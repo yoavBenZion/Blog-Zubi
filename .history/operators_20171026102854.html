@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <link rel="stylesheet" type="text/css" href="css/articlefix.css">
+    <link rel="stylesheet" type="text/css" href="css/artiFooter.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
 </head>
@@ -29,9 +30,16 @@
                 </p>
 
                 <p class="p1" dir="rtl">
-                    לפני שנתחיל, מהו BOOLEAN? ערך שמסתכם בשתי צורות: True/False. ישנם מספר ערכים בוליאנים אשר נותנים לנו תשובת False:
+                    לפני שנתחיל, מהו BOOLEAN? ערך שמסתכם בשתי צורות: True/False.
+                    <br> ישנם מספר ערכים בוליאנים אשר נותנים לנו תשובת False:
                     <ul class="p1" dir="rtl">
-                        <li>False / Null / Undefined / NaN / " " / ' ' / 0 </li>
+                        <li>False</li>
+                        <li>Null</li>
+                        <li>Undefined</li>
+                        <li>NaN </li>
+                        <li>" "</li>
+                        <li>' '</li>
+                        <li>0</li>
                     </ul>
                     <p class="p1" dir="rtl">
                         ומספר ערכים בוליאנים לTRUE:
@@ -46,9 +54,11 @@
                         <p class="p1" dir="rtl">
                             לפני שנבין מה עושים עם כל אלו חשוב שנבין שכל מחרוזת שנרצה להמיר לערך בוליאני נעשה זאת על-ידי שימוש בנוסחאת converting to
                             boolean:
-                            <br> 'string'! / 'string'!! / Boolean('סטרינג') / (false) / (true) /
-                        </p>
-                        <p class="p1" dir="rtl"> כמה הערות חשובות:
+                            <br> 'string'!
+                            <br>'string'!!
+                            <br>Boolean('מחרוזת')
+                            <br>(false)
+                            <br>(true)
                             <br> ** מחרוזת שלפניה יהיה ! תהיה FALSE
                             <br> ** מחרוזת שלפניה יהיו !! תישלח כFALSE ותחזור כTRUE
                             <br> ** מחרוזת בתוך (מחרוזת) עם המילה BOOLEAN לפניה תחזור כTRUE
@@ -165,8 +175,7 @@
         </box2>
     </div>
     <!--Arti Footer - Copy Paste from here-->
-    <link rel="stylesheet" type="text/css" href="css/articlefix.css">
-    <link rel="stylesheet" type="text/css" href="css/artiFooter.css">
+
     <script src="js/article.js"></script>
 </body>
 

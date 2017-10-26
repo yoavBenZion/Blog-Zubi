@@ -17,14 +17,12 @@
     margin-left: 5%;
     padding: 10px;
     font-family: 'Karla', sans-serif;
-    font-size: 1.4em;
-    line-height: 30.6px;
 }
 
 .header2 {
     font-size: 2.5em;
     text-align: center;
-    text-shadow: 1.9px 1.8px 0.1px #5F5E5E;
+    text-shadow: 2.7px 2.6px 0.1px #5F5E5E;
     margin-left: auto;
     color: #46434A;
 }
@@ -381,9 +379,22 @@ a {
 .ex1 {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    max-width: 65.5%;
+    margin-right: auto
 }
+
+
+/* .miner {
+    width: 21.3%;
+    position: relative;
+    left: 11.3%;
+} */
+
+
+/* .footerName {
+    font-family: monospace;
+    font-size: 1.4em;
+    margin-left: 8.1%;
+} */
 
 
 /* *****RESPONSIVE***** */
@@ -484,7 +495,7 @@ a {
     }
 }
 
-@media(min-width: 720px) and (max-width: 980px) {
+(min-width: 720px) and (max-width: 980px) {
     .menufade {
         right: 6.1%;
     }
