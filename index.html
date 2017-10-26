@@ -551,7 +551,9 @@
       };
 
       $('.close').click(function(){$('#sib_embed_signup').fadeOut(400)});
-      $('.subscribe').click(function(){$('#sib_embed_signup').fadeIn(400)});
+      $('.subscribe').click(function(){
+          $('.navbar-toggler-icon').click();
+          $('#sib_embed_signup').fadeIn(400)});
   </script>
   <script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
 </body>
