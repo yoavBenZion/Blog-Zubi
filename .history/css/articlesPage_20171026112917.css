@@ -1,0 +1,7 @@
+/* Grid */
+
+.col {
+    height: 15%;
+    width: 15%;
+    border: 1px solid black;
+}

@@ -1,0 +1,21 @@
+.imgbg {
+    position: relative;
+    opacity: 0.4;
+}
+
+
+/* Grid */
+
+body {
+    background-color: ;
+}
+
+.col {
+    background-color: red;
+    margin: 2%;
+    height: 30vh;
+    border: 1px solid black;
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.3);
+}

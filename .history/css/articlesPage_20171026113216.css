@@ -1,0 +1,11 @@
+/* Grid */
+
+body {
+    background-color: yellowgreen;
+}
+
+.col {
+    height: 35%;
+    width: 15%;
+    border: 1px solid black;
+}

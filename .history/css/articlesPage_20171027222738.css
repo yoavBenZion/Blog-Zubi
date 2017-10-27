@@ -1,0 +1,91 @@
+.header1 {
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+}
+
+
+/* Grid */
+
+.col {
+    background-color: red;
+    margin: 2%;
+    height: 31vh;
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.3);
+    border-radius: 47.3px 0px;
+}
+
+.undercol {
+    background-color: #d5bfa8;
+    position: absolute;
+    display: inline-block;
+    height: 19.3%;
+    width: 100.1%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 30.6px 0px;
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.3);
+}
+
+.topcol {
+    z-index: 1;
+    background-color: #d5bfa8;
+    position: absolute;
+    display: inline-block;
+    height: 19.3%;
+    width: 100.1%;
+    left: 0;
+    border-radius: 50px 0px 0px 0px;
+    box-shadow: 0 6px 25px 0 rgba(0, 1, 1, 0.3);
+}
+
+.insideImg {
+    height: 100%;
+    width: 100%;
+    display: table-header-group;
+    position: absolute;
+    border-radius: 45px 0px 30.3px 1px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+/* background video */
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.collapse_navbar-collapse {
+    background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+    div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
