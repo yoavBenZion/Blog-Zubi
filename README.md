@@ -1,4 +1,4 @@
-This is the Dev-Tips blog project, maintanted by the Diggers team.
+This is the Dev-Tips blog project, maintained by the Diggers team.
 
 Chen Ginsberg
 
