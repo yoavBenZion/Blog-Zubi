@@ -121,8 +121,10 @@ footer{
 
 .contact-info li {
   list-style: none;
-  color: lightblue;
+  color: #54ABCF;
   display: inline;
+  font-weight: 800;
+  font-size: 18px;
 }
 .contact-info li.phone a {
     background-image:  url(../img/phone1.png);
@@ -138,5 +140,12 @@ footer{
     background-size: 20px 18px;
     padding: 0 0 0 30px;
     margin: 5px 5px 10px;
+}
+
+.home {
+    width: 50px;
+    font-size: 20px;
+    border: 2px solid;
+    padding-top: 7px;
 }
 
