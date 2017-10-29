@@ -1,3 +1,5 @@
+
+/* ----- MAOR COMMENT START- move to chen.css and attach to you operator.html----*/
 .header1 {
     padding: 10px;
     font-weight: 900;
@@ -28,11 +30,11 @@
     margin-left: auto;
     color: #46434A;
 }
-
+/* MAOR COMMENT - there is no main tag, delete if its unused */
 main {
     text-align: center;
 }
-
+/* MAOR COMMENT - there is no small tag, delete if its unused */
 small {
     background: #101010;
     color: #FFFFFF;
@@ -42,6 +44,7 @@ small {
     padding: 0 8px;
     text-transform: uppercase;
 }
+/* ----- MAOR COMMENT END- move to chen.css and attach to you operator.html----*/
 
 .grid {
     display: grid;
@@ -72,11 +75,12 @@ small {
     -webkit-filter: opacity(.2);
     filter: opacity(.2);
 }
+/* ----- MAOR COMMENT - move to chen.css and attach to you operator.html----*/
 
 .ex1 {
     width: 90%;
 }
-
+/*MAOR COOMENT- THIS IS THE COVER IMAGE IN THE RIGHT SIDE */
 .imgbox2 {
     min-height: 100%;
     position: fixed;
@@ -276,7 +280,7 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/* ----- MAOR COMMENT START- move a tag to chen.css and attach to you operator.html----*/
 a {
     display: block;
     margin: auto;
@@ -329,7 +333,7 @@ a {
         background-position: -100px 5px;
     }
 }
-
+/* MAOR COMMENT--- THIS IS THE NAVIGATION STYLE */
 .biliboard {
     width: 200px;
     padding: 20px;
@@ -420,6 +424,7 @@ a {
         padding: 1em;
         justify-content: center;
     }
+    /* ----- MAOR COMMENT START-  REMEMBER THE MEDIA QUERY!!!!!! move to chen.css and attach to you operator.html----*/
     .header1 {
         position: relative;
         top: 0;
@@ -432,6 +437,8 @@ a {
     .ex1 {
         max-width: 100%;
     }
+    /* ----- MAOR COMMENT END- -  REMEMBER THE MEDIA QUERY!!!!!! move to chen.css and attach to you operator.html----*/
+
     .cd-nav-trigger {
         position: fixed;
         z-index: 3;
@@ -474,6 +481,7 @@ a {
         text-align: center;
         font-family: 'Roboto', sans-serif;
     }
+    /*MAOR COMMENT- .miner not in use.. delete */
     .miner {
         width: 41.3%;
         position: relative;
