@@ -16,12 +16,11 @@
 
 .p1 {
     top: 400px;
-    margin-left: 12%;
+    margin-left: 5%;
     padding: 10px;
-    font-family: monospace;
-    font-size: 1.9em;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.4em;
     line-height: 30.6px;
-    margin-right: 17%;
 }
 
 .header2 {
