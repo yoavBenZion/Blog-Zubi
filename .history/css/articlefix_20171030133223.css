@@ -440,6 +440,13 @@ a {
         text-align: center;
         font-family: 'Roboto', sans-serif;
     }
+    /*MAOR COMMENT- .miner not in use.. delete */
+
+    .miner {
+        width: 41.3%;
+        position: relative;
+        left: -5.7%;
+    }
 
     .imgbox2 {
         min-height: 0;
