@@ -236,7 +236,7 @@ footer {
      margin: 0 auto;
      grid-gap: 10px;
      grid-template-columns: 33% 33% 33%;
-     grid-template-rows: 100px 200px 100px 200px 100px 345px;
+     grid-template-rows: 10% 20% 10% 20% 10% 30%;
      grid-template-areas:
        "header header header"
        "coulmn1 coulmn1 coulmn1 "
