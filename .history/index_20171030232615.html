@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no;">
+  <title>החופרים</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/Gridrispon.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
+  <link rel="stylesheet" href="css/PopupRispon.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    div#sib_embed_signup .needsfilled input {
+      border-color: #B94A48 !important;
+      color: #B94A48 !important;
+    }
+
+    div#sib_embed_signup .needsfilled {
+      color: #B94A48 !important;
+    }
+
+    div#sib_embed_signup input[type="text"] {
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+    }
+
+    div#sib_embed_signup input[type=number]::-webkit-inner-spin-button,
+    div#sib_embed_signup input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      margin: 0;
+    }
+
+    div#sib_embed_signup input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    div#sib_embed_signup div.message_area {
+      width: 100%;
+      position: relative;
+      padding: 10px 30px 10px 10px;
+      margin: 0px 0px 10px 0px;
+      font-size: 14px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    div#sib_embed_signup div.message_area button.close {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      color: inherit;
+      background: 0 0;
+      border: 0;
+      padding: 0px;
+      -webkit-appearance: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .tipicon {
+      cursor: pointer;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: #fff;
+      text-align: center;
+      vertical-align: baseline;
+      background-color: #999;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .tooltip {
+      display: inline;
+      position: absolute;
+      left: 97%;
+    }
+
+    .tooltip:hover:after {
+      background: #333;
+      background: rgba(0, 0, 0, .8);
+      border-radius: 5px;
+      color: #fff;
+      content: attr(data-title);
+      right: -2px;
+      bottom: 26px;
+      padding: 5px 15px;
+      position: absolute;
+      z-index: 98;
+      width: 220px;
+    }
+
+    .tooltip_small:hover:after {
+      padding: 5px 5px;
+      width: 150px;
+    }
+
+    .tooltip:hover:before {
+      border: solid;
+      border-color: #333 transparent;
+      border-width: 6px 6px 0 6px;
+      bottom: 20px;
+      content: "";
+      left: 1px;
+      position: absolute;
+      z-index: 99;
+    }
+
+    .sib-dropdown-menu.flag-icon {
+      display: none;
+      height: 100px;
+      overflow-x: hidden;
+      min-width: 160px;
+      font-size: 13px;
+      list-style: none;
+      padding-left: 14px;
+      border: 1px solid rgba(0, 0, 0, .15);
+      background: white;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    .sib-dropdown-menu.flag-icon li a {
+      display: block;
+      white-space: nowrap;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+      box-shadow: none;
+    }
+
+    .sms_field .country-block {
+      margin-right: 3px !important;
+      float: left;
+      width: 56px;
+    }
+
+    .icon-arrow {
+      display: inline-block;
+      width: 0px;
+      height: 0px;
+      margin-left: 2px;
+      margin-top: 5px;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+      vertical-align: text-top;
+    }
+
+    .sib-dropdown-toggle.country-flg {
+      display: inline-block;
+      font-size: 13px;
+    }
+
+    body {
+      background-color: #dcdcdc;
+    }
+
+    div#sib_embed_signup .sib-container h1 {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    div#sib_embed_signup h1.title {
+      font-size: 45px;
+    }
+
+    div#sib_embed_signup .sib-container .forms-builder-footer,
+    div#sib_embed_signup .sib-container .description,
+    div#sib_embed_signup .sib-container .fake-label,
+    div#sib_embed_signup .sib-container .row,
+    div#sib_embed_signup .sib-container #company-name {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    div#sib_embed_signup .forms-builder-footer,
+    div#sib_embed_signup div.description,
+    div#sib_embed_signup .fake-label,
+    div#sib_embed_signup .row {
+      font-size: 17px;
+    }
+
+    div#sib_embed_signup .sib-container .button {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    div#sib_embed_signup .button {
+      font-size: 14px;
+    }
+
+    div#sib_embed_signup input {
+      font-size: 13px;
+    }
+
+    div#sib_embed_signup .sib-container h1 {
+      color: #232323;
+    }
+
+    div#sib_embed_signup .sib-container {
+      color: #343434;
+    }
+
+    div#sib_embed_signup .sib-container .button {
+      color: #ffffff;
+    }
+
+    div#sib_embed_signup .sib-container .button {
+      background: #2234d6;
+    }
+
+    div#sib_embed_signup .forms-builder-wrapper {
+      max-width: 540px;
+    }
+
+    div#sib_embed_signup .sib-container {
+      padding: 40px 20px 20px;
+    }
+
+    div#sib_embed_signup .header {
+      padding: 0 20px;
+    }
+
+    div#sib_embed_signup h1.title {
+      lineHeight: 50px;
+    }
+
+    div#sib_embed_signup h3.company-name {
+      lineHeight: 35px;
+    }
+
+    div#sib_embed_signup div.description {
+      padding: 0 20px 15px;
+    }
+
+    div#sib_embed_signup div.row {
+      padding: 10px 20px;
+    }
+
+    div#sib_embed_signup input[type=text] {
+      padding: 10px 4px;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+
+    div#sib_embed_signup input[type=number] {
+      padding: 10px 4px;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" />
+
+</head>
+
+<body dir="rtl">
+  <header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="logo">
+        <img src="./img/shovel-575661_1280.png">
+      </div>
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"> </a>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="nav-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#1">ראשי</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#2">עלינו</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articlesPage.html">מאמרים</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">צור קשר</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link subscribe">עקבו אחרינו</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <div id="sib_embed_signup" style="display:none; width:100%; position:absolute; padding: 10px; z-index:100;">
+    <div class="forms-builder-wrapper" style="position:relative;margin:17% auto;">
+      <input type="hidden" id="sib_embed_signup_lang" value="en">
+      <input type="hidden" id="sib_embed_invalid_email_message" value="המייל שלך לא תקין">
+      <input type="hidden" name="primary_type" id="primary_type" value="email">
+      <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+        <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+      </div>
+      <div class="close" style="color:white; font-size: 28px; padding:10px;">x</div>
+
+      <form dir="rtl" style="background-color: rgba(0,0,0,.85); border-radius: 10px; " class="description" id="theform" name="theform"
+        action="https://my.sendinblue.com/users/subscribeembed/js_id/2wk89/id/2" onsubmit="return false;">
+        <input type="hidden" name="js_id" id="js_id" value="2wk89">
+        <input type="hidden" name="listid" id="listid" value="4">
+        <input type="hidden" name="from_url" id="from_url" value="yes">
+        <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+        <div class="sib-container rounded">
+
+          <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
+          <div class="header" style="padding:0 20px;">
+            <h1 class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 45px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">My Newsletter</h1>
+            <h3 id="company-name" style="font-weight: normal; text-align: left; font-size: 25px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">By</h3>
+          </div>
+          <div class="description editable" data-editfield="newsletter_description" style="padding: 0px 20px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; display: none;">What type of content do you plan to share with your subscribers? </div>
+          <div class="view-messages" style=" margin:5px 0;"> </div>
+          <!-- an email as primary -->
+          <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+            <div class="row mandatory-email" style="padding: 10px 20px; position: relative; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px;">
+              <div class="lbl-tinyltr" style="color: white; clear: both;padding:1em; float: none; font-family:Helvetica, Arial, sans-serif; text-align: center;">
+                הכנס מייל כדי שנוכל לעדכן אותך על מאמרים נוספים שנפרסם
+                <br>
+              </div>
+              <input type="text" name="email" id="email" value="" style=" padding: 10px 2%; width: 90%;">
+              <div style="color:white;">
+                *לא תקבלו מאיתנו ספאם והכתובת מייל לא תעבור לאף גורם אחר
+                <br>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="hidden-btns">
+                <a class="btn move" href="#">
+                  <i class="fa fa-arrows"></i>
+                </a>
+                <br>
+                <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+              </div>
+            </div>
+
+          </div>
+          <div class="captcha forms-builder-group" style="display: none;">
+            <div class="row" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; padding: 10px 20px;">
+              <div id="gcaptcha" style="transform: scale(1); margin-left: 0px;"></div>
+            </div>
+          </div>
+
+          <!-- end of primary -->
+          <div class="byline" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-weight: bold; font-size: 16px; text-align: center; display: block;">
+            <button class="button editable " type="submit" data-editfield="subscribe" style="font-family:Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); background: rgb(34, 52, 214); display: inline-block; white-space: nowrap; min-height: 40px; margin: 0px 5px 0px 0px; padding: 0px 22px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 14px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;">&nbsp;עקוב&nbsp;אחרינו &nbsp;</button>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- End : SendinBlue Signup Form HTML Code -->
+
+  <article class="main">
+    <div class="wrapper">
+      <div class="box1 hover-zoom article ">
+        <!--Article Link-->
+        <a class="article_link" href="operators.html">
+          <div class="box1-title">
+            <span>Operators</span>
+            <span>{ && / || ..}</span>
+          </div>
+        </a>
+        <div class="box1-date-container">
+          <span class="date-container">
+            <span class="date">חן גינסברג
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="./img/MINER-chen.jpg" />
+          </span>
+        </div>
+      </div>
+
+      <div class="box2 hover-zoom">
+        <a class="article_link" href="operators.html">
+          <span>ICON</span>
+        </a>
+      </div>
+      <div class="box3 hover-zoom panorama">
+        <a class="article_link" href="operators.html">
+          <div class="box3-title">
+            <span>Callback Functions</span>
+            <span class="js">{ JS }</span>
+          </div>
+        </a>
+
+        <div class="box3-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="box4 hover-zoom icon">
+        <a class="article_link" href="operators.html">
+          <span>icon/blog</span>
+        </a>
+      </div>
+      <div class="box5 hover-zoom panorama">
+        <a class="article_link" href="operators.html">
+          <div class="box5-title">
+            <span></span>
+          </div>
+        </a>
+
+        <div class="box5-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="box6 hover-zoom article">
+        <a class="article_link" href="operators.html">
+          <div class="box6-title">
+            <span>Arguments</span>
+            <span class="js">{text}</span>
+          </div>
+        </a>
+        <div class="box6-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="box7 hover-zoom article">
+        <a class="article_link" href="operators.html">
+          <div class="box7-title">
+            <span class="js">{ JAVASCRIPT }</span>
+            <span>Hoisting</span>
+          </div>
+        </a>
+        <div class="box7-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+
+      </div>
+      <div class="box8 hover-zoom icon">
+        <a class="article_link" href="operators.html">
+          <span></span>
+        </a>
+      </div>
+      <div class="box9 hover-zoom article">
+        <a class="article_link" href="operators.html">
+          <div class="box9-title">
+            <span>DOM</span>
+            <span class="js">{ ?מזה דום }</span>
+          </div>
+        </a>
+        <div class="box9-date-container">
+          <span class="date-container">
+            <span class="date">יואב בנציון
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="./img/yohav.jpg" />
+          </span>
+        </div>
+
+      </div>
+      <div class="box10 hover-zoom panorama">
+        <a class="article_link" href="operators.html">
+          <div class="box10-title">
+            <span>Jquery</span>
+            <span class="jquery">$ Write Less, Do More $</span>
+          </div>
+        </a>
+        <div class="box10-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="box11 hover-zoom panorama">
+        <a class="article_link" href="operators.html">
+          <div class="box11-title">
+            <span></span>
+          </div>
+        </a>
+        <div class="box11-date-container">
+          <span class="date-container">
+            <span class="date">מאור בכר
+              <img class="calander" src="./img/ic_date_range_black_18dp_1x.png"> 24/7/2017</span>
+            <img class="photo" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p320x320/21462719_10210142853382942_2008499162272625195_n.jpg?oh=a4dec4fc9184acc63d4b2fd9bae7e7ac&oe=5A45BFE9"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="box12 hover-zoom icon">
+        <a class="article_link" href="operators.html">
+          <span></span>
+        </a>
+      </div>
+      <div class="box13 panorama">
+        <span class="quote">Often, when debugging JS code, I get the urge </br>to just throw my hands up and say "this is bullshit!". </br>But
+          I can never remember what "this" refers to.</span>
+      </div>
+    </div>
+  </article>
+  <!--Footer by Name-->
+  <footer id="footer">
+    <div class="about">עלינו :
+      <p> חולמים בהקיץ על קוד,
+        <br> חופרים עד השעות הקטנות של הלילה בconsole.
+        <br> ומאמינים שהעולם נוצר ע"י evnet target
+        <br> ב DOM .
+      </p>
+      <ul>
+        <li class="box">
+          <a class="button" href="#popup3">
+            מאור
+          </a>
+        </li>
+        <li class="box">
+          <a class="button" href="#popup2">
+            שחר
+          </a>
+        </li>
+        <li class="box">
+          <a class="button" href="#popup1">
+            יואב
+          </a>
+        </li>
+        <li>
+          <a class="button" href="#popup4">
+            חן
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--yoav popup-->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Yoav Benzion</h2>
+        <a class="close" href="#footer">&times;</a>
+        <div class="content">
+          <div class="footer-social-icons">
+            <img class="avatar" src="img/yoav.jfif">
+            <p>front end web developer</p>
+            <h4 class="_14">Follow me on:</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/yoav.benzion.5" target="_blank" class="social-icon">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Yoav_BenZion" target="_blank" class="social-icon">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/yoavBenZion" target="_blank" class="social-icon">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/yoavBZ/" target="_blank" class="social-icon">
+                  <i class="fa fa-codepen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yoav-benzion-45818360/" target="_blank" class="social-icon">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/8386160/yoav-b" target="_blank" class="social-icon">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Shachar popup-->
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2>Shachar</h2>
+        <a class="close" href="#footer">&times;</a>
+        <div class="content">
+          <div class="footer-social-icons">
+            <img class="avatar" src="img/kid.jpg">
+            <p>front end web developer</p>
+            <h4 class="_14">Follow me on:</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-codepen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Maor popup-->
+
+    <div id="popup3" class="overlay">
+      <div class="popup">
+        <h2>Maor</h2>
+        <a class="close" href="#footer">&times;</a>
+        <div class="content">
+          <div class="footer-social-icons">
+            <img class="avatar" src="img/mona.jpg">
+            <p>front end web developer</p>
+            <h4 class="_14">Follow me on:</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-codepen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Chen popup-->
+    <div id="popup4" class="overlay">
+      <div class="popup">
+        <h2>Chen Ginsberg</h2>
+        <a class="close" href="#footer">&times;</a>
+        <div class="content">
+          <!--          <div class="footer-social-icons">-->
+          <img class="avatar" src="img/MINER.jpg">
+          <p>front end web developer</p>
+          <h4 class="_14">Follow me on:</h4>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/chenogi" class="social-icon">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ChenGinsberg?" class="social-icon">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/chen-ginsberg-8829a713b/" class="social-icon">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/8377318/chen-ginsberg" class="social-icon">
+                <i class="fa fa-stack-overflow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footer-bottem" dir="ltr">&copy; All righets reserved </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=en"></script>
+
+  <script>
+    var verifyCallback = function (response) {
+      if (response.length > 0) {
+        $(".captcha > div.row > div.message_area").remove();
+      }
+    };
+
+    var myCallBack = function () {
+      //Render the recaptcha1 on the element with ID "recaptcha1"
+      if ($('.captcha > div.row > div#gcaptcha').length > 0) {
+        var captcha = grecaptcha.render('gcaptcha', {
+          'sitekey': '6LezqRkUAAAAACOopT30XBwc1_-zbarrSr8FIjXU',
+          'theme': 'light',
+          'callback': verifyCallback,
+        });
+      }
+    };
+
+    $('.close').click(function () {
+      $('#sib_embed_signup').fadeOut(400)
+    });
+    $('.subscribe').click(function () {
+      $('.navbar-toggler-icon').click();
+      $('#sib_embed_signup').fadeIn(400)
+    });
+  </script>
+  <script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
+</body>
+
+</html>

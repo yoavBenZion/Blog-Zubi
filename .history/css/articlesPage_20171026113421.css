@@ -1,0 +1,11 @@
+/* Grid */
+
+body {
+    background-color: ;
+}
+
+.col {
+    padding: 25px;
+    height: 150px;
+    border: 1px solid black;
+}

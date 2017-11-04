@@ -1,0 +1,17 @@
+.header1 {
+    text-align: center;
+}
+
+
+/* Grid */
+
+.col {
+    background-color: red;
+    margin: 2%;
+    height: 31vh;
+    border: 1px solid black;
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.3);
+    border-radius: 109px 0px;
+}
