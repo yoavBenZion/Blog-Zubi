@@ -105,6 +105,56 @@ footer {
   RESPONSIVE Layout -Tablet - Medium 
   **********************************/
 
+@media (min-device-width:450px) and (max-device-width: 540px){
+   .container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 100px;
+        grid-template-areas: "img img img img" "text text text text " "text text text text";
+    }
+    .box1 {
+        grid-area: img;
+    }
+    .grid_con {
+        grid-area: text;
+        text-align: right;
+    }
+    /*Article Body Grid*/
+    .content {
+        display: grid;
+        width: 400px;
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px 100px 200px 100px 350px;
+        grid-template-areas: "header header header" "coulmn1 coulmn1 coulmn1 " ". img1 ." "coulmn2 coulmn2 coulmn2 " ". img2  ." "footer footer footer";
+    }
+    .main_header {
+        grid-area: header;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: coulmn1;
+    }
+    .small_img {
+        grid-area: img1;
+        width: 150px;
+        height: 100px;
+    }
+    .column2 {
+        grid-area: coulmn2;
+    }
+    .big_img {
+        grid-area: img2;
+        width: 150px;
+        height: 100px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
 @media (min-width: 450px) and (max-width: 540px) {
     .container {
         display: grid;
@@ -124,6 +174,44 @@ footer {
     .content {
         display: grid;
         width: 400px;
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px 100px 200px 100px 350px;
+        grid-template-areas: "header header header" "coulmn1 coulmn1 coulmn1 " ". img1 ." "coulmn2 coulmn2 coulmn2 " ". img2  ." "footer footer footer";
+    }
+    .main_header {
+        grid-area: header;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: coulmn1;
+    }
+    .small_img {
+        grid-area: img1;
+        width: 150px;
+        height: 100px;
+    }
+    .column2 {
+        grid-area: coulmn2;
+    }
+    .big_img {
+        grid-area: img2;
+        width: 150px;
+        height: 100px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+/**/
+
+
+@media (min-device-width:550px) and (max-device-width: 650px){
+   .content {
+        display: grid;
+        width: 500px;
         margin: 0 auto;
         grid-gap: 10px;
         grid-template-columns: 33% 33% 33%;
@@ -190,6 +278,43 @@ footer {
     }
 }
 
+/**/
+
+@media (min-device-width:651px) and (max-device-width: 890px){
+    .content {
+        display: grid;
+        width: 600px;
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px 100px 200px 100px 345px;
+        grid-template-areas: "header header header" "coulmn1 coulmn1 coulmn1 " ". img1 ." "coulmn2 coulmn2 coulmn2 " ". img2  ." "footer footer footer";
+    }
+    .main_header {
+        grid-area: header;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: coulmn1;
+    }
+    .small_img {
+        grid-area: img1;
+        width: 150px;
+        height: 100px;
+    }
+    .column2 {
+        grid-area: coulmn2;
+    }
+    .big_img {
+        grid-area: img2;
+        width: 150px;
+        height: 100px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
 @media (min-width: 651px) and (max-width: 890px) {
     .content {
         display: grid;
@@ -226,12 +351,63 @@ footer {
 }
 
 
-/*************************************************
+/***********************************************
   RESPONSIVE Layout -DeskTop and Big Fucking Screens
-  **************************************************/
+  ***********************************************/
 
 
 /*Desktop Resizing - Small*/
+
+@media (min-device-width:891px) and (max-device-width: 1019px) {
+   .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 320px 320px 380px;
+        grid-template-areas: "text text img img " "text text img img " "text text img img ";
+    }
+    .box1 {
+        grid-area: img;
+    }
+    .box2 {
+        grid-area: text;
+    }
+    /*Article Body Grid*/
+    .content {
+        width: 420px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px 100px 200px 100px;
+        grid-template-areas: "header header header" "coulmn1 coulmn1 coulmn1 " ". img1 ." "coulmn2 coulmn2 coulmn2 " ". img2  ." "footer footer footer";
+    }
+    .main_header {
+        grid-area: header;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: coulmn1;
+        width: 400px;
+        margin: 0 20px;
+    }
+    .small_img {
+        grid-area: img1;
+        width: 200px;
+    }
+    .column2 {
+        grid-area: coulmn2;
+        width: 400px;
+        margin: 0 20px;
+    }
+    .big_img {
+        grid-area: img2;
+        width: 200px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
 
 @media (min-width: 891px) and (max-width: 1019px) {
     .container {
@@ -274,6 +450,61 @@ footer {
         grid-area: coulmn2;
         width: 400px;
         margin: 0 20px;
+    }
+    .big_img {
+        grid-area: img2;
+        width: 200px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+
+/**/
+
+
+@media (min-device-width:1020px) and (max-device-width: 1500px) {
+   .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 320px 320px 380px;
+        grid-template-areas: "text text img img " "text text img img " "text text img img ";
+    }
+    .box1 {
+        grid-area: img;
+    }
+    .box2 {
+        grid-area: text;
+    }
+    /*Article Body Grid*/
+    .content {
+        width: 480px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px 100px 200px 100px;
+        grid-template-areas: "header header header" "coulmn1 coulmn1 coulmn1 " ". img1 ." "coulmn2 coulmn2 coulmn2 " ". img2  ." "footer footer footer";
+    }
+    .main_header {
+        grid-area: header;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: coulmn1;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .small_img {
+        grid-area: img1;
+        width: 200px;
+    }
+    .column2 {
+        grid-area: coulmn2;
+        width: 400px;
+        margin: 0 auto;
     }
     .big_img {
         grid-area: img2;

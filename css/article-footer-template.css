@@ -314,7 +314,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
 
 /*Tablet Devices*/
 
-@media (min-device-width:450px) and (max-device-width: 899px) {
+@media (min-device-width:450px) and (max-device-width: 550px) {
     /*social icon in popup*/
     a {
         text-decoration: none;
@@ -448,8 +448,6 @@ RESPONSIVE Layout -Tablet - Medium PopUp
     }
 }
 
-
-/*Desktop Resizing - Medium*/
 
 @media (min-width: 450px) and (max-width: 550px) {
     /*social icon in popup*/
@@ -585,6 +583,144 @@ RESPONSIVE Layout -Tablet - Medium PopUp
         background-color: #e25714;
     }
 }
+
+/*Desktop Resizing - Medium*/
+@media (min-device-width:550px) and (max-device-width: 890px) {
+  /*social icon in popup*/
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    p>a:hover {
+        color: #d9d9d9;
+        text-decoration: underline;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1% 0 1% 0;
+    }
+    ._12 {
+        font-size: 1.2em;
+    }
+    ._14 {
+        font-size: 1.2em;
+        direction: ltr;
+        text-align: center;
+    }
+    .avatar {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 5px auto;
+    }
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+    .footer-social-icons {
+        width: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+    .social-icon {
+        color: #fff;
+    }
+    ul.social-icons {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        width: 400px;
+    }
+    .social-icons li {
+        vertical-align: top;
+        display: inline;
+        height: 40px;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .fa-facebook {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-facebook:hover {
+        background-color: #3d5b99;
+    }
+    .fa-twitter {
+        padding: 10px 12px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+    }
+    .fa-github {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-github:hover {
+        background-color: #9C4BE8;
+    }
+    .fa-codepen {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-codepen:hover {
+        background-color: #e64a41;
+    }
+    .fa-linkedin {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-linkedin:hover {
+        background-color: #0073a4;
+    }
+    .fa-stack-overflow {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-stack-overflow:hover {
+        background-color: #e25714;
+    } 
+}
+
 
 @media (min-width: 550px) and (max-width: 890px) {
     /*social icon in popup*/
@@ -723,9 +859,150 @@ RESPONSIVE Layout -Tablet - Medium PopUp
 }
 
 
-/*************************************************
+/*****************************************
 RESPONSIVE Layout -DeskTop and Big Fucking Screens
-**************************************************/
+*******************************************/
+
+@media (min-device-width:891px) and (max-device-width: 1019px) {
+   /*social icon in popup*/
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    p>a:hover {
+        color: #d9d9d9;
+        text-decoration: underline;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1% 0 1% 0;
+    }
+    ._12 {
+        font-size: 1.2em;
+    }
+    ._14 {
+        font-size: 1.2em;
+        direction: ltr;
+        text-align: center;
+    }
+    .avatar {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 5px auto;
+    }
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+    .footer-social-icons {
+        display: block;
+        margin: 0 auto;
+    }
+    .social-icon {
+        color: #fff;
+        margin: 8px;
+    }
+    ul.social-icons {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        width: 400px;
+    }
+    .social-icons li {
+        vertical-align: top;
+        display: inline;
+        height: 50px;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .fa-facebook {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-facebook:hover {
+        background-color: #3d5b99;
+    }
+    .fa-twitter {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+    }
+    .fa-github {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-github:hover {
+        background-color: #9C4BE8;
+    }
+    .fa-codepen {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-codepen:hover {
+        background-color: #e64a41;
+    }
+    .fa-linkedin {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-linkedin:hover {
+        background-color: #0073a4;
+    }
+    .fa-stack-overflow {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-stack-overflow:hover {
+        background-color: #e25714;
+    }
+}
 
 @media (min-width: 891px) and (max-width: 1019px) {
     /*social icon in popup*/
@@ -870,6 +1147,147 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
 
 
 /**/
+@media (min-device-width:1020px) and (max-device-width: 1600px) {
+   /*social icon in popup*/
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    p>a:hover {
+        color: #d9d9d9;
+        text-decoration: underline;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1% 0 1% 0;
+    }
+    ._12 {
+        font-size: 1.2em;
+    }
+    ._14 {
+        font-size: 1.2em;
+        direction: ltr;
+        text-align: center;
+    }
+    .avatar {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 5px auto;
+    }
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+    .footer-social-icons {
+        display: block;
+        margin: 0 auto;
+    }
+    .social-icon {
+        color: #fff;
+        margin: 8px;
+    }
+    ul.social-icons {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        width: 400px;
+    }
+    .social-icons li {
+        vertical-align: top;
+        display: inline;
+        height: 50px;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .fa-facebook {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-facebook:hover {
+        background-color: #3d5b99;
+    }
+    .fa-twitter {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+    }
+    .fa-github {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-github:hover {
+        background-color: #9C4BE8;
+    }
+    .fa-codepen {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-codepen:hover {
+        background-color: #e64a41;
+    }
+    .fa-linkedin {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-linkedin:hover {
+        background-color: #0073a4;
+    }
+    .fa-stack-overflow {
+        padding: 10px 14px;
+        width: 20px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+    }
+    .fa-stack-overflow:hover {
+        background-color: #e25714;
+    }
+}
+
 
 @media (min-width: 1020px) and (max-width: 1600px) {
     /*social icon in popup*/
