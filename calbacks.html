@@ -1,128 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Operator's</title>
-    <link rel="stylesheet" type="text/css" href="css/articlefix.css">
-    <link rel="stylesheet" type="text/css" href="css/artiFooter.css">
+    <title>Document</title>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
     </script>
-
-    <style>
-        textarea{
-            display: block;
-            width:100%;
-            outline: none;
-            resize: none;
-        }
-       p a{
-            color:blue;
-           margin: 0;
-           display: inline;
-        }
-    </style>
 </head>
-<body >
+
+<body>
 <div class="grid">
-    <box1>
-        <background-image: url("")>
+    <box1 dir="rtl">
+        <div class="mediabackground"></div>
         <h1>Callback Functions</h1>
         <h2>מהו callback?</h2>
-        <p class="p1" dir="rtl" >
+        <p class="p1">
             callback היא פונקציה שהועברה לתוך פונקציה אחרת כמשתנה, מתישהו במהלך ריצת הפונקציה שמכילה את המשתנה callback, נריץ את הcallback ובכך ניצור אינטגרציה בין שתי פונקציות.
             בקלות אנחנו יכולים להעביר קוד מפונקציה מסוימת לתוך פונקציה אחרת.
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             דבר נוסף שחשוב לדעת - בג'אווה סקריפט במקום להמתין לפונקציה שתסיים ותחזיר תשובה שכתוצאה מכך אנחנו סתם תוקעים את הדפדפן לבקשות אחרות, אנחנו יכולים להשתמש בcallback  כדי לבצע את הפעולה באופן אסינכרוני, זה מעולה ומאוד שימושי בשביל פעולות שעלולות לקחת קצת יותר זמן מהרגיל,  לדוגמה בקשות באמצעות AJAX.
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             על מנת להבין מהו callback נתחיל בדוגמה פשוטה ביותר באמצעות פונקציה setTimeout :
-            <textarea readonly dir="ltr">setTimeout(callback, delay);</textarea>
-             המשתנה callback היא פונקציה מסוימת שהועברה כמשתנה לתוך setTimeout,
-            אחרי x שניות הפונקציה שהועברה כמשתנה תופעל.
+        <pre><code class="js" dir="ltr">setTimeout(callback, delay);</code></pre>
+        המשתנה callback היא פונקציה מסוימת שהועברה כמשתנה לתוך setTimeout,
+        אחרי x שניות הפונקציה שהועברה כמשתנה תופעל.
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             דרך פשוטה יותר היא להשתמש בפונקציה אנונימית :
             <textarea readonly dir="ltr">setTimeout(alert("this is anonymous function"), delay);
 </textarea>
             הפונקציה האנונימית תופעל לאחר x שניות ויוצג חלון אזהרה: "this is anonymous function”
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             ניתן גם להשתמש בsetInterval  אם אתם מעוניינים שהcallback יופעל כל כמה זמן:
             <textarea dir="ltr">setInterval(callback, delay);</textarea>
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             על הדרך מי שמתעניין לחקור קצת יותר לגבי ההבדלים ומה כדאי להשתמש settimeout  או setinterval
             מוזמן להיכנס לדיון
             <a href="https://stackoverflow.com/questions/729921/settimeout-or-setinterval">הבא</a>
             בstackoverflow (מומלץ לעיין בתשובה מס' 2)
         </p>
-        <p class="p1" dir="rtl">
+        <p class="p1">
             נתקדם לדוגמה נוספת, נבנה סה"כ 3 פונקציות:
-<ul>
-        <li>פונקציה שמבצעת פעולת חיבור בין 2 מספרים ומחזירה את התוצאה.</li>
-        <li></li>
-        <li></li>
-    </ul>
+        <ul>
+            <li>פונקציה שמבצעת פעולת חיבור בין 2 מספרים ומחזירה את התוצאה.</li>
+            <li></li>
+            <li></li>
+        </ul>
         </p>
     </box1>
     <box2>
+        <div>
+            <ul class="menufade">
+                <a href="index.html" class="biliboard electronic">לעמוד הראשי</a>
+                <a href="contact.html" class="biliboard repeating">צור קשר</a>
+                <a href="articlesPage.html" class="biliboard">מאמרים נוספים</a>
+                <a href="#" class="biliboard radial">הרשמה</a>
+            </ul>
+        </div>
         <a href="#cd-nav" class="cd-nav-trigger">
             <span class="cd-nav-icon"></span>
             <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-                <circle class="circle" fill="transparent" stroke="#66788f" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                <circle class="circle" fill="transparent" stroke="#66788f" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157"
+                        stroke-dashoffset="157"></circle>
             </svg>
         </a>
-        <ul class="menufade" >
-            <a href="index.html" class="biliboard electronic">לעמוד הראשי</a>
-            <a href="#" class="biliboard repeating">עלינו</a>
-            <a href="#" class="biliboard">צור קשר</a>
-            <a href="#" class="biliboard radial">הרשמה</a>
-        </ul>
+
         <img class="imgbox2" src="img/gears-1236578_1280.jpg">
 
     </box2>
 </div>
-<!--Arti Footer - Copy Paste from here-->
-<footer>
-    <img class="avatar" src="img/mario.jpg">
-    <p class="footer_txt">
-        קוראים לי חן<br>
-        למה לא? כל העניין זה שואו<br>
-        תזכור שזה הכרטיס ביקור שלי<br>
-        ואתה רוצה שידעו שיש לך גדול...<br>
-        למרות שיש לך קטן<br>
-    </p>
-
-    <p>front end web developer</p>
-    <h4 class="_14">Follow me on:</h4>
-    <ul class="social-icons">
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
-        </li>
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
-        </li>
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-github"></i></a>
-        </li>
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-codepen"></i></a>
-        </li>
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
-        </li>
-        <li>
-            <a href="" class="social-icon"> <i class="fa fa-stack-overflow"></i></a>
-        </li>
-    </ul>
-</footer>
-<script src="js/article.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/operators.css">
+    <link rel="stylesheet" type="text/css" href="css/artiFooter.css">
+    <script src="js/article.js"></script>
 </body>
+
 </html>
