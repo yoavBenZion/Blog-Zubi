@@ -18,6 +18,7 @@ Thank you !!
   background-size: cover;
 }
 
+
 /*Main Article Layout Grid*/
 .container { 
     display: grid;
@@ -42,7 +43,13 @@ Thank you !!
   padding-left: 0px;
 }
 
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: url("./fonts/OpenSansHebrew-Regular.ttf");
+}
+
 .box1 ul li{
+    font-family: 'Open Sans Hebrew', sans-serif;
    font-size: 2em;
 }
 
@@ -398,6 +405,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
     .box1 ul li{
         font-size: 3.5em;
+        line-height: 2em;
     }
   .box2 {
     grid-area:text ;
