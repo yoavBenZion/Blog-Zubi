@@ -1,10 +1,10 @@
 /*This is the Main Article Layout Grid, css page.
-If you want to use this page, follow this instractions.
+If you want to use this page, follow the instractions below.
 
 1.Create a new template, and give it your 
 Article-name.css and link it to your article page.
 
-2.foolow the coomments in the code, and make your personal cahnges.
+2.folow the coomments in the code, and make your personal cahnges.
 
 If you have any question conatact Yoav Benzion.
 
@@ -39,11 +39,11 @@ Thank you !!
   text-align: center;
   color:white;
   align-self: center;
-
+  padding-left: 0px;
 }
 
 .box1 ul li{
-    font-size: 2em;
+   font-size: 2em;
 }
 
 .menu{
@@ -312,7 +312,12 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
 
   .box1 {
-    grid-area:img ;
+    grid-area:img;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
   }
     .box1 ul li{
         font-size: 3.5em;
@@ -385,6 +390,11 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
 
   .box1 {
     grid-area:img ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
   }
     .box1 ul li{
         font-size: 3.5em;
