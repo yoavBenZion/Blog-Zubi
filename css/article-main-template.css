@@ -57,6 +57,10 @@ Thank you !!
     display: none;
 }
 
+.menu a,.menu a:hover{
+    text-decoration: none;
+    color:white;
+}
 .grid_con {
   grid-area:text ;
   text-align: right;
