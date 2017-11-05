@@ -27,13 +27,14 @@ $(".ninja-btn").click(function () {
     if (is == false) {
         $(this).toggleClass("active");
         is = true;
-        console.log('open');
-        $('.box1 ul').css('display', 'block');
+        $('.box1 ul .text').fadeOut(0);
+        $('.box1 ul .menu').fadeIn(200);
+
     } else if (is == true) {
         is = false;
         $(this).toggleClass("active");
         console.log('close');
-        $('.box1 ul').css('display', 'none');
-
+        $('.box1 ul .text').fadeIn(200);
+        $('.box1 ul .menu').fadeOut(0);
     }
 });

@@ -42,6 +42,13 @@ Thank you !!
 
 }
 
+.box1 ul li{
+    font-size: 2em;
+}
+
+.menu{
+    display: none;
+}
 
 .grid_con {
   grid-area:text ;
@@ -125,6 +132,9 @@ RESPONSIVE Layout -Tablet - Medium
 .box1 {
   grid-area:img ;
 }
+    .box1 ul li{
+        font-size: 2.5em;
+    }
 
 .grid_con {
   grid-area:text ;
@@ -180,9 +190,8 @@ footer {
 }
 }
 
-@media (min-width: 550px) and (max-width: 650px) {
-  
-  .content {
+@media (min-width: 541px) and (max-width: 650px) {
+    .content {
      display: grid;
      width: 500px;
      margin: 0 auto;
@@ -203,6 +212,9 @@ footer {
       text-align: center;
     }
 
+    .box1 ul li{
+        font-size: 2.5em;
+    }
   .column1 {
     grid-area:coulmn1;
   }
@@ -249,6 +261,9 @@ footer {
   .main_header {
       grid-area: header;
       text-align: center;
+    }
+    .box1 ul li{
+        font-size: 2.5em;
     }
 
   .column1 {
@@ -299,7 +314,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   .box1 {
     grid-area:img ;
   }
-
+    .box1 ul li{
+        font-size: 3.5em;
+    }
   .box2 {
     grid-area:text ;
   }
@@ -369,7 +386,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   .box1 {
     grid-area:img ;
   }
-
+    .box1 ul li{
+        font-size: 3.5em;
+    }
   .box2 {
     grid-area:text ;
   }
