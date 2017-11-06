@@ -13,6 +13,13 @@ Thank you !!
 */
 
 /*Change the url to your own article main img.*/
+
+/*FONT HEBREW*/
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+body {
+  font-family: "Open Sans Hebrew","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .box1 {
   background: url(../img/plasma-ball-2282449_1920.jpg);
   background-size: cover;
