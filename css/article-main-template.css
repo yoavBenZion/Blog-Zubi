@@ -66,6 +66,7 @@ page to the size of the content*/
 
 .content {
    display: grid;
+   direction: rtl;
    width: 280px;
    margin: 0 auto;
    grid-gap: 10px;
