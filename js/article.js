@@ -5,7 +5,7 @@ var $body = document.querySelector('body');
 //open/close lateral navigation
 $trigger.addEventListener('click', function (event) {
     event.preventDefault();
-    //stop if nav animation is running 
+    //stop if nav animation is running
     if (!isLateralNavAnimating) {
         $trigger.classList.add('open');
         isLateralNavAnimating = true;

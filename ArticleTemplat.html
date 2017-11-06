@@ -20,12 +20,81 @@ Thank you !!
     <link rel="stylesheet" href="css/article-main-template.css">
     <link rel="stylesheet" href="css/article-footer-template.css">
     <link rel="stylesheet" href="css/article-nav-template.css">
-<!--fixing risponsive view on mobile devices-->
+    <link rel="stylesheet" href="css/subscribe.css" />
+    <link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" />
+    <!--fixing risponsive view on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>New arti</title>
 </head>
 
 <body>
+<!---subscribe pop-up section!--->
+<div id="sib_embed_signup" style="display:none; width:90%; position:absolute; z-index:100; margin:auto 2.55%;">
+    <div class="forms-builder-wrapper" style="position:relative;margin:17% auto;">
+        <input type="hidden" id="sib_embed_signup_lang" value="en">
+        <input type="hidden" id="sib_embed_invalid_email_message" value="המייל שלך לא תקין">
+        <input type="hidden" name="primary_type" id="primary_type" value="email">
+        <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+            <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+        </div>
+
+        <form dir="rtl" style="background-color: rgba(0,0,0,.85); border-radius: 10px; " class="description" id="theform" name="theform"
+              action="https://my.sendinblue.com/users/subscribeembed/js_id/2wk89/id/2" onsubmit="return false;">
+            <input type="hidden" name="js_id" id="js_id" value="2wk89">
+            <input type="hidden" name="listid" id="listid" value="4">
+            <input type="hidden" name="from_url" id="from_url" value="yes">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+            <div class="close" style="color:white; font-size: 28px; padding:10px;">x</div>
+
+            <div class="sib-container rounded">
+                <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
+                <div class="header" style="padding:0 20px;">
+                    <h1 class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 45px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">My Newsletter</h1>
+                    <h3 id="company-name" style="font-weight: normal; text-align: left; font-size: 25px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">By</h3>
+                </div>
+                <div class="description editable" data-editfield="newsletter_description" style="padding: 0px 20px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; display: none;">What type of content do you plan to share with your subscribers? </div>
+                <div class="view-messages" style=" margin:5px 0;"> </div>
+                <!-- an email as primary -->
+                <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+                    <div class="row mandatory-email" style="padding: 10px 20px; position: relative; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px;">
+                        <div class="lbl-tinyltr" style="color: white; clear: both;padding:1em; float: none; font-family:Helvetica, Arial, sans-serif; text-align: center;">
+                            הכנס מייל כדי שנוכל לעדכן אותך על מאמרים נוספים שנפרסם
+                            <br>
+                        </div>
+                        <input type="text" name="email" id="email" value="" style=" padding: 10px 2%; width: 90%;">
+                        <div style="color:white;">
+                            *לא תקבלו מאיתנו ספאם והכתובת מייל לא תעבור לאף גורם אחר
+                            <br>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div class="hidden-btns">
+                            <a class="btn move" href="#">
+                                <i class="fa fa-arrows"></i>
+                            </a>
+                            <br>
+                            <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="captcha forms-builder-group" style="display: none;">
+                    <div class="row" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; padding: 10px 20px;">
+                        <div id="gcaptcha" style="transform: scale(1); margin-left: 0px;"></div>
+                    </div>
+                </div>
+
+                <!-- end of primary -->
+                <div class="byline" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-weight: bold; font-size: 16px; text-align: center; display: block;">
+                    <button class="button editable " type="submit" data-editfield="subscribe" style="font-family:Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); background: rgb(34, 52, 214); display: inline-block; white-space: nowrap; min-height: 40px; margin: 0px 5px 0px 0px; padding: 0px 22px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 14px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;">&nbsp;עקוב&nbsp;אחרינו &nbsp;</button>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- End : SendinBlue Signup Form HTML Code -->
+<!----end of subscribe pop-up section!--->
     <!--Page Layout Grid-->
     <main class="container">
 
@@ -34,12 +103,12 @@ Thank you !!
                 <span></span>
             </a>
             <ul>
-                <li class="menu">home</li>
-                <li class="menu">about</li>
-                <li class="menu">contact</li>
-                <li class="menu">Stay intouch</li>
-                <li class="text">text here</li>
-                <li class="text">text here</li>
+                <li class="menu"><a href="./index.html">ראשי</a> </li>
+                <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
+                <li class="menu"><a href="contact.html">צור קשר</a></li>
+                <li class="menu subscribe">עקוב אחרינו</li>
+                <li class="text">טקסט נמצא בשורה 110</li>
+                <li class="text">שקשור למאמר</li>
             </ul>
         </div>
         <!--Article Body Grid-->
@@ -122,6 +191,12 @@ Thank you !!
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/nav-template.js"></script>
+    <script src="js/subscribe.js"></script>
+<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
 </body>
 
 </html>
