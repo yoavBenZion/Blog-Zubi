@@ -20,12 +20,6 @@ body {
   font-family: "Open Sans Hebrew","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.box1 {
-  background: url(../img/plasma-ball-2282449_1920.jpg);
-  background-size: cover;
-}
-
-
 /*Main Article Layout Grid*/
 .container { 
     display: grid;
@@ -60,16 +54,17 @@ body {
 .box1 ul li{
     font-family: 'Open Sans Hebrew', sans-serif;
    font-size: 2em;
+
 }
 
 .menu{
     display: none;
+    cursor: pointer;
 }
 
 .menu a,.menu a:hover{
     text-decoration: none;
     color:white;
-
 }
 .grid_con {
   grid-area:text ;
@@ -262,7 +257,10 @@ footer {
   }
   
 }
-
+ code{
+     direction: ltr;
+     text-align: left;
+ }
 @media (min-width: 651px) and (max-width: 890px) {
   .content {
      display: grid;
@@ -371,7 +369,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
   }
   .column1 {
     grid-area:coulmn1;
-    width: 400px;
+    /*width: 400px;*/
     margin: 0 20px;
   }
 

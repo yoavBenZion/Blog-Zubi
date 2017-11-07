@@ -26,10 +26,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 
 @media (min-device-width:290px) and (max-device-width: 449px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;
@@ -169,10 +166,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 
 @media (min-width: 290px) and (max-width: 449px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;
@@ -317,10 +311,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
 
 @media (min-width: 450px) and (max-width: 550px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;
@@ -455,10 +446,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
 
 @media (min-width: 550px) and (max-width: 890px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;
@@ -597,10 +585,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
 
 @media (min-width: 891px) and (max-width: 1019px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;
@@ -742,10 +727,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
 
 @media (min-width: 1020px) {
     /*social icon in popup*/
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
+
     p>a:hover {
         color: #d9d9d9;
         text-decoration: underline;

@@ -15,12 +15,13 @@ Please don't make any changes to this page!!
 Thank you !!
 */
 
-/*
+$(document).ready(function() {
+    $('div code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
 
-$(".ninja-btn").click( function() {
-  $(this).toggleClass("active");
 });
-*/
+
 var is = false;
 
 $(".ninja-btn").click(function () {
