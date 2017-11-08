@@ -77,6 +77,10 @@ body {
   text-align: right;
 }
 
+code{
+    direction: ltr;
+    text-align: left;
+}
 /***************************
 RESPONSIVE Layout -Mobile 
 *****************************/
@@ -123,16 +127,8 @@ RESPONSIVE Layout -Tablet - Medium
 
 @media (min-width: 541px) and (max-width: 650px) {
   
-  code{
-     direction: ltr;
-     text-align: left;
- }
-}
 
-@media (min-width: 651px) and (max-width: 890px) {
- 
 }
-
 
 /*************************************************
 RESPONSIVE Layout -DeskTop and Big Fucking Screens
