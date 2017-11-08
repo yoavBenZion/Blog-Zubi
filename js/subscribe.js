@@ -21,4 +21,5 @@ $('.close').click(function () {
 $('.subscribe').click(function () {
     $('.navbar-toggler-icon').click();
     $('#sib_embed_signup').fadeIn(400)
+    console.log('test')
 });
