@@ -25,6 +25,12 @@ body {
   direction: rtl;
 }
 
+/*Code Snippets*/
+code{
+     direction: ltr;
+     text-align: left;
+ }
+
 /*Main Article Layout Grid*/
 .container { 
     display: grid;
@@ -58,7 +64,6 @@ body {
 }
 
 .box1 ul li{
-    font-family: 'Open Sans Hebrew', sans-serif;
    font-size: 2em;
 
 }
@@ -77,14 +82,6 @@ body {
   text-align: right;
 }
 
-/***************************
-RESPONSIVE Layout -Mobile 
-*****************************/
-
-/*Article Body Grid*/
-
-/*By changing the Grid-template-Rows, you can ajust the 
-page to the size of the content*/
 
 
 /*********************************
@@ -95,42 +92,30 @@ RESPONSIVE Layout -Tablet - Medium
 @media (min-width: 450px) and (max-width: 540px) {
 
 
-.container { 
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 100px;
-     grid-template-areas:
-       "img img img img"
-       "text text text text "
-       "text text text text";
-}
+  .container { 
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px 100px;
+       grid-template-areas:
+         "img img img img"
+         "text text text text "
+         "text text text text";
+  }
 
-.box1 {
-  grid-area:img ;
-}
-    .box1 ul li{
-        font-size: 2.5em;
-    }
+  .box1 {
+    grid-area:img ;
+  }
+      .box1 ul li{
+          font-size: 2.5em;
+      }
 
-.grid_con {
-  grid-area:text ;
-  text-align: right;
-}
+  .grid_con {
+    grid-area:text ;
+    text-align: right;
+  }
 
 
-}
-
-@media (min-width: 541px) and (max-width: 650px) {
-  
-  code{
-     direction: ltr;
-     text-align: left;
- }
-}
-
-@media (min-width: 651px) and (max-width: 890px) {
- 
 }
 
 
