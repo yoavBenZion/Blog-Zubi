@@ -82,8 +82,6 @@ code{
   text-align: right;
 }
 
-<<<<<<< HEAD
-=======
 code{
     direction: ltr;
     text-align: left;
@@ -96,8 +94,6 @@ RESPONSIVE Layout -Mobile
 
 /*By changing the Grid-template-Rows, you can ajust the 
 page to the size of the content*/
->>>>>>> 387b6ac5bfadb44dedd3db5ddd91704bb5425175
-
 
 /*********************************
 RESPONSIVE Layout -Tablet - Medium 
@@ -129,16 +125,6 @@ RESPONSIVE Layout -Tablet - Medium
     grid-area:text ;
     text-align: right;
   }
-
-<<<<<<< HEAD
-=======
-@media (min-width: 541px) and (max-width: 650px) {
-  
->>>>>>> 387b6ac5bfadb44dedd3db5ddd91704bb5425175
-
-}
-
-
 
 /*************************************************
 RESPONSIVE Layout -DeskTop and Big Fucking Screens
