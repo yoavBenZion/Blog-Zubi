@@ -16,7 +16,7 @@ Thank you !!
 */
 
 $(document).ready(function() {
-    $('pre code').each(function(i, block) {
+    $('div code').each(function(i, block) {
         hljs.highlightBlock(block);
     });
 
