@@ -20,6 +20,15 @@ body {
     font-family: "Open Sans Hebrew","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.main_header {
+  direction: ltr;
+  text-align: center;
+}
+
+.center_header {
+  text-align: center;
+}
+
 .grid_con {
     margin: 0 10%;
     direction: rtl;
@@ -29,6 +38,16 @@ body {
 code{
     direction: ltr;
     text-align: left;
+}
+img {
+  margin: 0 5%;
+  width: 90%;
+}
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #FFF;
 }
 
 /*Main Article Layout Grid*/
