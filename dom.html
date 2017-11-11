@@ -158,7 +158,7 @@ Thank you !!
            Document object – כל עמוד html  שנטען בדפדפן, הופך ל Document object . ומכיל את כל תוכן העמוד. 
            </p>
            <p>
-למעשה ב         DOM, כל אלמנט html הוא אובייקט, וכל ערכי ה CSS  הם חלק מה        property value pairs שנמצאים ב property style של אותו אובייקט. 
+למעשה ב DOM, כל אלמנט html הוא אובייקט, וכל ערכי ה CSS  הם חלק מה  property value pairs שנמצאים ב property style של אותו אובייקט. 
   </p>
         </section>
 <!--img snnipet for article-->
@@ -197,8 +197,10 @@ Thank you !!
            </figure>
                
             <p>
-              כשמשווים את הדיאגרמה משמאל, ל html Syntax מימין. אפשר לראות שכל אלמנט תופס את מיקומו ההיררכי ב DOM . החלק האפור – מסמן את הצד הוויזואלי של ה webpage .
-
+              כשמשווים את הדיאגרמה משמאל, ל html Syntax מימין, אפשר לראות שכל אלמנט תופס את מיקומו ההיררכי ב DOM .
+              <br> החלק האפור – 
+               מסמן את הצד הוויזואלי של ה webpage .
+              <br>
               ב body יושבים האלמנטים H1 , P, UL . כשכל אלמנט שווה מבחינת סדר היררכי, אך המיקום שלו בעמוד מצויר משמאל לימין. 
               ומתחת ל UL , בהמשך לסדר ההיררכי אפשר לראות 3 אלמנטים של LI . 
             </p>
@@ -235,9 +237,9 @@ Thank you !!
           <section>
             <ul>
              <p>ה DOM, הוא הבסיס לאינטראקציה עם הדפדפן ,על ידי ביצוע 3 פעולות מרכזיות : </p>
-              <li>1.	בחירת אלמנטים בדף. (Selecting ). </li>
-              <li>2.	ביצוע שינויים באלמנטים. (manipulating ). </li>
-              <li>3.	הקשבה לפעולות המשתמש בדף.  (Listening ) .</li>
+              <li>1.	בחירת אלמנטים בדף (Selecting). </li>
+              <li>2.	ביצוע שינויים באלמנטים (manipulating). </li>
+              <li>3.	הקשבה לפעולות המשתמש בדף (Listening) .</li>
             </ul>
           </section>
           
@@ -247,16 +249,17 @@ Thank you !!
           <!--code snippet to change and modifay-->
             <p>
                  ניקח את הקוד html  הבא כדוגמא : 
-                  <figure>
+           <figure>
             <a href="./img/dom-h1.png"> 
               <img src="./img/dom-h1.png" alt="model3" >
             </a>
            </figure>
            <p>אותו נבחר בעזרת javaScript</p>
               <div ><code class="javascript">
-              <br>document.querySelector('.header');
+              document.querySelector('.header');
              </code></div>
            </p>
+           
            <!--img snnipet for article-->
             <p>
               ונקבל את הפלט הבא ב console
@@ -266,12 +269,13 @@ Thank you !!
               <img src="./img/dom-queryselector.png" alt="model3" >
             </a>
            </figure>
+           
            <!--code snippet to change and modifay-->
            <p>
              באותה צורה אפשר לקבל רשימת ערכים של רשימת LI כ ARRAY , לדוגמא :
            </p>
            <div ><code class="javascript">
-              <br>document.querySelectorAll('li');
+              document.querySelectorAll('li');
               <br>>(3)[li,li,li]
               <br>document.querySelectorAll('li')[0];
               <br>> This will give us the first node of the li tag.
@@ -298,20 +302,19 @@ Thank you !!
              </code></div>
              
              <p>
-               יש עוד המון שינויים שאפשר לעשות לכל אלמנט כולל שינוי ה style  שלו, כל מה שצריך זה לזכור שכל אלמנט בעמוד הוא אובייקט, ולכל אובייקט יש property value pairs  . אחד מהproperties  האלו – הוא style  שתחתיו נמצאים כל ערכי ה CSS . 
+               יש עוד המון שינויים שאפשר לעשות לכל אלמנט כולל שינוי ה style  שלו, כל מה שצריך זה לזכור שכל אלמנט בעמוד הוא אובייקט, ולכל אובייקט יש property value pairs  . אחד מה properties  האלו – הוא style  שתחתיו נמצאים כל ערכי ה CSS . 
              </p>
       
       <div ><code class="javascript">
               //adding style
               <br> para.style.backgroundColor = 'lightgreen'
-              
              </code></div>
              
-             <h3 class="center_header"> הקשבה לפעולות המשתמש בדף  (Listening) :</h3>
+             <h3 class="center_header"> הקשבה לפעולות המשתמש בדף (Listening) :</h3>
              
              <p>
               בעזרת JS אפשר להצמיד event  לכל אלמנט בעמוד . 
-              לדוגמא, הוספת event מסוג mousemove יכול לשמור לנו את הקורדינטות של העכבר כל פעם שאנחנו מעבירים את העכבר על האלמנט הנבחר. 
+              לדוגמא, הוספת event מסוג <kbd>mousemove</kbd> יכול לשמור לנו את הקורדינטות של העכבר כל פעם שאנחנו מעבירים את העכבר על האלמנט הנבחר. 
               למטה, אני משתמש בקורדינטות האלו, כדי לשנות את צבע הרקע של העמוד לפי <kbd>()rgb</kbd> . 
 
              </p>
@@ -369,13 +372,13 @@ Thank you !!
             <figcaption>
              למשל – ל h1 יש parentNode שזה ה body 
              <br>
-            ל body יש 3   childNodes
+            ל body יש 3 <kbd>childNodes</kbd>
             <br>
             ו ל P האמצעי יש 2 קרובי משפחה 
-            h1 הוא ה previousSibling 
+            h1 הוא ה <kbd>previousSibling</kbd> 
             <br>
-            ועוד P מתחתיו .. 
-            nextSibling
+            ועוד P מתחתיו 
+            <kbd>nextSibling</kbd> 
             </figcaption>
            </figure>
             
