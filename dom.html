@@ -111,8 +111,8 @@ Thank you !!
                 <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
                 <li class="menu"><a href="contact.html">צור קשר</a></li>
                 <li class="menu subscribe">עקוב אחרינו</li>
-                <li class="text">טקסט נמצא בשורה 110</li>
-                <li class="text">שקשור למאמר</li>
+                <li class="text">JavaScript</li>
+                <li class="text">& the DOM</li>
             </ul>
         </div>
         <!--Article Body Grid-->
@@ -120,52 +120,294 @@ Thank you !!
         <div class="grid_con">
 
                 <!--כותרת המאמר-->
-                <h1 class="main_header" style="direction: ltr">JavaScript and the DOM</h1>
+                <h1 class="main_header">JavaScript and the DOM</h1>
 
                 <div class="column1">
                     <!--First part of article-->
-                    <h2>כותרת 2</h2>
-                    <section>
-                       החשוד בביצוע הירי ההמוני בכנסייה הבפטיסטית הראשונה בסאתרלנד ספרינגס אתמול שלח מסרונים מאיימים לקרובי משפחתה של אשתו, שנהגו להתפלל במקום - כך גילו היום (שני) גורמי אכיפת חוק בטקסס. קרובי המשפחה לא היו בכנסייה בעת שהיורה, דווין פטריק קלי, פתח באש והרג 26 בני אדם ופצע 20 נוספים. 
-                    </section>
+                    <h3>או למה את מתכוונת כשאת אומרת DOM ?</h3>
+        <section>
+           ה DOM או Document Object Model  ב JavaScript , הוא אחד הכלים הכי חזקים איתם נעבוד בפיתוח Front End . <br>
+         <p>
+           למעשה, את כל האינטראקטיביות של הדף, כגון שינויים בעיצוב כתלות בפעולות המשתמש כגון קליק, הזזה של העכבר או פתיחה של חלון חדש לפי זמן קבוע, כולן פעולות המבוססות על מניפולציות של JS על הDOM. 
+         </p>
+         <p>
+          כדי להתחיל לדבר על ה DOM , אכתוב ממש בקצרה מהו אובייקט ב JS   : <br>
+           Object - הדרך הנכונה להסתכל על אובייקטים, זה על פרט שיש לו Property & Methods. כאשר : 
+           
+         </p>
+         <ul>
+           <li>Property: ערך משתנה, ששייך לאובייקט. </li>
+           <li>Method: משהוא שאפשר לעשות עם/ל/על אובייקט. </li>
+        </ul>
+        
+        <p>לדוגמא : <br>
+          Array   הוא אובייקט, יש לו property כמו length ויש לו method, כמו <kbd>()push</kbd> שמוסיף לו ערכים. 
+        </p>
+       </section>
 
-                </div>
-
-            <p>
-                  ניתן גם להשתמש בsetInterval  אם אתם מעוניינים שהcallback יופעל כל כמה זמן:
-
-              <div ><code class="javascript">
-              callback = function(){alert("this is anonymous function")};
-              <br>setInterval(callback, delay);
-
-              <br><br>//or directly
-
-              <br><br>setInterval(function(){
-              <br>&ensp; &ensp;,alert("this is anonymous function"),delay);
-             </code></div>
+               
+          <h2>משתנים גלובליים</h2>
+                    
+             <!--Second part of article-->
+           <section>
+           <p>
+          בדפדפן יש כמה משתנים גלובליים מובנים, איתם אנחנו יכולים לעבוד. <br> כל המשתנים האלו, לדוגמא <kbd>()alert</kbd>  או <kbd>()location</kbd> , הם properties של ה window . 
+          </p>
+          <p>
+           window object  -  נמצא בפסגת ההיררכיה של העמוד, עליו יושבים כל המשתנים הגלובליים שאנחנו מכירים, וגם האובייקט document . 
+           Document object – כל עמוד html  שנטען בדפדפן, הופך ל Document object . ומכיל את כל תוכן העמוד. 
            </p>
-
-                <div class="column2">
-                    <h2>כותרת 2</h2>
+           <p>
+למעשה ב DOM, כל אלמנט html הוא אובייקט, וכל ערכי ה CSS  הם חלק מה  property value pairs שנמצאים ב property style של אותו אובייקט. 
+  </p>
+        </section>
+        
+        <!--img snippet to change and modifay-->
+        <figure>
+          <a href="./img/dom-art.png"> 
+            <img src="./img/dom-art.png" alt="model1" >
+          </a>
+          <figcaption>
+            איור 1 : דוגמא למבנה של עמוד HTML 
+            והצורה בה הדפדפן מצייר אותו. <br>
+            ה body  מכיל 3 קוביות h1, p, ul 
+  ו ה UL  גם מכיל 3 קוביות LI  .
+          </figcaption>
+         </figure>
+               
+                </div>
+                
+                    <h2 class="center_header">DOM – the virtual map of the webpage</h2>
+                    
                     <!--Second part of article-->
                     <section>
-                      הקואליציה הצבאית בראשות סעודיה תסגור זמנית את כל הכניסות לתימן - מהאוויר, מהים ומהיבשה - בניסיון למנוע את חימושם של המורדים החותים במדינה. על פי ההודעה, שפורסמה היום (שני) בסוכנות הידיעות הממשלתית של סעודיה SPA, מטרת הסגירה היא לעצור את הכנסת הנשק האיראני למדינה.
-                       <br>
-                     בהודעה נכתב כי על אף המצור, עובדי סיוע ואספקה הומניטרית יורשו להכנס למדינה ולצאת ממנה.
-                  </section>
-                </div>
+                     <p>
+                       Document object model  - המודל מתייחס לדיאגרמה (הציור), של מבנה הדף . כאשר כל אלמנט html , מקבל מקום משלו על העץ.  מיקום האלמנטים בעץ, מוגדר עפ"י הסדר (היררכיה) של ה html. 
+                     </p>
+                     <p>
+                       אנסה לפשט את זה ע"י הציור הבא : 
+                     </p>
+              <figure>
+            <a href="./img/dom-diagram.png"> 
+              <img src="./img/dom-diagram.png" alt="model2" >
+            </a>
+            <figcaption>
+            מימין ה html syntax,  ומשמאל - דיאגרמת ה DOM של הדף .
+            
+            </figcaption>
+           </figure>
+               
+            <p>
+              כשמשווים את הדיאגרמה משמאל, ל html Syntax מימין, אפשר לראות שכל אלמנט תופס את מיקומו ההיררכי ב DOM .
+              <br> החלק האפור – 
+               מסמן את הצד הוויזואלי של ה webpage .
+              <br>
+              ב body יושבים האלמנטים H1 , P, UL . כשכל אלמנט שווה מבחינת סדר היררכי, אך המיקום שלו בעמוד מצויר משמאל לימין. 
+              ומתחת ל UL , בהמשך לסדר ההיררכי אפשר לראות 3 אלמנטים של LI . 
+            </p>
+            <p>
+              הציור של ה DOM , מזכיר מבנה של עץ הפוך, ולכן מקובל לקרוא לדיאגרמה הזו <br>
+              The DOM tree . 
+            </p>
+          </section>
+          
+          <h2 class="center_header">The DOM tree</h2>
+          <section>
+            <p>
+              המבנה של העץ לקוח מעולם מדעי המחשב ומנסה לתאר את המורכבות של הקשרים בין האלמנטים. אפשר להסתכל על המבנה של אילן יוחסין, המתאר את הקשר בין ה parent  (לדוגמא ה body ), ל child (לדוגמא ה p ). 
+            </p>
+            <p>
+              אבל מה נותן ה DOM ? 
+            </p>
+            <p>
+              למעשה, מרגע שיש לנו מפה היררכית של מבנה העמוד. אנחנו יכולים להגיע לכל אלמנט בעמוד, ולבצע בו שינויים או פעולות בעזרת JavaScript . <br>
+אז באיזה אלמנטים אפשר לבצע שינויים ?  
+            </p>
+            <ul>
+             <p>NODE  - הוא למעשה כל דבר שניתן לשנות, כגון : </p>
+              <li>1. Html elements</li>
+              <li>2. Text</li>
+              <li>3. Attributes – href / class / style וכו' .. </li>
+            </ul>
+            <p>לדוגמא האלמנט li  הוא node, והטקסט שבתוכו נחשב node נפרד. וכך אפשר לבחור את ה node  הספציפי שאותו אנו רוצים לשנות.</p>
+            
+          </section>
+          
+          <h3 class="center_header">Interacting with the web page</h3>
+          
+          <section>
+            <ul>
+             <p>ה DOM, הוא הבסיס לאינטראקציה עם הדפדפן ,על ידי ביצוע 3 פעולות מרכזיות : </p>
+              <li>1.	בחירת אלמנטים בדף (Selecting). </li>
+              <li>2.	ביצוע שינויים באלמנטים (manipulating). </li>
+              <li>3.	הקשבה לפעולות המשתמש בדף (Listening) .</li>
+            </ul>
+          </section>
+          
+          <h3 class="center_header">בחירת אלמנטים בדף
+          <br> (Selecting) :</h3>
+          
+          <!--code snippet to change and modifay-->
+            <p>
+                 ניקח את הקוד html  הבא כדוגמא : 
+           <figure>
+            <a href="./img/dom-h1.png"> 
+              <img src="./img/dom-h1.png" alt="model3" >
+            </a>
+           </figure>
+           <p>אותו נבחר בעזרת javaScript</p>
+              <div ><code class="javascript">
+              document.querySelector('.header');
+             </code></div>
+           </p>
+           
+           <!--img snnipet for article-->
+            <p>
+              ונקבל את הפלט הבא ב console
+            </p>
+           <figure>
+            <a href="./img/dom-queryselector.png"> 
+              <img src="./img/dom-queryselector.png" alt="model3" >
+            </a>
+           </figure>
+           
+           <!--code snippet to change and modifay-->
+           <p>
+             באותה צורה אפשר לקבל רשימת ערכי LI של ARRAY , לדוגמא :
+           </p>
+           <div ><code class="javascript">
+              document.querySelectorAll('li');
+              <br>>(3)[li,li,li]
+              <br>document.querySelectorAll('li')[0];
+              <br>> This will give us the first node of the li tag.
+             </code></div>
+           
+  
+      <h3 class="center_header">ביצוע שינויים באלמנטים <br>
+       (manipulating) : </h3>
+      
+      <ul>
+       <p>אלו רק כמה דוגמאות לאפשרויות שנוכל לעשות עם JS : </p>
+        <li>1. CreateElement – מאפשר לנו ליצור אלמט חדש.</li>
+        <li>2. textContent – מאפשר להכניס בו text . </li>
+        <li>3. appendChild  - מאפשר לצרף אותו לאלמנט קיים כ child . </li>
+      </ul>
+      
+      <div ><code class="javascript">
+              //creating an element
+              <br>var para = document.createElement('p');
+              <br> //creating a text node in the element
+              <br>para.textContent = 'This is a color app, try to move your courser on the screen';
+              <br>//apending the new element to the body
+              <br>document.body.appendChild(para);
+             </code></div>
+             
+             <p>
+               יש עוד המון שינויים שאפשר לעשות לכל אלמנט כולל שינוי ה style  שלו, כל מה שצריך זה לזכור שכל אלמנט בעמוד הוא אובייקט, ולכל אובייקט יש property value pairs  . אחד מה properties  האלו – הוא style  שתחתיו נמצאים כל ערכי ה CSS . 
+             </p>
+      
+      <div ><code class="javascript">
+              //adding style
+              <br> para.style.backgroundColor = 'lightgreen'
+             </code></div>
+             
+             <h3 class="center_header"> הקשבה לפעולות המשתמש בדף (Listening) :</h3>
+             
+             <p>
+              בעזרת JS אפשר להצמיד event  לכל אלמנט בעמוד . 
+              לדוגמא, הוספת event מסוג <kbd>mousemove</kbd> יכול לשמור לנו את הקורדינטות של העכבר כל פעם שאנחנו מעבירים את העכבר על האלמנט הנבחר. 
+              למטה, אני משתמש בקורדינטות האלו, כדי לשנות את צבע הרקע של העמוד לפי <kbd>()rgb</kbd> . 
 
-<!--                <img class="big_img" src="img/jsbox.png" alt="">-->
+             </p>
+             
+        <div ><code class="javascript">
+              //creating an element
+          <br>  var div = document.createElement('DIV');
+          <br>//setting it's height
+          <br>div.style.height = '100vh';
+          <br>// appending it to the page
+          <br>document.body.appendChild(div);
+          <br>// adding a mousemove Event listner
+          <br>div.addEventListener('mousemove', function (e){
+          <br> var x = e.clientX;
+          <br> var y = e.clientY;
+          <br> div.textContent = ' R=' + x +' ' + ' G=' + y + ' B=' + (x-y);
+          <br> div.style.textAlign= 'center';
+          <br> div.style.backgroundColor = 'rgb('+ x + ',' + y + ',' + (x-y) +')';
+          <br> });
+      </code></div>
+            
+            <p>ניתן לראות את כל הקוד בשלמותו ב : </p>
+             <a href="https://codepen.io/yoavBZ/pen/BwZEqx" target="_blank">mousemove color changer</a>
+             
+             <p>דוגמאות נוספות ל events</p>
+             <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">EventTarget.Mozilla</a>
+             
+             
+              <h3 class="center_header"> 
+              Traversing:
+              </h3>
+             
+             <p>
+               החלק האחרון של המאמר יעסוק במעבר בין אלמנטים בעמוד, שזה חלק חשוב בשימוש של ה DOM, כבר ראינו למעלה שאנחנו יכולים לקבל מס' אלמנטים כמערך, אבל אנחנו גם יכולים לבחור באלמנט מסוים ע"י בחירה של קרוב משפחה שלו, כמו sibling או parent . 
+               <br>
+               מה זה נותן בעצם ? 
+             </p>
+             
+             <p>
+            הרי אנחנו יודעים למצוא כל אלמנט בעמוד בעזרת querySelector ? 
+            </p>
+            <p>
+           אז למעשה, אחרי שמצאנו אלמנט אחד בעמוד, אנחנו לא צריכים לפנות כל פעם ל document object , אנחנו פשוט יכולים להשתמש ב קרבה המשפחתית שלו להשיג אלמנט קרוב.
+           <br> 
+            וכך אפשר לרשום קוד קצר יותר, שימושי יותר, ופונקציות יעילות יותר. 
+             </p>
+             
+          <p>
+                אפשר לראות בציור הבא, שלכל אלמנט בעמוד יש אלמנט קרוב אליו בקרבה משפחתית (לפי האילן יוחסין).
+               </p>
+              <figure>
+            <a href="./img/dom-traverse.png"> 
+              <img src="./img/dom-traverse.png" alt="model2" >
+            </a>
+            <figcaption>
+             למשל – ל h1 יש parentNode שזה ה body 
+             <br>
+            ל body יש 3 <kbd>childNodes</kbd>
+            <br>
+            ו ל P האמצעי יש 2 קרובי משפחה 
+            h1 הוא ה <kbd>previousSibling</kbd> 
+            <br>
+            ועוד P מתחתיו 
+            <kbd>nextSibling</kbd> 
+            </figcaption>
+           </figure>
+            
+            <p>
+              לסיום, מקווה שנתתי לכם מספיק רעיונות ודוגמאות לכלים שימושיים שאפשר לעשות עם ה DOM , 
+ואפילו קצת חשק לקרוא עוד קצת חומר בנושא כדי שתוכלו להשתמש בכלי הזה כמו שצריך בפרויקטים שלכם בעתיד. 
+            </p>
+            
+            <p>Additional reading : </p>
+            
+          <a href="https://eloquentjavascript.net/13_dom.html" target="_blank">Eloquentjavascript</a> <br>
+          <a href="https://www.youtube.com/watch?v=-0ZcldkGlt8" target="_blank">Introduction to the DOM</a>
+             
+        <!--End of Article Text-->
 
                 <!--footer Copy Paste-->
                 <footer>
                     <!--put your avatar img here-->
                     <img class="avatar" src="img/yoav.jfif">
-                    <p class="footer_txt">
-                        החלטה צפויה להחמיר את המשבר ההומניטרי בתימן, שמתבטא הן ברעב והן בהתפרצות מחלות: לפי האו"ם, כשבעה מיליון בני אדם סובלים מרעב בתימן וכ-500 אלף בני אדם חולים בכולירה.
+                    <p class="footer_txt" dir="ltr" style="text-align:left">
+                       "Start by doing what's necessary then do what's possible, and suddenly you are doing the impossible." 
+                       <br>
+                       <br>
+                       ~Francis of Assisi
                     </p>
 
-                    <p class="_14">front end web developer</p>
+                    <p class="_14">
+                    Yoav Benzion, FullStack developer</p>
                     <h4 class="_14">Follow me on:</h4>
                     <ul class="social-icons">
                         <li>
