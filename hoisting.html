@@ -120,54 +120,143 @@ Thank you !!
     <div class="grid_con">
 
         <div class="box2 ">
-            <h1>Callback Functions</h1>
-            <h2>מהו callback?</h2>
+            <h1>JavaScript Hoisting</h1>
 
+            <p>
+                מי שמכיר JS  יודע שישנם מקרים שJS בנויה ומתנהגת שונה משאר שפות התכנות. אחד המקרים הוא HOISTING.
+                מנגנון בJavaScript הפועל מאחורי הקלעים שמעביר את כל ההצהרות על המשתנים והפונקציות לראש התחום אליהם הם שייכים.
+            </p>
 
-            <!--footer Copy Paste-->
-            <footer>
-                <!--put your avatar img here-->
-                <img class="avatar" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t31.0-8/21753430_10210142853382942_2008499162272625195_o.jpg?oh=7b1ee7e746e2e7d9e60393ba39309cae&oe=5AAADAF5&__gda__=1517109340_7460f083d98d0c3deb18a4643bbcbfeb">
-                <p class="footer_txt" dir="ltr" style="text-align: left
-">
-                    "Don't ask yourself what the world needs, ask yourself what makes you come alive. And then go and do that. Because what the world needs is people who have come alive."
-                    <br><br>~Howard Washington Thurman                </p>
-                <p class="_14">FullStack developer</p>
-                <h4 class="_14">Follow me on:</h4>
-                <ul class="social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/maor.bahar" target="_blank" class="social-icon">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" class="social-icon">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/MaorBahar" target="_blank" class="social-icon">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" class="social-icon">
-                            <i class="fa fa-codepen"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/maorbachar/" target="_blank" class="social-icon">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/8157241/maor-bachar" target="_blank" class="social-icon">
-                            <i class="fa fa-stack-overflow"></i>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
+            <p>
+                לכן על מנת למנוע בעיות בקוד רצוי תמיד להצהיר על משתנים בראש הדף ובפונקציות להצהיר ולאתחל משתנים לפני שימוש בהם.
+            </p>
+            <h3>Hoisting and variables:</h3>
+            <p>
+            <p>
+                נתחיל מהדוגמא הפשוטה ביותר ונפתח אותה בהדרגה:<br>
+                נגדיר משתנה ושימוש באותו המשתנה
+            </p>
+            <div><code class="javascript">
+                var myvar = 'my value';<br>
+                alert(myvar); // my value
+            </code></div>
+            </p>
+            <p>
+                כמובן שזה יציג 'my value’ בהודעת אזהרה קופצת על גבי המסך.. נמשיך לקוד הבא וניצור פונקציה פשוטה..
+            </p>
+            <p>
+                 נעטוף את ה alert  בפונקציה אנונימית ולא אמורה להיות שום השפעה על התוצאה
+            <div><code class="javascript">
+                var myvar = 'my value';<br>
+                (function () {<br>
+                alert(myvar); // my value<br>
+                })();
+            </code></div>
+            </p>
+            <p>
+                ברור זה יעבוד כמו שצריך, בסך הכל יצרנו פונקציה פשוטה.
+            </p>
+            <p style="color: blue; font-weight: bold;">
+                על מנת להבין את המהות של Hoisting ב JS נשדרג קצת את הדוגמה בעזרתה נראה את ההשפעה של hoisting  על משתנים:
+            </p>
+            <p>
+
+                נוסיף עוד הצהרה על myvar ונאתחל אותה מתחת לalert.
+                כבר נתחיל לראות איך Hoisting פועל מאחורי הקלעים בJavaScript.
+            <div><code class="javascript">
+                var myvar = 'my value';<br>
+                (function () {<br>
+                alert(myvar); // undefined<br>
+                var myvar = 'local value';<br>
+                <br>
+                })();
+            </code></div>
+            </p>
+            <p>
+                ניתן לראות שHoisting  העלה לראש הפונקציה את ההצהרה בלבד על המשתנה המקומי שיצרנו ואת האתחול של המשנה השאיר באותו מקום.
+            <div><code class="javascropt">
+                var myvar = 'my value';<br>
+                (function () {<br>
+                var myvar; // declare<br>
+                alert(myvar); // undefined<br>
+                myvar = 'local value'; // initialization<br>
+                <br>
+                })();
+            </code></div>
+            </p>
+            <h3>Hoisting and functions:
+            </h3>
+            <p>
+                בשונה משפות תכנות אחרות שיש להצהיר ולאתחל את הפונקציה לפני שימוש
+                בJavaScript אם נציב את מימוש הפונקציה לפני שהגדרנו את הפונקציה עצמה, לא נקבל שגיאה או הערה undefined, המימוש יעבוד!
+
+            </p>
+            <p>
+                לגבי ההשפעה של hoisting  על פונקציות? ההתנהגות בהקשר לפונקציות זהה לזו של hoisting על משתנים וגם מעלה מחוץ לתחום הפונקציה את המימוש של פונקציה:
+            </p>
+            <p>
+                <b>לדוגמה:</b>
+
+            <div><code class="javascript">
+                (function isItHoisted () {<br>
+                console.log('yes');<br>
+                })();
+
+            </code></div>
+            </p>
         </div>
+        <p>
+            <b>אחרי Hoisting:</b>
+            <div><code class="javascript">
+        isItHoisted ();<br>
+        (function isItHoisted () {<br>
+        console.log('yes’); // will work!!<br>
+        })();
+    </code></div>
+        </p>
+        <!--footer Copy Paste-->
+        <footer>
+            <!--put your avatar img here-->
+            <img class="avatar" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t31.0-8/21753430_10210142853382942_2008499162272625195_o.jpg?oh=7b1ee7e746e2e7d9e60393ba39309cae&oe=5AAADAF5&__gda__=1517109340_7460f083d98d0c3deb18a4643bbcbfeb">
+            <p class="footer_txt" dir="ltr" style="text-align: left">
+                "Don't ask yourself what the world needs, ask yourself what makes you come alive. And then go and do that. Because what the world needs is people who have come alive."
+                <br><br>~Howard Washington Thurman </p>
+            <p class="_14">FullStack developer</p>
+            <h4 class="_14">Follow me on:</h4>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/maor.bahar" target="_blank" class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/MaorBahar" target="_blank" class="social-icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fa fa-codepen"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maorbachar/" target="_blank" class="social-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/8157241/maor-bachar" target="_blank" class="social-icon">
+                        <i class="fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
     </div>
 </main>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
