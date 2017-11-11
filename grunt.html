@@ -1,0 +1,289 @@
+<!--Main Article Template
+If you want to use this page, follow this instractions.
+
+1.Create a new template, and give it your
+Article-name.html.
+
+2.folow the coomments in the code, and make your personal cahnges.
+
+If you have any question conatact Yoav Benzion.
+Please don't make any changes to this page!!
+Thank you !!
+
+-->
+
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/article-main-template.css">
+    <link rel="stylesheet" href="css/article-footer-template.css">
+    <link rel="stylesheet" href="css/article-nav-template.css">
+    <link rel="stylesheet" href="css/subscribe.css" />
+    <!----this links for highlightjs!--->
+    <link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <!----this links for highlightjs!--->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!--fixing risponsive view on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New arti</title>
+</head>
+
+<body>
+<!---subscribe pop-up section!--->
+<div id="sib_embed_signup" style="display:none; width:90%; position:absolute; z-index:100; margin:auto 2.55%;">
+    <div class="forms-builder-wrapper" style="position:relative;margin:17% auto;">
+        <input type="hidden" id="sib_embed_signup_lang" value="en">
+        <input type="hidden" id="sib_embed_invalid_email_message" value="המייל שלך לא תקין">
+        <input type="hidden" name="primary_type" id="primary_type" value="email">
+        <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+            <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+        </div>
+
+        <form dir="rtl" style="background-color: rgba(0,0,0,.85); border-radius: 10px; " class="description" id="theform" name="theform"
+              action="https://my.sendinblue.com/users/subscribeembed/js_id/2wk89/id/2" onsubmit="return false;">
+            <input type="hidden" name="js_id" id="js_id" value="2wk89">
+            <input type="hidden" name="listid" id="listid" value="4">
+            <input type="hidden" name="from_url" id="from_url" value="yes">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+            <div class="close" style="color:white; font-size: 28px; padding:10px; cursor: pointer;">x</div>
+
+            <div class="sib-container rounded">
+                <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
+                <div class="header" style="padding:0 20px;">
+                    <h1 class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 45px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">My Newsletter</h1>
+                    <h3 id="company-name" style="font-weight: normal; text-align: left; font-size: 25px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">By</h3>
+                </div>
+                <div class="description editable" data-editfield="newsletter_description" style="padding: 0px 20px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; display: none;">What type of content do you plan to share with your subscribers? </div>
+                <div class="view-messages" style=" margin:5px 0;"> </div>
+                <!-- an email as primary -->
+                <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+                    <div class="row mandatory-email" style="padding: 10px 20px; position: relative; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px;">
+                        <div class="lbl-tinyltr" style="color: white; clear: both;padding:1em; float: none; font-family:Helvetica, Arial, sans-serif; text-align: center;">
+                            הכנס מייל כדי שנוכל לעדכן אותך על מאמרים נוספים שנפרסם
+                            <br>
+                        </div>
+                        <input type="text" name="email" id="email" value="" style=" padding: 10px 2%; width: 90%;">
+                        <div style="color:white;">
+                            *לא תקבלו מאיתנו ספאם והכתובת מייל לא תעבור לאף גורם אחר
+                            <br>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div class="hidden-btns">
+                            <a class="btn move" href="#">
+                                <i class="fa fa-arrows"></i>
+                            </a>
+                            <br>
+                            <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="captcha forms-builder-group" style="display: none;">
+                    <div class="row" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; padding: 10px 20px;">
+                        <div id="gcaptcha" style="transform: scale(1); margin-left: 0px;"></div>
+                    </div>
+                </div>
+
+                <!-- end of primary -->
+                <div class="byline" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-weight: bold; font-size: 16px; text-align: center; display: block;">
+                    <button class="button editable " type="submit" data-editfield="subscribe" style="font-family:Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); background: rgb(34, 52, 214); display: inline-block; white-space: nowrap; min-height: 40px; margin: 0px 5px 0px 0px; padding: 0px 22px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 14px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;">&nbsp;עקוב&nbsp;אחרינו &nbsp;</button>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- End : SendinBlue Signup Form HTML Code -->
+<!----end of subscribe pop-up section!--->
+<!--Page Layout Grid-->
+<main class="container">
+
+    <!---change here cover of your article!--->
+    <div class="box1" style="background: url(./img/computer-2557644_1920.jpg);   background-size: cover;">        <a class="ninja-btn" title="menu">
+        <span></span>
+    </a>
+        <ul>
+            <li class="menu"><a href="./index.html">ראשי</a> </li>
+            <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
+            <li class="menu"><a href="contact.html">צור קשר</a></li>
+            <li class="menu subscribe">עקוב אחרינו</li>
+            <li class="text">טקסט נמצא בשורה 110</li>
+            <li class="text">שקשור למאמר</li>
+        </ul>
+    </div>
+    <!--Article Body Grid-->
+
+    <div class="grid_con">
+
+        <div class="box2 ">
+            <h1>Grunt - JavaScript Task Runner</h1>
+
+            <p>
+                אהלן חבר'ה, היום נתקדם ונלמד חבילה שימושית מאוד שנמצאת בתוך NODEJS בשם grunt,
+מדובר בחבילה שמדורגת בין עשרת המקומות הראשונים מבחינת הורדות מדי חודש.</p>
+
+            <p>
+Grunt מאגדת בתוכה מלא תוספים שימושיים כמו:
+            <ul>
+                <li>JSHINT- תוסף שכולם משתמשים בו בתוכנת כתיבת הקוד שלהם, מאתר SYNTAX ERROR בקוד.</li>
+                <li>MINIFY CSS/HTML- מקטין את נפח הקבצים לשיפור ביצועים (זמן טעינת אתרים).</li>
+            <li>קימפול קבצי sass לcss</li>
+            <li>מעקב אחרי שינוי כלשהו בקבצים</li>
+            </ul>
+            </p>
+            <p>
+                במאמר זה אנחנו נשתמש בתוסף הנקרא <kbd>grunt-contrib-watch</kbd> ונשלב יחד איתו שימוש בתוסף <kbd>grunt-contrib-htmlmin</kbd> שמכווץ את קבצי הhtml על מנת לבצע שיפור בביצועי טעינת האתר, ככל שהקובץ קטן יותר זמן הטעינה מהיר יותר.
+            </p>
+            <p>
+                התוסף <kbd>grunt-contrib-watch</kbd> עוקב אחרי שינויים בקבצים שנמצאים בשרת שלנו, אנחנו כמובן יכולים לשלוט באיזה תיקיה ואיזה סוגי קבצים הוא יעקוב, במידה וחל שינוי כלשהו, נוכל להגדיר לו לבצע פעולה מסויימת על אותו קובץ.
+            </p>
+            <p>
+                על מנת שנוכל להשתמש בgrunt כמו שציינתי מדובר בחבילה שנמצאת בתוך nodejs ולכן נצטרך להרים שרת nodejs.
+                הקמתם סביבת עבודה של nodejs? יופי! בואו נמשיך...
+
+            </p>
+            <p>
+נתחיל בהתקנת grunt על שרת הnodejs שלנו, נפתח CMD על התיקיה של השרת ונריץ את השורות הבאות (במק להוסיף sudo לפני npm):
+            <div><code class="javascript">
+            npm install -g grunt-cli // install the package of grunt.<br>
+            npm init -f // create/update your package.json with grunt properties
+             </code></div>
+            </p>
+            <p>
+                אחרי שהתקנו את grunt, נתקין את התוסיפים שבהם נשתמש על השרת שלנו,
+                נריץ את השורות הבאות בCMD (במק להוסיף sudo לפני npm):
+            <div><code class="javascript">
+            npm install grunt-contrib-watch --save --dev <br>
+            npm install grunt-contrib-htmlmin --save --dev
+        </code></div>
+            </p>
+
+            <p>
+                על מנת שנוכל להשתמש בgrunt ולהפעיל את שתי התוספים שאנחנו נעבוד איתם היום
+                ניצור קובץ בתיקיה הראשית (איפה שנמצא package.json) בשם Gruntfile.js, זהו הקובץ שיחיל את כל ההגדרות של התוספים.
+            </p>
+
+            <p style="color: blue; font-weight: bold;">
+בתוך קובץ Gruntfile.js נכניס את הקוד הבא
+ <pre><code class="javascript">
+    module.exports = function(grunt) {
+
+        grunt.initConfig({
+            htmlmin: {
+                dist: {
+                    files: {
+                        'public/index.min.html': 'public/index.html', // 'destination': 'source'
+                    }
+                }
+            },
+            watch: {
+                files: ['public/index.html'],
+                tasks: ['htmlmin']
+            }
+        });
+        // Load the plugins that provides the "htmlmin" and "watch" tasks.
+        grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+        grunt.registerTask('default', ['watch']);
+
+    };
+</code></pre>
+            </p>
+            <p>
+            initConfig מדובר בפונקציה שמקבלת אובייקט, שבמקרה הזה מכילה את ההגדרות של התוספים שאנחנו רוצים להריץ על השרת,
+                    נסביר קצת מה רשמנו בתוך האובייקט: ניתן לראות שישנם עוד 2 אובייקטים עיקריים, htmlmin ו watch.
+            </p>
+            <p>
+htmlmin מקבל הגדרה של קובץ אליו אנחנו רוצים להפוך את הקובץ ל minify -   להקטין את גודל הקובץ כמה שניתן לצורכי אופטימיזציה לטעינה מהירה של האתר - (index.min.html)
+            </p>
+            <p>
+                ו index.html זה קובץ המקור שאותו אנחנו מבקשים לכווץ בעזרת התוסף htmlmin
+            </p>
+            <p>
+                באובייקט watch אנחנו בוחרים את הקובץ עליו אנחנו מעוניינים לעקוב ובמידה וחל שינוי אוטומטי נפעיל את התוסף htmlmin (ניתן לראות שיש קריאה בtasks לתוסף).
+            </p>
+            <p>
+                בחלק האחרון של הקוד ניתן לראות שאנחנו מבצעים טעינה של התוספים בתוך המודול
+על מנת שנוכל להשתמש בתוספים:
+            <div><code class="javascript">
+            grunt.loadNpmTasks('grunt-contrib-watch');<br>
+            grunt.loadNpmTasks('grunt-contrib-htmlmin');
+            </code></div>
+            </p>
+<p>
+    ברגע שנרשום את המשימה במודול כשנריץ בcmd: grunt אוטומטית grunt יפעיל את התוסף watch.
+            בלי שנרשום את התוסף, watch לא יפעל ויעקוב אחרי שינויים בקבצים.
+            <div><code class="javascript">
+            grunt.registerTask('default', ['watch']);
+            </code></div>
+</p>
+
+            <p>
+                הפעלת grunt דרך הcmd תגרום לwatch לפעול ולעקוב אחרי כל שינוי שיחול בקובץ index.html ויכווץ אותו לindex.min.html.
+            </p>
+            <p>
+                ישנם עוד אלפי תוספים שימושיים שיקלו עליכם מצרף <a href="https://gruntjs.com/plugins" target="_blank">לכאן</a> קישור לתוספים הכי פופולארים בgrunt.
+            </p>
+
+        <!--footer Copy Paste-->
+        <footer>
+            <!--put your avatar img here-->
+            <img class="avatar" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t31.0-8/21753430_10210142853382942_2008499162272625195_o.jpg?oh=7b1ee7e746e2e7d9e60393ba39309cae&oe=5AAADAF5&__gda__=1517109340_7460f083d98d0c3deb18a4643bbcbfeb">
+            <p class="footer_txt" dir="ltr" style="text-align: left">
+                "Don't ask yourself what the world needs, ask yourself what makes you come alive. And then go and do that. Because what the world needs is people who have come alive."
+                <br><br>~Howard Washington Thurman </p>
+            <p class="_14">FullStack developer</p>
+            <h4 class="_14">Follow me on:</h4>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/maor.bahar" target="_blank" class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/MaorBahar" target="_blank" class="social-icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fa fa-codepen"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maorbachar/" target="_blank" class="social-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/8157241/maor-bachar" target="_blank" class="social-icon">
+                        <i class="fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    </div>
+</main>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/nav-template.js"></script>
+<script src="js/subscribe.js"></script>
+<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
+</body>
+
+</html>

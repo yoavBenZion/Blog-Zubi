@@ -19,7 +19,9 @@ $(document).ready(function() {
     $('div code').each(function(i, block) {
         hljs.highlightBlock(block);
     });
-
+    $('div pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
 });
 
 var is = false;
