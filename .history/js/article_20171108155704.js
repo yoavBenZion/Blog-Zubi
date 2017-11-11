@@ -28,12 +28,7 @@ $(".cd-nav-trigger").click(function () {
     }
 });
 
-$(document).ready(function () {
-    /*<div><code class="javascript">
-let add = function (a,b){ return a+b;} ;
-<br>
-let multiply = function (a,b) { return a*b;};
-</code></div> */
+$(document).ready(function () { /*<div><code class="javascript"></code></div> */
     $('div code').each(function (i, block) {
         hljs.highlightBlock(block);
     });

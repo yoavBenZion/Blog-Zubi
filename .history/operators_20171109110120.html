@@ -31,17 +31,23 @@
 
                 <p class="p1" dir="rtl">
                     לפני שנתחיל, מהו BOOLEAN? ערך שמסתכם בשתי צורות: True/False. ישנם מספר ערכים בוליאנים אשר נותנים לנו תשובת False:
-                    <br>
-                    <span class="lili">False / Null / Undefined / NaN / " " / ' ' / 0 </s>
-                        <p class="p1" dir="rtl" class="lili">
-                            ומספר ערכים בוליאנים לTRUE:
-                            <br>
-                            <span class="lili">NaN / True / כל מספר מלבד 0 / כל מחרוזת שהיא לא ריקה / כל סוג של מערך אפילו אם הוא ריק / כל סוג
-                                של אובייקט אפילו אם הוא ריק</span>
-                        </p>
+                    <ul class="p1" dir="rtl">
+                        <li class="lili">False / Null / Undefined / NaN / " " / ' ' / 0 </li>
+                    </ul>
+                    <p class="p1" dir="rtl">
+                        ומספר ערכים בוליאנים לTRUE:
+                        <ul class="p1" dir="rtl">
+                            <li>True</li>
+                            <li>כל מספר מלבד 0</li>
+                            <li>כל מחרוזת (STRING) שהיא לא ריקה</li>
+                            <li>NaN </li>
+                            <li>כל סוג של מערך (ARRAY []) אפילו אם הוא ריק</li>
+                            <li>כל סוג של אובייקט (OBJECT {}) אפילו אם הוא ריק</li>
+                        </ul>
                         <p class="p1" dir="rtl">
                             לפני שנבין מה עושים עם כל אלו חשוב שנבין שכל מחרוזת שנרצה להמיר לערך בוליאני נעשה זאת על-ידי שימוש בנוסחאת converting to
-                            boolean: 'string'! / 'string'!! / Boolean('סטרינג') / (false) / (true) /
+                            boolean:
+                            <br> 'string'! / 'string'!! / Boolean('סטרינג') / (false) / (true) /
                         </p>
                         <p class="p1" dir="rtl"> כמה הערות חשובות:
                             <br> ** מחרוזת שלפניה יהיה ! תהיה FALSE
