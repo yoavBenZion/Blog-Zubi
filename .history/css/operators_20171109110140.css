@@ -61,7 +61,6 @@ small {
 .grid box1 ::after {
     content: "";
     background: url(http://ccresourcecenter.org/wp-content/uploads/2016/06/georgia.jpg);
-    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
