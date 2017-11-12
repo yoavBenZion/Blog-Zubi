@@ -1,0 +1,39 @@
+/****************
+ARRAY
+*****************/
+
+.array {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+.array li {
+  margin: 80px 2px;
+  border-top: 1px solid grey;
+  padding-top: 2px;
+}
+
+
+.no-change,
+.change,
+.es5 {
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 25%;
+  margin: 4px 15px 2px 35px;
+  padding: 1px 1px;
+}
+
+.no-change {
+  background-color: lightblue;
+  
+}
+
+.change {
+  background-color: tomato;
+  display: inline-block;
+}
+
+.es5 {
+  background-color: yellow;
+}

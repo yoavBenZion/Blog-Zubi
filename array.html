@@ -1,0 +1,786 @@
+<!--Main Article Template
+If you want to use this page, follow this instractions.
+
+1.Create a new template, and give it your
+Article-name.html.
+
+2.folow the coomments in the code, and make your personal cahnges.
+
+If you have any question conatact Yoav Benzion.
+Please don't make any changes to this page!!
+Thank you !!
+
+-->
+
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <!--This links for Article templates-->
+    <link rel="stylesheet" href="css/article-main-template.css">
+    <link rel="stylesheet" href="css/article-footer-template.css">
+    <link rel="stylesheet" href="css/article-nav-template.css">
+    <link rel="stylesheet" href="css/subscribe.css" />
+    <!--This link for array.css-->
+    <link rel="stylesheet" href="css/array.css">
+    <!----this links for highlightjs!--->
+    <link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <!----this links for highlightjs!--->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!--fixing risponsive view on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Array Cheat Sheet</title>
+</head>
+
+<body>
+<!---subscribe pop-up section!--->
+<div id="sib_embed_signup" style="display:none; width:90%; position:absolute; z-index:100; margin:auto 2.55%;">
+    <div class="forms-builder-wrapper" style="position:relative;margin:17% auto;">
+        <input type="hidden" id="sib_embed_signup_lang" value="en">
+        <input type="hidden" id="sib_embed_invalid_email_message" value="המייל שלך לא תקין">
+        <input type="hidden" name="primary_type" id="primary_type" value="email">
+        <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+            <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+        </div>
+
+        <form dir="rtl" style="background-color: rgba(0,0,0,.85); border-radius: 10px; " class="description" id="theform" name="theform"
+              action="https://my.sendinblue.com/users/subscribeembed/js_id/2wk89/id/2" onsubmit="return false;">
+            <input type="hidden" name="js_id" id="js_id" value="2wk89">
+            <input type="hidden" name="listid" id="listid" value="4">
+            <input type="hidden" name="from_url" id="from_url" value="yes">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+            <div class="close" style="color:white; font-size: 28px; padding:10px; cursor: pointer;">x</div>
+
+            <div class="sib-container rounded">
+                <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
+                <div class="header" style="padding:0 20px;">
+                    <h1 class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 45px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">My Newsletter</h1>
+                    <h3 id="company-name" style="font-weight: normal; text-align: left; font-size: 25px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">By</h3>
+                </div>
+                <div class="description editable" data-editfield="newsletter_description" style="padding: 0px 20px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; display: none;">What type of content do you plan to share with your subscribers? </div>
+                <div class="view-messages" style=" margin:5px 0;"> </div>
+                <!-- an email as primary -->
+                <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+                    <div class="row mandatory-email" style="padding: 10px 20px; position: relative; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px;">
+                        <div class="lbl-tinyltr" style="color: white; clear: both;padding:1em; float: none; font-family:Helvetica, Arial, sans-serif; text-align: center;">
+                            הכנס מייל כדי שנוכל לעדכן אותך על מאמרים נוספים שנפרסם
+                            <br>
+                        </div>
+                        <input type="text" name="email" id="email" value="" style=" padding: 10px 2%; width: 90%;">
+                        <div style="color:white;">
+                            *לא תקבלו מאיתנו ספאם והכתובת מייל לא תעבור לאף גורם אחר
+                            <br>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div class="hidden-btns">
+                            <a class="btn move" href="#">
+                                <i class="fa fa-arrows"></i>
+                            </a>
+                            <br>
+                            <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="captcha forms-builder-group" style="display: none;">
+                    <div class="row" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; padding: 10px 20px;">
+                        <div id="gcaptcha" style="transform: scale(1); margin-left: 0px;"></div>
+                    </div>
+                </div>
+
+                <!-- end of primary -->
+                <div class="byline" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-weight: bold; font-size: 16px; text-align: center; display: block;">
+                    <button class="button editable " type="submit" data-editfield="subscribe" style="font-family:Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); background: rgb(34, 52, 214); display: inline-block; white-space: nowrap; min-height: 40px; margin: 0px 5px 0px 0px; padding: 0px 22px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 14px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;">&nbsp;עקוב&nbsp;אחרינו &nbsp;</button>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- End : SendinBlue Signup Form HTML Code -->
+<!----end of subscribe pop-up section!--->
+   
+    <!--Page Layout Grid-->
+    <main class="container">
+        <!---change here cover of your article!--->
+        <div class="box1" style="background: url(./img/chess-982260_1920.jpg);   background-size: cover;">
+            <a class="ninja-btn" title="menu">
+                <span></span>
+            </a>
+            <ul>
+                <li class="menu"><a href="./index.html">ראשי</a> </li>
+                <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
+                <li class="menu"><a href="contact.html">צור קשר</a></li>
+                <li class="menu subscribe">עקוב אחרינו</li>
+                <li class="text">JavaScript</li>
+                <li class="text">Array's</li>
+            </ul>
+        </div>
+        <!--Article Body Grid-->
+
+        <div class="grid_con">
+
+                <!--כותרת המאמר-->
+                <h1 class="main_header">Array Cheat Sheet</h1>
+
+                <div class="column1">
+                    <!--First part of article-->
+              <h2 class="center_header">Uses & Methods</h2>
+                    
+            <p>מאמר זה עוסק במתודות של ARRAY. </p>
+            <p>
+              המאמר נועד למפתחים מתחילים שעושים את הצעדים הראשונים שלהם בעולם ה Front End או למתקדמים אשר רוצים לרענן את הזיכרון שלהם בנושא. 
+            </p>
+            <p>
+              Array – נחשב אחד מאבני היסוד (core), של שפת JavaScript. ואי אפשר באמת להבין את העומק שלה, בלי לשלוט בנושא. כמו כן, מאוד מקובל להישאל בראיון עבודה (במיוחד בשלבים הראשונים של כניסה לתחום), מה עושה מתודת array מסוימת.
+            </p>
+            <p>
+              אני ממליץ בחום לקרוא את המאמר הזה לפחות פעם אחת בחייכם, ולחזור לפה מידי פעם, כדי לרענן את הידע שלכם. <br> הרי ידוע שמה שלא משתמשים בו ביום יום, הולך לאיבוד (: 
+            </p>
+            <p>
+              ניתן להשתמש בחלונית החיפוש למטה, ע"י כתיבת המתודה המבוקשת, ולחיצה על כפתור חיפוש. 
+            </p>
+            <p class="center_header">You can look for the Array Method in the 
+            <br> &darr; Serch BOX below &darr;</p>
+            <input type="text" title="Array serch box" class="arraySerchInput">
+            <button class="arrayButton">חיפוש</button>
+                   
+            <ol class="orderd-list">
+              <li id="isArray"><kbd>()isArray</kbd> 
+               <div class="no-change">no change </div>
+                <p>Returns <kbd>True</kbd> or <kbd>False</kbd>. </p>
+                
+<!--code snippet for each array method-->
+          <p>
+  
+          <div >
+            <code class="javascript">
+              var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo;
+              <br> &raquo; (3) [1,2,3]
+              <br> Array.isArray(boo);
+              <br> &raquo; true
+              <br> Array.isArray();
+              <br> &raquo; false
+              <br> Array.isArray('string');
+              <br> &raquo; false
+            </code>
+          </div>
+        </p>
+<!--End of snippet for array method-->
+              </li>
+              <li id="length"> <kbd>Length</kbd>
+             <div class="no-change">no change </div>
+              <p>Returns the <kbd>number</kbd> of elements in the Array.</p>
+<!--code snippet for each array method-->
+          <p>
+            מחזיר את מס' האלמנטים במערך.
+          <div >
+            <code class="javascript">
+              var boo = [1,2,3, 'someString', true];
+              <br> &raquo; undefined
+              <br> boo;
+              <br> &raquo; (5) [1,2,3, 'someString', true]
+              <br> boo.length;
+              <br> &raquo; 5
+            </code>
+          </div>
+        </p>
+        
+<!--End of snippet for array method-->
+           </li>
+           <li id="indexof"> <kbd>()indexOf</kbd> 
+       <div class="no-change">no change </div>
+        <p>Returns the First <kbd>index</kbd> value, where the element that is passed as an argument (inside the parenthesis), is found. <br>
+        if the element is not present, the return vaue will be <kbd>-1</kbd><br>
+        note, that you can pass a second argument, where the index position count will start.</p>
+        <p>
+            דוגמא א : <br>
+             המתודה תחזיר את ה <kbd>index value</kbd> , הראשון של האלמנט שמועבר במתודה, (בתוך הסוגריים) . 
+            <br>הספירה תתחיל מ index 0, אלא אם כן יועבר פרמטר נוסף.
+          <div >
+            <code class="javascript">
+              var boo = [1,2,3,1,2,3];
+              <br> &raquo; undefined
+              <br> boo;
+              <br> &raquo; (6) [1,2,3,1,2,3]
+              <br> boo.indexOf(3);
+              <br> &raquo; 2
+            </code>
+          </div>
+        </p>
+        <p>
+            דוגמא ב : 
+            <br> הפרמטר השני המועבר במתודה, קובע את ה index ממנו תתחיל הספירה.
+          <div >
+            <code class="javascript">
+               boo;
+              <br> &raquo; (6) [1,2,3,1,2,3]
+              <br> boo.indexOf(3,3);
+              <br> &raquo; 5
+            </code>
+          </div>
+        </p>
+        
+        <p>
+            דוגמא ג : 
+            <br> במידה והפרמטר המועבר במתודה לא קיים במערך, נקבל בחזרה <kbd>1-</kbd>.
+          <div >
+            <code class="javascript">
+               boo;
+              <br> &raquo; (6) [1,2,3,1,2,3]
+              <br> boo.indexOf(6);
+              <br> &raquo; -1
+            </code>
+          </div>
+        </p>
+      </li>
+           
+<!--last index of-->
+      <li id="lastindexof"><kbd>()lastIndexOf</kbd>
+      <div class="no-change">no change </div>
+       <p>מחזיר את ערך ה <kbd>index</kbd>  בו האלמנט המועבר במתודה נמצא, כאשר הספירה מתחילה מסוף המערך .</p>
+           <p>
+            
+          <div >
+            <code class="javascript">
+               boo;
+              <br> &raquo; (6) [1,2,3,1,2,3]
+              <br> boo.lastIndexOf(2);
+              <br> &raquo; 4
+            </code>
+          </div>
+        </p>
+      </li>
+      
+<!--push-->
+      <li id="push"><kbd>()push</kbd>
+       <div class="change">change</div>
+        <p>מכניס ערכים (אחד או יותר), לסוף המערך<br>
+        מחזיר את ה <kbd>length</kbd> של המערך.</p>
+         <p>
+            
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.push(4,5);
+              <br> &raquo; 5
+              <br> boo
+              <br> &raquo; (5) [1,2,3,4,5]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--pop-->
+      <li id="pop"><kbd>()pop</kbd>
+       <div class="change">change</div>
+        <p>מוריד אלמנט מסוף המערך, <br>
+        מחזיר את ה <kbd>Value</kbd> של האלמנט שהוצא<br>
+         אם המערך היה ריק, מחזיר <kbd>Undefined</kbd>.</p>
+        <p>
+          <div >
+            <code class="javascript">
+                var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.pop();
+              <br> &raquo; 3
+            </code>
+          </div>
+        </p>
+      </li>
+      
+<!--unshift-->
+     <li id="unshift"><kbd>()unshift</kbd>
+       <div class="change">change</div>
+        <p>מוסיף ערכים (אחד או יותר), לתחילת המערך, <br>
+        מחזיר את ה  <kbd>length</kbd> של המערך .</p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.unshift(0);
+              <br> &raquo; 4
+              <br> boo;
+              <br> &raquo; (4) [0,1,2,3]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--shift-->
+     <li id="shift"><kbd>()shift</kbd>
+       <div class="change">change</div>
+        <p>מוציא ערך מתחילת המערך, <br>
+        מחזיר את <kbd>Value</kbd> של האלמנט שהוצא .<br> במידה והמערך ריק, מחזיר  <kbd>Undefined</kbd>.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.shift();
+              <br> &raquo; 1
+              <br> boo
+              <br> &raquo; (2) [2,3]
+            </code>
+          </div>
+        </p>
+      </li>
+
+<!--toString-->
+     <li id="tostring"><kbd>()toString</kbd>
+       <div class="no-change">no change</div>
+        <p>מחזיר את כל המערך כ <kbd>string</kbd> מופרד בפסיק.<br>
+        לא מקבל פרמטרים, או משנה את המערך .</p>
+         <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.toString();
+              <br> &raquo; "1,2,3"
+            </code>
+          </div>
+        </p>
+      </li>
+<!--join-->
+    <li id="join"><kbd>()join</kbd>
+       <div class="no-change">no change</div>
+        <p>מחזיר את המערך כ  <kbd>string</kbd>. כאשר הפרמטר המועבר בסוגריים, יהיה המפריד של ה <kbd>string</kbd>.<br>
+        אם משתמשים במתודה ללא פרמטר, הערכים יחזרו כ <kbd>string</kbd>, מופרד ע"י פסיק . <br> 
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.join();
+              <br> &raquo; "1,2,3"
+              <br> boo.join('')
+              <br> &raquo; "123"
+            </code>
+          </div>
+        </p>
+      </li>
+      
+<!--reverse-->
+     <li id="reverse"><kbd>()reverse</kbd>
+       <div class="change">change</div>
+        <p>משנה את המערך במקום, ומחזיר אותו הפוך <kbd>reversed</kbd>.<br> 
+        בתוך המערך הישן.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> boo.reverse();
+              <br> &raquo; (3) [3,2,1]
+              <br> boo
+              <br> &raquo; (3) [1,2,3]
+            </code>
+          </div>
+        </p>
+      </li>
+
+<!--sort-->
+      <li id="sort"><kbd>()sort</kbd> 
+       <div class="change">change</div>
+        <p>משנה את הערכים במקום ומחזיר את ה  <kbd>Sorted</kbd> array<br>
+        <strong>שים לב!</strong>
+        <br>המתודה מסדרת את המערך לפי unicode, שלמעשה מסדרת את המערך לפי סדר אלפביתי.
+        <br>
+        למעשה, כדי לסדר את המערך בסדר אחר, עולה-יורד/ יורד-עולה, יש להשתמש ב 
+        <br> <kbd>Compare Function</kbd> כפרמטר המועבר בפונקציה.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = ['zebra', 'lion', 'fish'];
+              <br> &raquo; undefined
+              <br> boo.sort();
+              <br> &raquo; (3) ["fish", "lion", "zebra"]
+              <br> var foo = [11,20,6,54]
+              <br> &raquo; undefined
+              <br> foo.sort();
+              <br> &raquo; (4) [11,20,54,6]
+            </code>
+          </div>
+        </p>
+      <p>דוגמא לפונקציות השוואה מגבוה לנמוך ולהפך
+          <div >
+            <code class="javascript">
+               var foo = [11,20,6,54];
+              <br> &raquo; undefined
+              <br> boo.sort();
+              <br> &raquo;(4) [11,20,54,6]
+              <br> // Smallest to highest
+              <br> foo.sort((a,b) => {return a-b})
+              <br> &raquo; (4) [6,11,20,54]
+              <br> // Highest to Smallest
+              <br> foo.sort((a,b) => {return b-a})
+              <br> &raquo; (4) [54,20,11,6]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--conct-->
+     <li id="concat"><kbd>()concat</kbd>
+       <div class="no-change">no change</div>
+        <p>מייצר מערך חדש, ע"י חיבור פרמטרים שהועברו במתודה,<br> למערך עליו המתודה נקראה,
+        מחזיר מערך חדש.</p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [1,2,3];
+              <br> &raquo; undefined
+              <br> var foo = boo.concat('one', 'two');
+              <br> &raquo; undefined
+              <br> foo
+              <br> &raquo; (5) [1,2,3,"one", "two"]
+              <br> boo
+              <br> (3) [1,2,3]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--slice-->
+<li id="slice"><kbd>()slice</kbd>
+       <div class="no-change">no change </div>
+        <p>מייצר העתק של המערך המקורי . <br>
+        מחזיר <kbd>Slice of the array</kbd>.
+        </p> 
+        <p>
+        הפרמטר הראשון שמועבר במתודה, קובע את מיקום תחילת המערך החדש, ויהיה כלול בו . <br>
+       הפרמטר השני המועבר במתודה, קובע את סוף החיתוך, אך  
+         <strong>לא</strong> יהיה כלול במערך החדש.</p>
+        <p>
+        במידה ומעבירם רק פרמטר אחד, ממנו המערך החדש ייגזר, עד סוף המערך הישן. <br>
+        <strong>פרמטר שלילי</strong> קובע שהחיתוך יתבצע מסוף המערך .<br>
+        כאשר <kbd>1-</kbd> יהיה המיקום האחרון במערך.
+         </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = ['one', 'two', 'three', 'four', 'five'];
+              <br> &raquo; undefined
+              <br> boo.slice(1);
+              <br> &raquo; (4) ['two', 'three', 'four', 'five']
+              <br> boo.slice(1,3)
+              <br> &raquo; (2) ['two', 'three']
+              <br> boo.slice(-2)
+              <br> &raquo; (2) ['four', 'five']
+              <br> boo
+              <br> &raquo; (5) ['one', 'two', 'three', 'four', 'five']
+            </code>
+          </div>
+        </p>
+      </li>
+<!--splice-->
+   <li id="splice"><kbd>()splice</kbd>
+       <div  class="change">change</div>
+        <p>
+          במתודה זו משתמשים לשינוי המערך ע"י 
+            <kbd>הוספה</kbd> או <kbd>הסרה</kbd> של אלמנטים מהמערך המקורי
+        </p>
+        <h3>הסרה</h3>
+        <p>כאשר מסירים אלמנטים מהמערך,<br> יחזרו ה <kbd>Removed elments</kbd>.</p>
+        <p>הפרמטר הראשון מייצג את ה index positin<br> ממנו יתחילו להיחתך ערכים מהמערך.<br>
+        הפרמטר השני, מפרט מה מס'' האלמנטים שיש להסיר.</p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = ['one', 'two', 'three', 'four', 'five'];
+              <br> &raquo; undefined
+              <br> boo.splice(0,2);
+              <br> &raquo; (2) ["one", "two"]
+              <br> boo
+              <br> &raquo; (3) ["three", "four", "five"]
+            </code>
+          </div>
+        </p>
+        <h3>הוספה</h3>
+        <p>
+          כל פרמטר שיעבר לאחר הפרמטר השני, יועבר כאלמנט למערך החדש.<br>
+          במידה והפרמטר השני הוא <kbd>0</kbd>, שום אלמנט לא יוסר מהמערך.<br>
+           במידה ושום אלמנט לא מוסר, חוזר מערך ריק כ -  <kbd>Empty Array</kbd>.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = ['one', 'two', 'three', 'four', 'five'];
+              <br> &raquo; undefined
+              <br> boo.splice(2,0,1,2,3);
+              <br> &raquo; []
+              <br> boo
+              <br> &raquo; (8) ["one", "two", 1, 2, 3, "three", "four", "five"]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--forEach-->
+<li id="foreach"><kbd>()forEach</kbd>
+       <div class="es5">ES5</div>
+       <div class="change">change</div>
+        <p>
+           מפעיל <kbd>callback function</kbd> שמועברת כפרמטר במתודה, 
+           על כל אחד מהאלמנטים במערך 
+          מחזיר <kbd>undefined</kbd>.
+        </p>
+        <p>
+          פונקציית Callback.<br>
+          מקבלת שלושה פרמטרים - <kbd>Value</kbd>,
+          <kbd>index</kbd> &
+          <kbd>Array</kbd>. <br>
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var foo = [1,2,3,4,5];
+              <br> &raquo; undefined
+              <br> foo.forEach(function(v,i,a) { a[i] = v+1});
+              <br> &raquo; undefined
+              <br> foo
+              <br> &raquo; (5) [2,3,4,5,6]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--map-->
+ <li id="map"><kbd>()map</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+        <p>
+          מחזיר מערך חדש, ע"י הפעלת פונקציה על כל אחד מהאלמנטים במערך הישן.<br>
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var foo = [1,2,3,4,5];
+              <br> &raquo; undefined
+              <br> foo.map((x)=>{ return x*x});
+              <br> &raquo; (5) [1,4,9,16,25]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--reduce-->
+<li id="reduce"><kbd>()reduce</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+        <p>
+          מפעילה פונקציה על כל אחד מהאלמנטים במערך<br> <strong>משמאל לימין</strong>, בצורה מצטברת.<br>
+          מקטינה את המערך לכדי  <kbd>singel Value</kbd>.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var foo = [1,2,3,4,5];
+              <br> &raquo; undefined
+              <br> foo.reduce((x,y)=> { return x+y});
+              <br> &raquo; 15
+              <br> foo.reduce((x,y)=> { return x+y},6);
+              <br> &raquo; 21
+            </code>
+          </div>
+        </p>
+        <p><strong>שים לב! </strong>
+        בשונה ממתודות ES5 אחרות <br>
+        Reduce callback function, מקבלת 4 פרמטרים :
+        </p>
+           <p>
+            Accumulater,<br>
+            Current Value,<br>
+            index,<br>
+            & Array.<br>
+           </p>
+           <p>
+           <strong>optional</strong> <br>
+            אופציה נוספת היא להשתמש בערך התחלתי , כפרמטר שני המועבר עם הפונקציה
+            שישמש כערך צובר התחלתי לחיבור האלמנטים. <br>
+            
+        </p>
+      </li>
+<!--reduceRight-->
+ <li id="reduceRight"><kbd>()reduceRight</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+         <p>
+          בדומה (אך הפוך), למתודה הקודמת -  reduce,<br>
+          מפעילה פונקציה על כל אחד מהאלמנטים במערך<br> <strong>מימין לשמאל</strong>, בצורה מצטברת.<br>
+          מקטינה את המערך לכדי  <kbd>singel Value</kbd>.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = ['a','b','c','d'];
+              <br> &raquo; undefined
+              <br> boo.reduceRight((x,y)=> { return x+y});
+              <br> &raquo; "dcba"
+              <br> boo.reduce((x,y)=> { return x+y})
+              <br> &raquo; "abcd"
+            </code>
+          </div>
+        </p>
+     </li>
+<!--filter-->
+ <li id="filter"><kbd>()filter</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+        <p>המתודה מפעילה פונקציה, על כל אחד מהאלמנטים של המערך,<br>
+         ובודקת אם האלמנט עובר את המשוואה שמועברת בפונקצית ה<br> callback function.<br>
+        מחזיר מערך חדש, שמכיל רק את האלמנטים שעומדים במשוואה,
+        ומחזירים ערך <strong>True</strong>
+         לפונקציה שהועברה.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var foo = [10, 22, 13, 44, 52, 23];
+              <br> &raquo; undefined
+              <br> foo.filter((x)=>{ return x<20});
+              <br> &raquo; (2) [10,13]
+              <br> foo.filter((x)=>{ return x>20});
+              <br> &raquo; (4) [22,44,52,23]
+              <br> foo
+              <br> &raquo; (6) [10,22,13,44,52,23]
+            </code>
+          </div>
+        </p>
+      </li>
+<!--every-->
+  <li id="every"><kbd>()every</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+        <p>מחזיר  <kbd>True</kbd> או <kbd>False</kbd>. </p>
+        <p>
+          הפונקציה רצה על כל אלמנט במערך, ובודקת אם כל האלמנטים עומדים במשוואה שמועברת בה.<br>
+         עוצרת מיד כשפוגשת ערך, שמחזיר לה false . 
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+                var foo = [10, 22, 13, 44, 52, 23];
+              <br> &raquo; undefined
+              <br> foo.every((e)=>{ return e>50;})
+              <br> &raquo; false
+              <br> foo.every((e)=>{ return e<60;})
+              <br> &raquo; true
+              <br> foo
+              <br> &raquo; [10, 22, 13, 44, 52, 23]
+              
+            </code>
+          </div>
+        </p>
+      </li>
+<!--some-->
+ <li id="some"><kbd>()some</kbd>
+       <div class="es5">ES5</div>
+       <div class="no-change">no change</div>
+        <p>מחזיר  <kbd>True</kbd> או <kbd>False</kbd>. </p>
+        <p>
+          הפונקציה רצה על כל אלמנט במערך,<br>
+         ובודקת <strong>if Some</strong> מהאלמנטים במערך,<br> עוברים את המשוואה שעברה ב <br> callback function.<br>
+        ומפסיקה באלמנט הראשון שמחזיר True.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var foo = [10, 22, 13, 44, 52, 23];
+              <br> &raquo; undefined
+              <br> foo.some((e)=>{ return e>15;})
+              <br> &raquo; true
+              <br> foo.some((e)=>{ return e<5;})
+              <br> &raquo; false
+            </code>
+          </div>
+        </p>
+        <p><strong>שים לב! </strong> כאשר המתודות האלו מופעלות על מערך ריק, יש להם התנהגות קבועה. <br>
+        <kbd>()some</kbd> מחזיר <kbd>False</kbd>,<br>
+        ו<kbd>()every</kbd> מחזיר <kbd>True</kbd>.
+        </p>
+        <p>
+          <div >
+            <code class="javascript">
+               var boo = [];
+              <br> &raquo; undefined
+              <br> boo.some((e)=>{ return e>5;};
+              <br> &raquo; false
+              <br> boo.every((e)=>{ return e>5;}
+              <br> &raquo; true
+            </code>
+          </div>
+        </p>
+      </li>
+<!--End of Array Method-->
+</ol> 
+<p>
+  מקווה שנהניתם, ובהצלחה !
+</p>
+                <!--footer Copy Paste-->
+                <footer>
+                    <!--put your avatar img here-->
+                    <img class="avatar" src="img/yoav.jfif">
+                    <p class="footer_txt" dir="ltr" style="text-align:left">
+                       "Start by doing what's necessary then do what's possible, and suddenly you are doing the impossible." 
+                       <br>
+                       <br>
+                       ~Francis of Assisi
+                    </p>
+                    <p class="_14">Yoav Benzion, FullStack developer</p>
+                    
+                    <h4 class="_14">Follow me on:</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-codepen"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/nav-template.js"></script>
+    <script src="js/subscribe.js"></script>
+<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
+<script src="js/array.js"></script>
+</body>
+
+</html>
