@@ -26,18 +26,22 @@
 .navbar-light .navbar-toggler{
     border-color:transparent ;
 }
-.photo {
-  display: none;
-}
+
 
 a.article_link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a.article_link:hover {
-  color: #fff;
+    color: #fff;
 }
 
+.article-title{
+    font-size: 3.5em;
+}
+.article-subtitle{
+    font-size: 1.5em;
+}
 /*****************************************
 RESPONSIVE Layout -Mobile - 1 article box
 *****************************************/
@@ -50,38 +54,38 @@ RESPONSIVE Layout -Mobile - 1 article box
 
 /*Desktop Resizing - Small*/
 @media (min-width: 290px) and (max-width: 749px) {
-  
-  .wrapper{
-      display: grid; 
-      direction: ltr;
-      grid-auto-rows:350px;
-      grid-gap:4em;
-  } 
-  .wrapper > div{
-      color:white;
-      font-size:1em;
-      font-weight: bolder;
-      text-align: center;
-      text-shadow: 1px 1px 1px gray;
-      background: rgba(211, 211, 211, 0.85);
-      box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 
-  }
-
-    .box1 span,.box3 span,.box5 span, .box6 span, .box7 span,.box9 span,.box10 span,.box11 span{
-        position: relative;
-        bottom: -20%;
-        display: block;
+    .wrapper{
+        display: grid;
+        direction: ltr;
+        grid-auto-rows:350px;
+        grid-gap:4em;
     }
+    .wrapper > div{
+        color:white;
+        font-size:1em;
+        text-align: center;
+        text-shadow: 1px 1px 1px gray;
+        background: rgba(211, 211, 211, 0.85);
+        box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
+
+    }
+
+
 
     .box2,.box4,.box8,.box12,.box13{
         display: none;
     }
+    .photo{
+        width:2rem;
+        border-radius: 100%;
+        display: inline;
 
+    }
     .box1{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
     }
 
@@ -89,58 +93,61 @@ RESPONSIVE Layout -Mobile - 1 article box
     .box1-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/gears-1236578_1280.jpg);
         background-size: cover;
         height:100%;
-
-
-
-    }
-    .box1-title span:first-child{
-        font-size: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .box1-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
-
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .box3{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
+
 
     }
-
     .box3-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
+        grid-area: box3;
         background: url(../img/computer-2557644_1920.jpg);
         background-size: cover;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height:100%;
 
     }
-    .box3-title span:first-child{
-        font-size:3em;
-    }
+
     .box3-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box5{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -150,24 +157,30 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding-top: 1rem;
         background: url(../img/guy-2618928_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
+
     }
-    .box5-title span:first-child{
-        font-size:3em;
-    }
+
     .box5-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box6{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -177,25 +190,29 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding-top: 1rem;
         background: url(../img/giphy5.gif);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box6-title span:first-child{
-        font-size:3em;
-    }
+
     .box6-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
-
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
     }
     .box7{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -205,25 +222,30 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding-top: 1rem;
         background: url(../img/computer-2583383_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box7-title span:first-child{
-        font-size:3em;
-    }
+
     .box7-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box9{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -233,25 +255,31 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding-top: 1rem;
         background: url(../img/plasma-ball-2282449_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box9-title span:first-child{
-        font-size:3em;
-    }
+
     .box9-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
+
     .box10{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -261,6 +289,10 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding-top: 1rem;
         background: url(../img/code-944499_1280.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
@@ -271,15 +303,18 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box11{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -315,37 +350,37 @@ RESPONSIVE Layout -Tablet - 2 article box
     .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 2rem;
     }
-  .wrapper{
-      display: grid; 
-      direction: ltr;
-      grid-auto-rows:350px;
-      grid-template-columns:1fr 1fr;
-      grid-gap:4em;
-  } 
-  .wrapper > div{
-      color:white;
-      font-size:1em;
-      font-weight: bolder;
-      text-align: center;
-      text-shadow: 1px 1px 1px gray;
-      background: rgba(211, 211, 211, 0.85);
-      box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
-
-  }
-    .box1 span,.box3 span,.box5 span, .box6 span, .box7 span,.box9 span,.box10 span,.box11 span{
-        position: relative;
-        bottom: -20%;
-        display: block;
+    .wrapper{
+        display: grid;
+        direction: ltr;
+        grid-auto-rows:350px;
+        grid-template-columns:1fr 1fr;
+        grid-gap:4em;
     }
+    .wrapper > div{
+        color:white;
+        font-size:1em;
+        text-align: center;
+        text-shadow: 1px 1px 1px gray;
+        background: rgba(211, 211, 211, 0.85);
+        box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
+
+    }
+
 
     .box2,.box4,.box8,.box12,.box13{
         display: none;
     }
+    .photo{
+        width:2rem;
+        border-radius: 100%;
+        display: inline;
 
+    }
     .box1{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
     }
 
@@ -353,59 +388,61 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box1-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/gears-1236578_1280.jpg);
         background-size: cover;
         height:100%;
-
-
-
-
-    }
-    .box1-title span:first-child{
-        font-size: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .box1-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
-
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .box3{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
     .box3-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
+        grid-area: box3;
         background: url(../img/computer-2557644_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box3-title span:first-child{
-        font-size:3em;
-    }
+
     .box3-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box5{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -415,25 +452,30 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding-top: 1rem;
         background: url(../img/guy-2618928_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box5-title span:first-child{
-        font-size:3em;
-    }
+
     .box5-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box6{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -443,25 +485,29 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding-top: 1rem;
         background: url(../img/giphy5.gif);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box6-title span:first-child{
-        font-size:3em;
-    }
+
     .box6-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
-
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
     }
     .box7{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -471,25 +517,30 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding-top: 1rem;
         background: url(../img/computer-2583383_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box7-title span:first-child{
-        font-size:3em;
-    }
+
     .box7-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box9{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -499,18 +550,23 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding-top: 1rem;
         background: url(../img/plasma-ball-2282449_1920.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
-    .box9-title span:first-child{
-        font-size:3em;
-    }
+
     .box9-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
@@ -518,7 +574,7 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box10{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -528,6 +584,10 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding-top: 1rem;
         background: url(../img/code-944499_1280.jpg);
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         height:100%;
 
     }
@@ -538,15 +598,18 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
         background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
 
 
     }
     .box11{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 87% 13%;
+        grid-template-rows: 85% 15%;
 
 
     }
@@ -579,168 +642,122 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 *****************************************************/
 
 @media (min-width:1200px) {
-   .navbar-expand-sm .navbar-nav .nav-link {
-       padding-right: 2rem;
-   }
-  .wrapper{
-    display: grid; 
-    direction: ltr;
-    grid-auto-rows:minmax(150px, auto);
-      background: #f3f3f3;
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 2rem;
+    }
+    .wrapper{
+        display: grid;
+        direction: ltr;
+        grid-auto-rows:minmax(150px, auto);
+        background: #f3f3f3;
 
-  grid-template-areas: 
-      "box3 box3 box3 box2 box2 box1 box1"
-      "box6 box6 box5 box5 box5 box1 box1"
-      "box6 box6 box9 box9 box4 box7 box7"
-      "box10 box10 box9 box9 box8 box7 box7"
-      "box13 box13 box13 box12 box11 box11 box11"
-        ;
+        grid-template-areas:
+                "box3 box3 box3 box2 box2 box1 box1"
+                "box6 box6 box5 box5 box5 box1 box1"
+                "box6 box6 box9 box9 box4 box7 box7"
+                "box10 box10 box9 box9 box8 box7 box7"
+                "box13 box13 box13 box12 box11 box11 box11"
+    ;
 
-}
+    }
 
-.wrapper > div{
-    color:white;
-    font-size:1em;
-    font-weight: bolder;
-    text-align: center;
-    text-shadow: 1px 1px 1px gray;
-    box-shadow: 0 6px 15px 0 rgba(0,1,1,0.3);
-    margin:0.65em;
+    .wrapper > div{
+        color:white;
+        font-size:1em;
+        text-align: center;
+        text-shadow: 1px 1px 1px gray;
+        box-shadow: 0 6px 15px 0 rgba(0,1,1,0.3);
+        margin:0.65em;
 
 
-}
+    }
 
-/*article boxes*/
-.box1 span, .box6 span, .box7 span,.box9 span{
+    .box3-date-container,.box5-date-container,.box10-date-container,.box11-date-container{
+        display: none;
+    }
 
-    display: block;
-}
-
-/*panorama boxes*/
-.box3 span, .box5 span, .box11 span,.box13 span, .box10 span{
-    position: relative;
-    bottom:-10%;
-    font-size:2em;
-}
-
-.box5-date-container,.box10-date-container,.box11-date-container{
-    display: none;
-}
-
-.jquery{
-    color:#0868ab;
-}
     .photo{
         width:2rem;
         border-radius: 100%;
-        top:5px;
-        position: relative;
+        display: inline;
+
     }
 
     .calander{
-        padding-right: 5px;
         width: 1.2rem;
-        position: relative;
 
     }
 
-.box1{
-    grid-area: box1;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 87% 13%;
-}
-
-.box1-title{
-    grid-column: 1/2;
-    grid-row:1/2;
-    padding-top: 1rem;
-    background: url(../img/gears-1236578_1280.jpg);
-    background-size: cover;
-    height:100%;
-}
-.box1-title span:first-child{
-    font-size: 4.5rem;
-}
-.box1-date-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border-top: dotted 1px grey;
-    padding-right: 1rem;
-    background-color: #d5bfa8;
-
-}
-
-.box1 span:nth-child(2){
-    font-size: 1.5em;
-}
-
-.box1 .date-container{
-    float: right;
-    display: inline;
-
-
-}
-.box1 .date-container .date{
-    display: inline;
-    font-size: 1rem;
-    bottom:0;
-    padding-right: 5px;
-    top:5px;
-    position: relative;
-}
-.box2{
-    grid-area: box2;
-    background: url(../img/chess-982260_1920.jpg);
-    background-size: cover;
-    grid-template-rows: 100%;
+    .box1{
+        grid-area: box1;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 85% 15%;
     }
 
-.box2 a{
-    grid-row:1/2;
-    height: 100%;
-    display: block;
-}
+    .box1-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        background: url(../img/gears-1236578_1280.jpg);
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.box3{
-    grid-area: box3;
-    grid-template-columns: 100%;
-    grid-template-rows: 70% 30%;
-    background: url(../img/computer-2557644_1920.jpg);
-    background-size: cover;
+
+    .box1-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box2{
+        grid-area: box2;
+        background: url(../img/chess-982260_1920.jpg);
+        background-size: cover;
+        grid-template-rows: 100%;
 
     }
 
-.box3-title{
-    grid-column: 1/2;
-    grid-row:1/2;
-    padding-top: 0.5rem;
+    .box2 a{
+        grid-row:1/2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
     }
-.box3-title span:first-child{
-        font-size:3em;
+
+    .box3{
+        grid-area: box3;
+        background: url(../img/computer-2557644_1920.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .box3-title .article-title{
         display: block;
+        font-size: 3em;
     }
-.box3-date-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding-right: 1rem;
+    .box3-title .article-subtitle{
+        font-size: 1.5em;
+    }
 
-}
-.box3 .date-container {
-    float: right;
-    display: inline;
-}
-
-.box3 .date-container .date{
-    display: inline;
-    font-size: 1rem;
-    padding-right: 5px;
-}
-
-.box4{
-    grid-area: box4;
-    background: url(../img/jsbox.png);
-    background-size: cover;
+    .box4{
+        grid-area: box4;
+        background: url(../img/jsbox.png);
+        background-size: cover;
     }
     .box4 a{
         grid-row:1/2;
@@ -748,235 +765,171 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         min-width: 125px;
         display: block;
     }
-.box5{
-    grid-area: box5;
-    background: url(../img/guy-2618928_1920.jpg);
-    background-size: cover;
-}
+    .box5{
+        grid-area: box5;
+        background: url(../img/guy-2618928_1920.jpg);
+        background-size: cover;
+    }
     .box5 a{
         grid-row:1/2;
         height: 100%;
         display: block;
     }
-/*article arguments*/
-.box6{
-    grid-area: box6;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 85% 15%;
-    background: url(../img/giphy5.gif);
-    background-size: cover;
-}
-
-
-.box6-title{
-    grid-column: 1/2;
-    grid-row:1/2;
-    height:100%;
-
-}
-.box6 .js{
-    font-size: 2.5em;
-}
-.box6 .date-container{
-    float: right;
-    display: inline;
-}
-.box6 .date-container .date{
-    display: inline;
-    font-size: 1rem;
-    top:5px;
-    position: relative;
-    padding-right: 5px;
-
-}
-.box6-title span:first-child{
-    font-size:4em;
-    display: block;
-
-}
-
-.box6-date-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border-top: dotted 1px grey;
-    padding-right: 1rem;
-    background-color: #d5bfa8;
-}
-
-
-
-/*hoisting*/
-.box7 {
-    grid-area: box7;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 85% 15%;
-}
-
-.box7-title{
-    grid-column: 1/2;
-    grid-row:1/2;
-    padding-top: 2rem;
-    background: url(../img/computer-2583383_1920.jpg);
-    background-size: cover;
-    height:100%;
-
-}
-.box7 .js{
-    font-size: 2.5em;
-}
-.box7 .date-container{
-    float: right;
-    display: inline;
-    top:40px;
-}
-
-.box7 .date-container .date{
-    display: inline;
-    font-size: 1rem;
-    bottom:0;
-    padding-right: 5px;
-    top: 5px;
-    position: relative;
-}
-.box7-title span:nth-child(2){
-    font-size:4.5em;
-    display: block;
-}
-
-.box7-date-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border-top: dotted 1px grey;
-    padding-right: 1rem;
-    background-color: #d5bfa8;
-
-}
-
-.box8{
-    grid-area: box8;
-    background: url(../img/giphy4.gif);
-    background-size: cover;
-    }
-.box8 a{
-    display: block;
-    height:100%;
-    min-width: 125px;
-}
-/*dom box*/
-
-.box9{
-    grid-area: box9;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 85% 15%;
-    background: url(../img/plasma-ball-2282449_1920.jpg);
-    background-size: cover;
-}
-.box9-title{
-    grid-column: 1/2;
-    grid-row:1/2;
-    padding-top: 2rem;
-    height:100%;
-
-}
-.box9 .js{
-    font-size: 2em;
-}
-.box9 .date-container{
-    float: right;
-    display: inline;
-}
-
-.box9 .date-container .date{
-    display: inline;
-    font-size: 1rem;
-    padding-right: 5px;
-    top:5px;
-    position: relative;
-}
-
-.box9-title span:nth-child(1){
-    font-size:4.5em;
-    display: block;
-
-}
-.box9-date-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border-top: dotted 1px grey;
-    padding-right: 1rem;
-    background-color: #d5bfa8;
-}
-
-.box9 .date-container .photo {
-    top:5px;
-}
-
-
-
-.box10{
-    grid-area: box10;
-    background: url(../img/code-944499_1280.jpg);
-    background-size: cover;
-    }
-.box10-title{
-    height:100%;
-}
-.box10 span:last-child{
-    font-size: 1.5em;
+    /*article arguments*/
+    .box6{
+        grid-area: box6;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 85% 15%;
     }
 
-.box10 span{
-    display: block;
-}
 
-.box11{
-    grid-area: box11;
-    background: url(../img/coding-1841550_1920.jpg);
-    background-size: cover;
-    }
-.box11-title{
-    height: 100%;
-}
-.box12{
-    grid-area: box12;
-    background: url(../img/lorem-ipsum-filler-text.jpg);
-    background-size: cover;
+    .box6-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        background: url(../img/giphy5.gif);
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
-.box12 a{
-    display: block;
-    height: 100%;
-    min-width: 125px;
-}
-
-.box13{
-    grid-area: box13;
-    background-color: #3d5b99;
+    .box6-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
     }
 
-.box13 .quote{
-    font-size: 1.25em;
-}
+
+    /*hoisting*/
+    .box7 {
+        grid-area: box7;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 85% 15%;
+    }
+
+    .box7-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        background: url('../img/computer-2583383_1920.jpg');
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box7-date-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: dotted 1px grey;
+        background-color: #d5bfa8;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
-.hover-zoom:hover {
-    -moz-transform: scale(1.15,1.15);
-    -webkit-transform: scale(1.15,1.15);
-    transform: scale(1.15,1.15);
-    transition: all 0.7s ease-in-out;
+    .box8{
+        grid-area: box8;
+        background: url(../img/giphy4.gif);
+        background-size: cover;
+    }
+    .box8 a{
+        display: block;
+        height:100%;
+        min-width: 125px;
+    }
+    /*dom box*/
 
-}
+    .box9{
+        grid-area: box9;
+        display: grid;
+        grid-template-columns: 100%;
+            grid-template-rows: 85% 15%;
+        background: url(../img/plasma-ball-2282449_1920.jpg);
+        background-size: cover;
+    }
+    .box9-title{
+        grid-column: 1/2;
+        grid-row:1/2;
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-  .photo {
-  display: inline;
-}
-  
+    }
+
+    .box10{
+        grid-area: box10;
+        background: url(../img/code-944499_1280.jpg);
+        background-size: cover;
+    }
+    .box10-title{
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box11{
+        grid-area: box11;
+        background: url(../img/coding-1841550_1920.jpg);
+        background-size: cover;
+    }
+    .box11-title{
+        background-size: cover;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box12{
+        grid-area: box12;
+        background: url(../img/lorem-ipsum-filler-text.jpg);
+        background-size: cover;
+
+    }
+    .box12 a{
+        display: block;
+        height: 100%;
+        min-width: 125px;
+    }
+
+    .box13{
+        grid-area: box13;
+        background-color: #3d5b99;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box13 .quote{
+        font-size: 1.25em;
+    }
+
+
+    .hover-zoom:hover {
+        -moz-transform: scale(1.15,1.15);
+        -webkit-transform: scale(1.15,1.15);
+        transform: scale(1.15,1.15);
+        transition: all 0.7s ease-in-out;
+
+    }
+
+
 }
 
 
 #dom {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
