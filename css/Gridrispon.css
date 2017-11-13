@@ -748,13 +748,13 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box6-title{
         grid-column: 1/2;
         grid-row:1/2;
-        background: url(../img/giphy5.gif);
+        background: url(../img/grunt-task-runner.png);
         text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
 
     }
 
