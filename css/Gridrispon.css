@@ -4,11 +4,15 @@
 
     font-family: 'Roboto', sans-serif;
     padding: 1em;
-    background: #f3f3f3;
+    background: white;
 }
 @font-face {
     font-family: 'assistant-v1-hebrew-regular';
     src: url("./fonts/assistant-v1-hebrew-regular.ttf");
+}
+@font-face {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    src: url("./fonts/OpenSansHebrew-Light.ttf");
 }
 
 .logo img{
@@ -19,12 +23,14 @@
     font-family: 'assistant-v1-hebrew-regular', sans-serif;
     border-bottom: 1px solid lightgrey;
     box-shadow: 1px 1px 5px lightgrey;
+    background: white;
     font-size: 1.25em;
     font-weight: bold;
 }
 
 .navbar-light .navbar-toggler{
     border-color:transparent ;
+
 }
 
 
@@ -599,12 +605,13 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 @media (min-width:1200px) {
     .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 2rem;
+        color: black;
     }
     .wrapper{
         display: grid;
         direction: ltr;
         grid-auto-rows:minmax(150px, auto);
-        background: #f3f3f3;
+        background: white;
 
         grid-template-areas:
                 "box3 box3 box3 box2 box2 box1 box1"
@@ -617,12 +624,13 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     }
 
     .wrapper > div{
-        color:white;
+        color:black;
+        font-family:  'Open Sans Hebrew', sans-serif;
         font-size:1em;
         text-align: center;
-        text-shadow: 1px 1px 1px gray;
-        box-shadow: 0 6px 15px 0 rgba(0,1,1,0.3);
+        box-shadow: 0 1px 5px 0 rgba(0,1,1,0.3);
         margin:0.65em;
+        border: 2px solid white;
     }
 
     .box3-date-container,.box5-date-container,.box10-date-container,.box11-date-container{
@@ -647,7 +655,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box1-title{
         grid-column: 1/2;
         grid-row:1/2;
-        background: url(../img/gears-1236578_1280.jpg);
+        background: url(../img/nut-2348816_1280.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
         display: flex;
@@ -659,7 +668,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -695,10 +704,12 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box3-title .article-title{
         display: block;
         font-size: 3em;
+        text-shadow: 1px 1px 4px black;
     }
 
     .box3-title .article-subtitle{
         font-size: 1.5em;
+        text-shadow: 1px 1px 4px black;
     }
 
     .box4{
@@ -737,12 +748,13 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box6-title{
         grid-column: 1/2;
         grid-row:1/2;
-        background: url(../img/giphy5.gif);
+        background: url(../img/grunt-task-runner.png);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
 
     }
 
@@ -750,7 +762,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -769,6 +781,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-column: 1/2;
         grid-row:1/2;
         background: url('../img/computer-2583383_1920.jpg');
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
         display: flex;
@@ -780,7 +793,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -812,6 +825,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
     .box9-title{
         grid-column: 1/2;
         grid-row:1/2;
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
         display: flex;
@@ -827,6 +841,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box10-title{
         background-size: cover;
+        text-shadow: 1px 1px 4px black;
         height:100%;
         display: flex;
         flex-direction: column;
@@ -841,6 +856,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box11-title{
         background-size: cover;
+        text-shadow: 1px 1px 4px black;
         height:100%;
         display: flex;
         flex-direction: column;
@@ -869,6 +885,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box13 .quote{
         font-size: 1.25em;
+        color:white;
     }
 
 
