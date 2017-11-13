@@ -1,0 +1,301 @@
+<!--Main Article Template
+If you want to use this page, follow this instractions.
+
+1.Create a new template, and give it your
+Article-name.html.
+
+2.folow the coomments in the code, and make your personal cahnges.
+
+If you have any question conatact Yoav Benzion.
+Please don't make any changes to this page!!
+Thank you !!
+
+-->
+
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/article-main-template.css">
+    <link rel="stylesheet" href="css/article-footer-template.css">
+    <link rel="stylesheet" href="css/article-nav-template.css">
+    <link rel="stylesheet" href="css/subscribe.css" />
+    <!----this links for highlightjs!--->
+    <link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <!----this links for highlightjs!--->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!--fixing risponsive view on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ES6</title>
+</head>
+
+<body>
+<!---subscribe pop-up section!--->
+<div id="sib_embed_signup" style="display:none; width:90%; position:absolute; z-index:100; margin:auto 2.55%;">
+    <div class="forms-builder-wrapper" style="position:relative;margin:17% auto;">
+        <input type="hidden" id="sib_embed_signup_lang" value="en">
+        <input type="hidden" id="sib_embed_invalid_email_message" value="המייל שלך לא תקין">
+        <input type="hidden" name="primary_type" id="primary_type" value="email">
+        <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+            <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+        </div>
+
+        <form dir="rtl" style="background-color: rgba(0,0,0,.85); border-radius: 10px; " class="description" id="theform" name="theform"
+              action="https://my.sendinblue.com/users/subscribeembed/js_id/2wk89/id/2" onsubmit="return false;">
+            <input type="hidden" name="js_id" id="js_id" value="2wk89">
+            <input type="hidden" name="listid" id="listid" value="4">
+            <input type="hidden" name="from_url" id="from_url" value="yes">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+            <div class="close" style="color:white; font-size: 28px; padding:10px; cursor: pointer;">x</div>
+
+            <div class="sib-container rounded">
+                <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
+                <div class="header" style="padding:0 20px;">
+                    <h1 class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 45px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">My Newsletter</h1>
+                    <h3 id="company-name" style="font-weight: normal; text-align: left; font-size: 25px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">By</h3>
+                </div>
+                <div class="description editable" data-editfield="newsletter_description" style="padding: 0px 20px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; display: none;">What type of content do you plan to share with your subscribers? </div>
+                <div class="view-messages" style=" margin:5px 0;"> </div>
+                <!-- an email as primary -->
+                <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+                    <div class="row mandatory-email" style="padding: 10px 20px; position: relative; font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px;">
+                        <div class="lbl-tinyltr" style="color: white; clear: both;padding:1em; float: none; font-family:Helvetica, Arial, sans-serif; text-align: center;">
+                            הכנס מייל כדי שנוכל לעדכן אותך על מאמרים נוספים שנפרסם
+                            <br>
+                        </div>
+                        <input type="text" name="email" id="email" value="" style=" padding: 10px 2%; width: 90%;">
+                        <div style="color:white;">
+                            *לא תקבלו מאיתנו ספאם והכתובת מייל לא תעבור לאף גורם אחר
+                            <br>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div class="hidden-btns">
+                            <a class="btn move" href="#">
+                                <i class="fa fa-arrows"></i>
+                            </a>
+                            <br>
+                            <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="captcha forms-builder-group" style="display: none;">
+                    <div class="row" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 17px; padding: 10px 20px;">
+                        <div id="gcaptcha" style="transform: scale(1); margin-left: 0px;"></div>
+                    </div>
+                </div>
+
+                <!-- end of primary -->
+                <div class="byline" style="font-family:Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-weight: bold; font-size: 16px; text-align: center; display: block;">
+                    <button class="button editable " type="submit" data-editfield="subscribe" style="font-family:Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); background: rgb(34, 52, 214); display: inline-block; white-space: nowrap; min-height: 40px; margin: 0px 5px 0px 0px; padding: 0px 22px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 14px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;">&nbsp;עקוב&nbsp;אחרינו &nbsp;</button>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- End : SendinBlue Signup Form HTML Code -->
+<!----end of subscribe pop-up section!--->
+   
+    <!--Page Layout Grid-->
+    <main class="container">
+        <!---change here cover of your article!--->
+        <div class="box1" style="background: url(./img/plasma-ball-2282449_1920.jpg);   background-size: cover;">
+            <a class="ninja-btn" title="menu">
+                <span></span>
+            </a>
+            <ul>
+                <li class="menu"><a href="./index.html">ראשי</a> </li>
+                <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
+                <li class="menu"><a href="contact.html">צור קשר</a></li>
+                <li class="menu subscribe">עקוב אחרינו</li>
+                <li class="text">טקסט נמצא בשורה 110</li>
+                <li class="text">שקשור למאמר</li>
+            </ul>
+        </div>
+        <!--Article Body Grid-->
+
+        <div class="grid_con">
+
+                <!--כותרת המאמר-->
+                <h1 class="main_header">ES6</h1>
+
+                
+                    <!--First part of article-->
+                    <h3 class="main_header">New Features & uses in the JavaScript language </h3>
+                    <h4 class="main_header">Part 1</h4>
+                    <section>
+                      <p>
+                        המאמר הוא חלק מסדרה שעוסקת בנושא ES6, ECMAScript2015 ומה שביניהם. 
+                        </p>
+                        <p>
+                        לוקח זמן קצת להבין מה ההבדל בין כל המושגים האלה, שנשמעים שונה, אבל בסופו של דבר מתארים את אותו הדבר. <br>
+                        המפץ הגדול, התחיל בבניית שפה חדשה לעבודה עם צד הלקוח ב 1995 - JavaScript  . 
+                        </p>
+                        <p>
+                        ולאור העובדה, שהיא נהפכה להיות פופולרית ואומצה (ולא פחות חשוב נתמכת), ע"י כל החברות שבונות את הדפדפנים ואת מנועי ה JavaScript, שמאחוריהם. <br>
+                         
+                          (google – Chrome , Microsoft – Edge , וכו'... ) . 
+                          </p>
+                          <p>
+                        נוצר צורך להחליט על סטנדרט אחיד, שייושם בכל הדפדפנים, וכך למעשה נולדה ECMA  - ארגון הסטנדרטיזציה של JavaScript . <br>
+                        בקיצור, JavaScript זו השפה ,ו ECMAScript זה הסטנדרט. 
+
+                      </p>
+                      <p>
+                        ו ES6? <br>
+                        
+זה העדכון האחרון של הפיתוחים ע"י ECMA, שייכנסו לשימוש כסטנדרט בכל הדפדפנים. אז גם אם זה טיפה מבלבל, חשוב לדעת, להכיר ובעיקר לדעת איפה ואיך אפשר להשתמש בפיתוחים האלו. 
+
+                      </p>
+                      <p>
+                        אז מה חדש ? <br>
+
+אחלק את המאמר ל 2 חלקים, כדי שאוכל לדבר בהרחבה וחופשיות על כל אחד מהנושאים.
+
+                      </p>
+                      <p>חלק ראשון ידבר על : </p>
+                      <ul>
+                        <li>משתנים חדשים – let & const . </li>
+                        <li>Arrow function</li>
+                      </ul>
+                      <p>וחלק 2, ידבר על : </p>
+                      <ul>
+                        <li>Template literal</li>
+                        <li>Promises</li>
+                        <li>Babel</li>
+                      </ul>
+                    </section>
+                    
+                    
+       <h2 class="center_header">Let & const</h2>
+                <h3 class="center_header">Or the early death of the var keyword</h3>
+                
+                <p>
+                  עכשיו ניתנו לנו 2 מילות מפתח חדשות, let & const . <br>
+                  אז מה המטרה ? ומתי משתמשים בכל אחת  ?
+                </p>
+                
+                <p>
+                  Var – הדרך הישנה, עוד מעט יהיה מובן מדוע שנרצה להפסיק להשתמש בה. <br>
+                  Let – נשתמש במשתנה זה, כאשר נרצה לשנות אותו במהלך הקוד. <br>
+                  Const – משתנה קבוע, לא ניתן לשנות, ובעצם כשניצור אותו, לא נוכל להגדיר אותו מחדש. 
+                  ואם ננסה נקבל error . 
+
+                </p>
+                ההגדרה של כל משתנה דומה לצורת ההגדרה הישנה,  <br> לדוגמא :
+                <p>
+              <div ><code class="javascript">
+              
+              var message = 'hello';
+              <br>const pi = 3.14;
+              <br>let score = 0;
+             </code></div>
+           </p>
+              <p>
+                איך זה עובד ומתי נשתמש בכל אחת ? 
+              </p>
+              
+              <h2 class="center_header">Const</h2>
+              
+               <!--img snippet to change and modifay-->
+            <figure>
+              <a href="./img/dom-art.png"> 
+                <img src="./img/dom-art.png" alt="model1" >
+              </a>
+                <figcaption>
+                  איור 1 : דוגמא למבנה של עמוד HTML 
+                  והצורה בה הדפדפן מצייר אותו. <br>
+                  ה body  מכיל 3 קוביות h1, p, ul 
+                  ו ה UL  גם מכיל 3 קוביות LI  .
+                </figcaption>
+            </figure>
+
+            <p>
+                  ניתן גם להשתמש בsetInterval  אם אתם מעוניינים שהcallback יופעל כל כמה זמן:
+
+              <div ><code class="javascript">
+              callback = function(){alert("this is anonymous function")};
+              <br>setInterval(callback, delay);
+
+              <br><br>//or directly
+
+              <br><br>setInterval(function(){
+              <br>&ensp; &ensp;,alert("this is anonymous function"),delay);
+             </code></div>
+           </p>
+
+                <div class="column2">
+                    <h2>כותרת 2</h2>
+                    <!--Second part of article-->
+                    <section>
+                      הקואליציה הצבאית בראשות סעודיה תסגור זמנית את כל הכניסות לתימן - מהאוויר, מהים ומהיבשה - בניסיון למנוע את חימושם של המורדים החותים במדינה. על פי ההודעה, שפורסמה היום (שני) בסוכנות הידיעות הממשלתית של סעודיה SPA, מטרת הסגירה היא לעצור את הכנסת הנשק האיראני למדינה.
+                       <br>
+                     בהודעה נכתב כי על אף המצור, עובדי סיוע ואספקה הומניטרית יורשו להכנס למדינה ולצאת ממנה.
+                  </section>
+                </div>
+
+                <!--footer Copy Paste-->
+                <footer>
+                    <!--put your avatar img here-->
+                    <img class="avatar" src="img/yoav.jfif">
+                    <p class="footer_txt" dir="ltr" style="text-align:left">
+                       "motivation quotes" 
+                       <br>
+                       <br>
+                       ~name or somthing
+                    </p>
+
+                    <p class="_14">Your name, FullStack developer</p>
+                    <h4 class="_14">Follow me on:</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-codepen"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="social-icon">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/nav-template.js"></script>
+    <script src="js/subscribe.js"></script>
+<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
+</body>
+
+</html>
