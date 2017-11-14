@@ -33,7 +33,37 @@ ARRAY
   background-color: tomato;
   display: inline-block;
 }
-
 .es5 {
   background-color: yellow;
+}
+
+.serch{
+  margin: 0 auto;
+  width: 300px;
+}
+.arrayButton{
+  background-color: #fff;
+  font-size: 1.1em;
+  box-shadow: 1px 1px grey, 1px 1.2px #000;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.arrayButton:hover {
+  box-shadow: -1px -1px #8F8781;
+}
+#top{
+  font-size: 2em;
+  text-decoration: none;
+  position: fixed;
+  right: 20px;
+  bottom: 1rem;
+  color: #000;
+}
+
+@media (min-width: 1020px) {
+  
+  #top {
+    right: 700px;
+  }
 }
