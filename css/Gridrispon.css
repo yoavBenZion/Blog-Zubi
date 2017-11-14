@@ -66,10 +66,8 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-gap:4em;
     }
     .wrapper > div{
-        color:white;
         font-size:1em;
         text-align: center;
-        text-shadow: 1px 1px 1px gray;
         background: rgba(211, 211, 211, 0.85);
         box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
     }
@@ -92,7 +90,9 @@ RESPONSIVE Layout -Mobile - 1 article box
     .box1-title{
         grid-column: 1/2;
         grid-row:1/2;
-        background: url(../img/gears-1236578_1280.jpg);
+        background: url(../img/nut-2348816_1280.jpg);
+        text-shadow: 1px 1px 4px black;
+
         background-size: cover;
         height:100%;
         display: flex;
@@ -104,7 +104,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -122,19 +122,20 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-row:1/2;
         grid-area: box3;
         background: url(../img/computer-2557644_1920.jpg);
+        text-shadow: 1px 1px 4px black;
+
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box3-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -142,59 +143,37 @@ RESPONSIVE Layout -Mobile - 1 article box
     }
 
     .box5{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 85% 15%;
-    }
+        display: none;
 
-    .box5-title{
-        grid-column: 1/2;
-        grid-row:1/2;
-        padding-top: 1rem;
-        background: url(../img/guy-2618928_1920.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height:100%;
-    }
-
-    .box5-date-container{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        border-top: dotted 1px grey;
-        background-color: #d5bfa8;
-        display: flex;
-        padding: 0 1em;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .box6{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
+
     }
 
     .box6-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
-        background: url(../img/giphy5.gif);
-        background-size: cover;
+        background: url(../img/grunt-task-runner.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #fba919;
+        width:100%;
+        text-shadow: 1px 1px 4px black;
+        height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height:100%;
+        justify-content: flex-end;
     }
 
     .box6-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -210,21 +189,20 @@ RESPONSIVE Layout -Mobile - 1 article box
     .box7-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/computer-2583383_1920.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box7-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -240,21 +218,20 @@ RESPONSIVE Layout -Mobile - 1 article box
     .box9-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/plasma-ball-2282449_1920.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box9-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -267,17 +244,16 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-template-rows: 85% 15%;
     }
 
-    .box10-title{
+    .box10-title {
         grid-column: 1/2;
-        grid-row:1/2;
-        padding-top: 1rem;
+        grid-row: 1/2;
         background: url(../img/code-944499_1280.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box10-title span:first-child{
@@ -288,12 +264,13 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
         align-items: center;
     }
+
 
     .box11{
         display: grid;
@@ -318,8 +295,11 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
-        background-color: #d5bfa8;
+        background-color: #efefef;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 /*****************************************
@@ -340,10 +320,8 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-gap:4em;
     }
     .wrapper > div{
-        color:white;
         font-size:1em;
         text-align: center;
-        text-shadow: 1px 1px 1px gray;
         background: rgba(211, 211, 211, 0.85);
         box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
     }
@@ -367,7 +345,9 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box1-title{
         grid-column: 1/2;
         grid-row:1/2;
-        background: url(../img/gears-1236578_1280.jpg);
+        background: url(../img/nut-2348816_1280.jpg);
+        text-shadow: 1px 1px 4px black;
+
         background-size: cover;
         height:100%;
         display: flex;
@@ -379,12 +359,13 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
         align-items: center;
     }
+
 
     .box3{
         display: grid;
@@ -397,54 +378,31 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-row:1/2;
         grid-area: box3;
         background: url(../img/computer-2557644_1920.jpg);
+        text-shadow: 1px 1px 4px black;
+
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box3-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
         align-items: center;
     }
+
 
     .box5{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 85% 15%;
+        display: none;
     }
 
-    .box5-title{
-        grid-column: 1/2;
-        grid-row:1/2;
-        padding-top: 1rem;
-        background: url(../img/guy-2618928_1920.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height:100%;
-    }
-
-    .box5-date-container{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        border-top: dotted 1px grey;
-        background-color: #d5bfa8;
-        display: flex;
-        padding: 0 1em;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .box6{
         display: grid;
@@ -455,21 +413,22 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box6-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
-        background: url(../img/giphy5.gif);
-        background-size: cover;
+        background: url(../img/grunt-task-runner.png);
+        text-shadow: 1px 1px 4px black;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #fba919;
+        height:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height:100%;
+        justify-content: flex-end;
     }
 
     .box6-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -485,21 +444,20 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box7-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/computer-2583383_1920.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box7-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -515,21 +473,20 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box9-title{
         grid-column: 1/2;
         grid-row:1/2;
-        padding-top: 1rem;
         background: url(../img/plasma-ball-2282449_1920.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height:100%;
     }
 
     .box9-date-container{
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -544,14 +501,13 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box10-title {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding-top: 1rem;
         background: url(../img/code-944499_1280.jpg);
+        text-shadow: 1px 1px 4px black;
         background-size: cover;
+        height:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        height: 100%;
     }
 
     .box10-title span:first-child{
@@ -562,7 +518,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        background-color: #d5bfa8;
+        background-color: #efefef;
         display: flex;
         padding: 0 1em;
         justify-content: space-between;
@@ -592,9 +548,13 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row: 2/3;
         border-top: dotted 1px grey;
-        padding-right: 1rem;
-        background-color: #d5bfa8;
+        background-color: #efefef;
+        display: flex;
+        padding: 0 1em;
+        justify-content: space-between;
+        align-items: center;
     }
+
 }
 
 
@@ -630,7 +590,6 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         text-align: center;
         box-shadow: 0 1px 5px 0 rgba(0,1,1,0.3);
         margin:0.65em;
-        border: 2px solid white;
     }
 
     .box3-date-container,.box5-date-container,.box10-date-container,.box11-date-container{
@@ -650,6 +609,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
+        border: 2px solid white;
+
     }
 
     .box1-title{
@@ -677,9 +638,11 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box2{
         grid-area: box2;
-        background: url(../img/chess-982260_1920.jpg);
+        background: url(../img/web-design-2906159_1920.jpg);
         background-size: cover;
         grid-template-rows: 100%;
+        border: 2px solid white;
+
     }
 
     .box2 a{
@@ -699,6 +662,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        border: 2px solid white;
     }
 
     .box3-title .article-title{
@@ -716,6 +680,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box4;
         background: url(../img/jsbox.png);
         background-size: cover;
+
     }
 
     .box4 a{
@@ -727,8 +692,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box5{
         grid-area: box5;
-        background: url(../img/guy-2618928_1920.jpg);
+        background-color: #3d5b99;
         background-size: cover;
+
     }
 
     .box5 a{
@@ -743,6 +709,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
+        border: 2px solid white;
+
     }
 
     .box6-title{
@@ -775,6 +743,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
+        border: 2px solid white;
+
     }
 
     .box7-title{
@@ -820,6 +790,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
             grid-template-rows: 85% 15%;
         background: url(../img/plasma-ball-2282449_1920.jpg);
         background-size: cover;
+        border: 2px solid white;
     }
 
     .box9-title{
@@ -837,6 +808,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box10;
         background: url(../img/code-944499_1280.jpg);
         background-size: cover;
+        border: 2px solid white;
     }
 
     .box10-title{
