@@ -58,7 +58,9 @@ RESPONSIVE Layout -Mobile - 1 article box
 
 /*Desktop Resizing - Small*/
 @media (min-width: 290px) and (max-width: 749px) {
-
+    .navbar-expand-sm .navbar-nav .nav-link {
+        color: black;
+    }
     .wrapper{
         display: grid;
         direction: ltr;
@@ -311,6 +313,7 @@ RESPONSIVE Layout -Tablet - 2 article box
 @media (min-width: 750px) and (max-width: 1199px){
     .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 2rem;
+        color: black;
     }
     .wrapper{
         display: grid;
