@@ -801,7 +801,9 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         transition: all 0.3s ease-out;
     }
     .button:hover {
-        background: #06D85F;
+        color: #000;
+      text-decoration: none;
+      
     }
     .overlay {
         position: fixed;
@@ -843,9 +845,6 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         text-decoration: none;
         color: #333;
     }
-    .popup .close:hover {
-        color: #06D85F;
-    }
     .popup .content {
         max-height: 30%;
         overflow: none;
@@ -857,7 +856,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         color: #fff;
     }
     p>a:hover {
-        color: #d9d9d9;
+/*        color: #d9d9d9;*/
         text-decoration: underline;
     }
     h1,
