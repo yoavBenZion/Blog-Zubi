@@ -211,7 +211,8 @@ RESPONSIVE Layout -Mobile - Small PopUp
         transition: all 0.3s ease-out;
     }
     .button:hover {
-        background: #06D85F;
+        color: #000;
+        text-decoration: none;
     }
     .overlay {
         position: fixed;
@@ -254,7 +255,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
         color: #333;
     }
     .popup .close:hover {
-        color: #06D85F;
+        color: #000;
     }
     .popup .content {
         max-height: 30%;
@@ -460,7 +461,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
         color: #333;
     }
     .popup .close:hover {
-        color: #06D85F;
+        color: #000;
     }
     .popup .content {
         max-height: 30%;
@@ -608,7 +609,8 @@ RESPONSIVE Layout -Tablet - Medium PopUp
         transition: all 0.3s ease-out;
     }
     .button:hover {
-        background: #06D85F;
+        color: #000;
+        text-decoration: none;
     }
     .overlay {
         position: fixed;
@@ -650,9 +652,10 @@ RESPONSIVE Layout -Tablet - Medium PopUp
         text-decoration: none;
         color: #333;
     }
-    .popup .close:hover {
-        color: #06D85F;
+  .popup .close:hover {
+        color: #000;
     }
+    
     .popup .content {
         max-height: 30%;
         overflow: auto;
@@ -801,7 +804,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         transition: all 0.3s ease-out;
     }
     .button:hover {
-        color: #000;
+      color: #000;
       text-decoration: none;
       
     }
@@ -849,6 +852,10 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         max-height: 30%;
         overflow: none;
         text-align: center;
+    }
+  
+  .popup .close:hover {
+        color: #000;
     }
     /*social icon in popup*/
     a {
