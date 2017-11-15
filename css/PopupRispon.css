@@ -652,9 +652,7 @@ RESPONSIVE Layout -Tablet - Medium PopUp
         text-decoration: none;
         color: #333;
     }
-  .popup .close:hover {
-        color: #000;
-    }
+  
     
     .popup .content {
         max-height: 30%;
@@ -852,10 +850,6 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens
         max-height: 30%;
         overflow: none;
         text-align: center;
-    }
-  
-  .popup .close:hover {
-        color: #000;
     }
     /*social icon in popup*/
     a {

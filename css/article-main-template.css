@@ -50,6 +50,17 @@ figcaption {
   background-color: #FFF;
 }
 
+/*Go to top finger icon*/
+#top{
+  font-size: 2em;
+  text-decoration: none;
+  position: fixed;
+  right: 20px;
+  bottom: 1rem;
+  color: #000;
+}
+
+
 /*Main Article Layout Grid*/
 .container {
     display: grid;
@@ -207,6 +218,9 @@ RESPONSIVE Layout -Tablet - Medium
         .box2 {
             grid-area:text ;
         }
-
+      
+       #top {
+          right: 700px;
+      }
 
     }
