@@ -200,54 +200,211 @@ Thank you !!
               
               <h2 class="center_header">Const</h2>
               
+              <p>
+                נתחיל במשתנה  const , קיצור של constant משמע קבוע . 
+ולכן הערך של המשתנה קבוע ומוגן מ re-assigning .  
+
+              </p>
               
-               <p>
-          <div >
-            <code class="javascript">
-              var devTips = blogProject() {
-               <br> console.log("Powerd by the Diggers Team");
-               <br>
-                }
-              <br> &raquo; undefined
-            </code>
-          </div>
-        </p>
-             <div >
-            <code class="javascript">
-              var devTips = blogProject() {
-               <br> console.log("Powerd by the Diggers Team");
-               <br>
-                }
-              <br> &raquo; undefined
-            </code>
-          </div>
-              
-               <!--img snippet to change and modifay-->
-            <figure>
-              <a href="./img/dom-art.png"> 
-                <img src="./img/dom-art.png" alt="model1" >
+              <p>אם ננסה לשנות משתנה קבוע, נקבל שגיאה, לדוגמא : </p>
+<!--img snnipet-->
+              <figure>
+              <a href="./img/const-error.png"> 
+                <img src="./img/const-error.png" alt="Const_Error" >
               </a>
                 <figcaption>
-                  איור 1 : דוגמא למבנה של עמוד HTML 
-                  והצורה בה הדפדפן מצייר אותו. <br>
-                  ה body  מכיל 3 קוביות h1, p, ul 
-                  ו ה UL  גם מכיל 3 קוביות LI  .
+                 קביעת משתנה קבוע, חשובה בבחירת משתנים ב dom ובשימוש במשתנים בפונקציה, והגבלה שלהם ל scope של הפונקציה בלבד. 
                 </figcaption>
             </figure>
+              
+              <p>
+                לדוגמא: <br>
+                אם אנסה להריץ את הקוד הבא >
+              </p>
+              
+        <div ><code class="javascript">
+           var name = 'Yoav';
+           <br>
+           <br>function createFullName(firstName, lastName){
+           <br> name = firstName + ' ' + lastName;
+           <br> console.log(name);
+           <br> }
+           <br><br>console.log(name);
+           <br>createFullName('donald', 'trump');
+              
+        </code></div>
+          <p>
+            1.	הגדרתי משתנה גלובלי. 
+        <br>  2.	השתמשתי באותו משתנה בדיוק בתוך פונקציה. 
+        <br>  3.	כתבתי את המשתנה ב console . 
+        <br>  4.	אח"כ קראתי לפונקציה, מה ערך המשתנה ?
 
-            <p>
-                  ניתן גם להשתמש בsetInterval  אם אתם מעוניינים שהcallback יופעל כל כמה זמן:
+          </p>
+          <p>
+            התשובה היא, ששני המשתנים נקראו ל console .
+          </p>
+           
+              <figure>
+              <a href="./img/const_output.png"> 
+                <img src="./img/const_output.png" alt="Const_Error" >
+              </a>
+                <figcaption>
+                אך אם אבדוק מה הערך הנוכחי של   המשתנה, אקבל את השם מהפונקציה. 
+מכיוון ש scope  הפונקציה, דורס את ההגדרה ב scope  הגלובלי. 
+בשורות קוד מעטות, זה לא נוראי לחפש את מקור הטעות, אבל בקבצים גדולים, זה יכול להיות קצת מייאש. 
+                </figcaption>
+            </figure>
+             
+              <p>מה יקרה אם נשתמש ב const רק במשתנה מחוץ לפונקציה ? </p>
+               <div ><code class="javascript">
+           var const = 'Yoav';
+           <br>
+           <br>function createFullName(firstName, lastName){
+           <br> name = firstName + ' ' + lastName;
+           <br> console.log(name);
+           <br> }
+           <br><br>console.log(name);
+           <br>createFullName('donald', 'trump');
+              
+        </code></div>
+        
+    <figure>
+              <a href="./img/const-error2.png"> 
+                <img src="./img/const-error2.png" alt="Const_Error" >
+              </a>
+                <figcaption>
+            ונוכל לראות בדיוק את השורה בקוד שטעינו בה, כדי לתקן. 
+                </figcaption>
+            </figure>
+             <figure>
+              <a href="./img/const-error-location.png"> 
+                <img src="./img/const-error-location.png" alt="Const_Error" >
+              </a>
+                <figcaption>
+ const-error-location
+                </figcaption>
+            </figure>
+              
+              <p>הפיתרון :</p>
+        <div ><code class="javascript">
+           var const = 'Yoav';
+           <br>
+           <br>function createFullName(firstName, lastName){
+           <br> const name = firstName + ' ' + lastName;
+           <br> console.log(name);
+           <br> }
+           <br><br>console.log(name);
+           <br>createFullName('donald', 'trump');
+              
+        </code></div>
+        
+               <p>הגדרת const  בתוך הפונקציה, תגביל את המשתנה לscope  הפונקציה. 
+והתוצאה תהייה הגנה של 2 המשתנים וריצה תקינה של הקוד. 
+</p>
+               
+               <p>
+                 מה קורה אם אנחנו משתמשים ב const  בסוג משתנים מורכב יותר כמו array או object . 
+לשניהם יש מתודות שמשנות אותם, האם הן עדיין יעבדו ? 
 
-              <div ><code class="javascript">
-              callback = function(){alert("this is anonymous function")};
-              <br>setInterval(callback, delay);
+               </p>
+               <p>
+                 התשובה היא, שאין בעיה לשנות את תוכן האובייקט/מערך, אבל אם ננסה לשייך לו אובייקט/מערך חדש. נקבל שגיאה.
+               </p>
+                
+      <h2 class="center_header">let</h2>
+                        
+        <p>
+          מילת המפתח let – מתי נשתמש בה ? <br>
+          דומה ל var, אך יש לה block level scoping . (כל מה שנמצא בין סוגריים מסולסלות { } ).<br>
+הכוונה, ש let מגדיר משתנה שמוגבל לscope של אותו block, statement או expression בה הוא משמש. 
+ו var מגדיר גם משתנים גלובליים מתוך ה scope , בו הוא נמצא. 
 
-              <br><br>//or directly
+        </p>
+                        
+                             <p>לדוגמא :</p>
+        <div ><code class="javascript">
+           function varTest() {
+           <br> var x = 1;
+           <br>
+           <br> if (true) {
+           <br> var x = 2; // same variable!
+           <br> console.log(x); //2
+           <br> }
+           <br>console.log(x); //2
+           <br>
+           <br>}
+           <br>
+           <br>varTest();
+              
+        </code></div>
+                         
+          <p>
+            מכיוון שהגדרנו את המשתנה כ var , הביטוי שבתוך ה if  נכון וכשהוא משנה את ה x , הוא משנה אותו גם מחוץ לscope . 
+ב let , אנחנו נמנעים מכך . 
 
-              <br><br>setInterval(function(){
-              <br>&ensp; &ensp;,alert("this is anonymous function"),delay);
-             </code></div>
-           </p>
+          </p>
+          
+          <div ><code class="javascript">
+           function varTest() {
+           <br> let x = 1;
+           <br>
+           <br> if (true) {
+           <br> let x = 2; // using let variable!
+           <br> console.log(x); //2
+           <br> }
+           <br>console.log(x); //1
+           <br>
+           <br>}
+           <br>
+           <br>varTest();
+              
+        </code></div>
+                        
+        <p>
+          אבל השימוש העיקרי ב let הוא בתוך לולאות.  <br>
+          <br>
+          ניקח את הקוד הבא לדוגמא, הקוד אמור להקפיץ הודעה עם מס' הכפתור, שנלחץ עליו בעמוד ה html , אך הוא לא עובד. 
+        </p>
+                         
+  <div ><code class="javascript">
+           const buttons = document.getElementsByTagName('button');
+           <br> for (var i = 0; i &gt; buttons.length; i++) {
+           <br>
+           <br> const button = buttons[i];
+           <br> button.addEventListener("click", function () {
+           <br>
+           <br> alert("button " + i + " Was pressed ! ")
+           <br>
+           <br>});
+           <br>
+           <br> }
+        </code></div>
+              
+                <p>
+                  מדוע ? כל כפתור שאני אלחץ עליו, יקפיץ את ההודעה שכפתור 4 נלחץ, במקום הכפתור שנלחץ בפועל. 
+מה מקור הבעיה? ואיך let עוזר לנו להתגבר עליה ? 
+
+                </p>
+                
+                <p>
+                  הבעיה נובעת מ scope ומכך ש var  קיים בעצם מחוץ ללולאה. 
+זה כאילו רשום var i = 0 , מחוץ ללולאה וכל ערכי i חולקים את אותו ערך שנדרס כל פעם. 
+הפיתרון הוא שימוש ב let – כך שלכל ערך i  יש העתק ייחודי בזיכרון, וכך הקוד רץ בצורה תקינה. 
+
+                </p>
+                
+                <p>
+                  דוגמא מלאה בלינק לחשבון ה 
+                  <a href="https://codepen.io/yoavBZ/pen/xPdWxw?editors=1010" target="_blank">codpen.io/yoavBZ</a>
+                  
+                    שלי  
+                </p>
+                
+                
+                
+                <h2 class="center_header">Arrow Functions</h2>
+                
+                
 
                 <div class="column2">
                     <h2>כותרת 2</h2>
@@ -258,6 +415,16 @@ Thank you !!
                      בהודעה נכתב כי על אף המצור, עובדי סיוע ואספקה הומניטרית יורשו להכנס למדינה ולצאת ממנה.
                   </section>
                 </div>
+                
+                <div >
+            <code class="javascript">
+              var devTips = blogProject() {
+               <br> console.log("Powerd by the Diggers Team");
+               <br>
+                }
+              <br> &raquo; undefined
+            </code>
+          </div>
 
                 <!--footer Copy Paste-->
                 <footer>
