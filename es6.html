@@ -404,8 +404,47 @@ Thank you !!
                 
                 <h2 class="center_header">Arrow Functions</h2>
                 
-                
+                <p>
+                  זה אחד מהשינויים הקטנים, שקל להתחיל יחסית ליישם אותם. 
+נתחיל בדוגמאות  - הדרך הישנה לכתוב פונקציה : 
 
+                </p>
+                
+                <div ><code class="javascript">
+           //The old way to write
+           <br> var sayBye = function () {
+           <br>
+           <br> console.log('Good bye ' + name); 
+           <br> }
+           <br>
+           <br>
+           <br>//The Arrow function way:
+           <br>//ES6 function with no parameters
+           <br>
+           <br>const sayHi = () =&gt; console.log('Hi ' + name);
+        </code></div>
+
+               <p>
+                 לכאורה שינוי קטן, ואתם בטח שואלים את עצמכם, מה הקטע .. אבל חכו, הדברים מתחילים להשתפר משמעותית בכתיבה מורכבת. 
+               </p>
+               <p>
+                 נניח, בכתיבה של פונקציות שמקבלות פרמטר אחד, ניתן לכתוב אות הפונקציה בצורה הבאה : 
+               </p>
+               
+                    <div ><code class="javascript">
+           //The old way to write
+           <br> function squere(x) {
+           <br>
+           <br> return x*x;
+           <br> }
+           <br>
+           <br>
+           <br>//The Arrow function way:
+           <br>//ES6 function with 1 parameter
+           <br>
+           <br>const squere2 = x =&gt; x*x;
+        </code></div>
+               
                 <div class="column2">
                     <h2>כותרת 2</h2>
                     <!--Second part of article-->
