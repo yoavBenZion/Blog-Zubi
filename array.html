@@ -171,6 +171,7 @@ Thank you !!
             </code>
           </div>
         </p>
+        
 <!--End of snippet for array method-->
               </li>
               <li id="length"> <kbd>Length</kbd>
@@ -420,10 +421,10 @@ Thank you !!
               <br> boo.sort();
               <br> &raquo;(4) [11,20,54,6]
               <br> // Smallest to highest
-              <br> foo.sort((a,b) => {return a-b})
+              <br> foo.sort((a,b) =&gt; {return a-b})
               <br> &raquo; (4) [6,11,20,54]
               <br> // Highest to Smallest
-              <br> foo.sort((a,b) => {return b-a})
+              <br> foo.sort((a,b) =&gt; {return b-a})
               <br> &raquo; (4) [54,20,11,6]
             </code>
           </div>
@@ -563,7 +564,7 @@ Thank you !!
             <code class="javascript">
                var foo = [1,2,3,4,5];
               <br> &raquo; undefined
-              <br> foo.map((x)=>{ return x*x});
+              <br> foo.map((x)=&gt;{ return x*x});
               <br> &raquo; (5) [1,4,9,16,25]
             </code>
           </div>
@@ -582,9 +583,9 @@ Thank you !!
             <code class="javascript">
                var foo = [1,2,3,4,5];
               <br> &raquo; undefined
-              <br> foo.reduce((x,y)=> { return x+y});
+              <br> foo.reduce((x,y)=&gt; { return x+y});
               <br> &raquo; 15
-              <br> foo.reduce((x,y)=> { return x+y},6);
+              <br> foo.reduce((x,y)=&gt; { return x+y},6);
               <br> &raquo; 21
             </code>
           </div>
@@ -620,9 +621,9 @@ Thank you !!
             <code class="javascript">
                var boo = ['a','b','c','d'];
               <br> &raquo; undefined
-              <br> boo.reduceRight((x,y)=> { return x+y});
+              <br> boo.reduceRight((x,y)=&gt; { return x+y});
               <br> &raquo; "dcba"
-              <br> boo.reduce((x,y)=> { return x+y})
+              <br> boo.reduce((x,y)=&gt; { return x+y})
               <br> &raquo; "abcd"
             </code>
           </div>
@@ -643,9 +644,9 @@ Thank you !!
             <code class="javascript">
                var foo = [10, 22, 13, 44, 52, 23];
               <br> &raquo; undefined
-              <br> foo.filter((x)=>{ return x<20});
+              <br> foo.filter((x)=&gt; { return x &lt; 20});
               <br> &raquo; (2) [10,13]
-              <br> foo.filter((x)=>{ return x>20});
+              <br> foo.filter((x)=&gt;{ return x &gt; 20});
               <br> &raquo; (4) [22,44,52,23]
               <br> foo
               <br> &raquo; (6) [10,22,13,44,52,23]
@@ -667,9 +668,9 @@ Thank you !!
             <code class="javascript">
                 var foo = [10, 22, 13, 44, 52, 23];
               <br> &raquo; undefined
-              <br> foo.every((e)=>{ return e>50;})
+              <br> foo.every((e)=&gt;{ return e &gt; 50;})
               <br> &raquo; false
-              <br> foo.every((e)=>{ return e<60;})
+              <br> foo.every((e)=&gt;{ return e &lt; 60;})
               <br> &raquo; true
               <br> foo
               <br> &raquo; [10, 22, 13, 44, 52, 23]
@@ -693,9 +694,9 @@ Thank you !!
             <code class="javascript">
                var foo = [10, 22, 13, 44, 52, 23];
               <br> &raquo; undefined
-              <br> foo.some((e)=>{ return e>15;})
+              <br> foo.some((e)=&gt;{ return e &gt; 15;})
               <br> &raquo; true
-              <br> foo.some((e)=>{ return e<5;})
+              <br> foo.some((e)=&gt;{ return e &lt; 5;})
               <br> &raquo; false
             </code>
           </div>
@@ -709,9 +710,9 @@ Thank you !!
             <code class="javascript">
                var boo = [];
               <br> &raquo; undefined
-              <br> boo.some((e)=>{ return e>5;};
+              <br> boo.some((e)=&gt;{ return e &gt; 5;};
               <br> &raquo; false
-              <br> boo.every((e)=>{ return e>5;}
+              <br> boo.every((e)=&gt;{ return e &gt; 5;}
               <br> &raquo; true
             </code>
           </div>
