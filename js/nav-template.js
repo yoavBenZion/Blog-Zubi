@@ -42,14 +42,5 @@ $(".ninja-btn").click(function () {
     }
 });
 
-// ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 400) { 
-      // If page is scrolled more than 800px
-        $('#top').fadeIn(500);    // Fade in the arrow
-    } else {
-        $('#top').fadeOut(400);   // Else fade out the arrow
-    }
-});
 
 
