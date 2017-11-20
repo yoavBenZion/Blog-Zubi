@@ -249,7 +249,7 @@ RESPONSIVE Layout -Mobile - 1 article box
     .box10-title {
         grid-column: 1/2;
         grid-row: 1/2;
-        background: url(../img/code-944499_1280.jpg);
+        background: url(../img/es6-recursion.png);
         text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
@@ -504,7 +504,7 @@ RESPONSIVE Layout -Tablet - 2 article box
     .box10-title {
         grid-column: 1/2;
         grid-row: 1/2;
-        background: url(../img/code-944499_1280.jpg);
+        background: url(../img/es6-recursion.png);
         text-shadow: 1px 1px 4px black;
         background-size: cover;
         height:100%;
@@ -809,7 +809,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box10{
         grid-area: box10;
-        background: url(../img/code-944499_1280.jpg);
+        background: url(../img/es6-recursion.png);
         background-size: cover;
         border: 2px solid white;
     }
