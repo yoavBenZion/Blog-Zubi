@@ -38,7 +38,9 @@ body {
 code{
     direction: ltr;
     text-align: left;
+    border-left : 3px solid purple;
 }
+
 img {
   margin: 0 5%;
   width: 90%;
