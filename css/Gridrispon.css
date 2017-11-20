@@ -19,6 +19,12 @@
     width:90px;
 }
 
+#index_code {
+  text-align: left;
+  height: 100%;
+  font-size: 1.1em;
+}
+
 .navbar{
     font-family: 'assistant-v1-hebrew-regular', sans-serif;
     border-bottom: 1px solid lightgrey;
@@ -695,9 +701,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box5{
         grid-area: box5;
-        background-color: #3d5b99;
+        background-color: #F0F0F0;
         background-size: cover;
-
     }
 
     .box5 a{
