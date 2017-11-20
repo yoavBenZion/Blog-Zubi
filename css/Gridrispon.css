@@ -703,6 +703,8 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box5;
         background-color: #F0F0F0;
         background-size: cover;
+        display: flex;
+        align-items: center;
     }
 
     .box5 a{
