@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .main{
-
+    cursor: default;
     font-family: 'Roboto', sans-serif;
     padding: 1em;
     background: white;
@@ -293,6 +293,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         background: url(../img/coding-1841550_1920.jpg);
         background-size: cover;
         height:100%;
+        cursor: default;
     }
 
     .box11-title span:first-child{
@@ -308,6 +309,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         padding: 0 1em;
         justify-content: space-between;
         align-items: center;
+        cursor: default;
     }
 }
 /*****************************************
