@@ -18,10 +18,20 @@ Thank you !!
 $(document).ready(function() {
     $('div code').each(function(i, block) {
         hljs.highlightBlock(block);
+
     });
     $('div pre').each(function(i, block) {
         hljs.highlightBlock(block);
     });
+    var typed = new Typed("#typed", {
+        strings: ['<b>var</b> devTips = blogProject() {<br>&nbsp;console.log(<span style="color: #880000;">"Powerd by the Diggers Team"</span>);<br>}<br> &raquo; <span style="color: #78A960;">undefined</span>'],
+        typeSpeed:40,
+        startDelay:3000,
+        fadeOut: true
+
+    });
+    typed.start();
+
 });
 
 var is = false;

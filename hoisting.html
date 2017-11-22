@@ -102,16 +102,15 @@ Thank you !!
 <main class="container">
 
     <!---change here cover of your article!--->
-    <div class="box1" style="background: url(./img/computer-2557644_1920.jpg);   background-size: cover;">        <a class="ninja-btn" title="menu">
+    <div class="box1" style="background: url('./img/computer-2583383_1920.jpg');   background-size: cover;">        <a class="ninja-btn" title="menu">
         <span></span>
     </a>
         <ul>
             <li class="menu"><a href="./index.html">ראשי</a> </li>
-            <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>
             <li class="menu"><a href="contact.html">צור קשר</a></li>
             <li class="menu subscribe">עקוב אחרינו</li>
-            <li class="text">טקסט נמצא בשורה 110</li>
-            <li class="text">שקשור למאמר</li>
+            <li class="text">להבין איך השפה עובדת</li>
+            <li class="text">קצת יותר לעומק</li>
         </ul>
     </div>
     <!--Article Body Grid-->
@@ -119,22 +118,23 @@ Thank you !!
     <div class="grid_con">
 
         <div class="box2 ">
-            <h1>JavaScript Hoisting</h1>
+            <h1 class="center_header">JavaScript Hoisting</h1>
 
             <p>
-                מי שמכיר JS  יודע שישנם מקרים שJS בנויה ומתנהגת שונה משאר שפות התכנות. אחד מהמקרים הוא HOISTING.
-                מנגנון בJavaScript הפועל מאחורי הקלעים שמרים את כל ההצהרות על המשתנים והפונקציות לראש התחום אליהם הם שייכים.
+                מי שמכיר JavaScript קצת יותר לעומק יודע שישנם מקרים שהיא בנויה ומתנהגת שונה משאר שפות התכנות. אחד מהמקרים הוא HOISTING.
+                מנגנון בJavaScript הפועל מאחורי הקלעים שמעלה את כל ההצהרות על המשתנים והפונקציות לתחילת הבלוק/התחום אליהם הם שייכים.
             </p>
 
             <p>
                 לכן על מנת למנוע בעיות בקוד רצוי תמיד להצהיר על משתנים בראש הדף ובפונקציות להצהיר ולאתחל משתנים לפני שימוש בהם.
             </p>
-            <h3>Hoisting and variables:</h3>
+            <br>
+            <h2 class="center_header">Hoisting and variables</h2>
 
             <p>
                 נתחיל מהדוגמא הפשוטה ביותר ונפתח אותה בהדרגה:<br>
 
-                נעטוף את ה alert  בפונקציה אנונימית.
+                נעטוף את ה alert  בפונקציה אנונימית (פונקציה שניתן להשתמש בה מבלי שנגדיר לה שם ובכך ליצור פונקציה אנונימית. פונקציה אנונימית נוצרת וקוראים לה פעם אחת.)
             <div><code class="javascript">
                 var myvar = 'my value';<br>
                 (function () {<br>
@@ -146,7 +146,7 @@ Thank you !!
                 עובד כמו שצריך, בסך הכל יצרנו פונקציה פשוטה.
             </p>
             <p style="color: blue; font-weight: bold;">
-                על מנת להבין את המהות של Hoisting ב JS נשדרג קצת את הדוגמה בעזרתה נראה את ההשפעה של hoisting  על משתנים:
+                על מנת להבין את המהות של Hoisting נשדרג קצת את הדוגמה בעזרתה נראה את השפעתה על משתנים:
             </p>
             <p>
 
@@ -162,8 +162,8 @@ Thank you !!
             כבר נתחיל לראות איך Hoisting פועל מאחורי הקלעים בJavaScript.
             </p>
             <p>
-                בשלב הבא נפעיל את הפונקציה ומתחת לפני השטח ומבלי שנשים לב
-                ניתן לראות javascript הרים לראש הפונקציה (בתוך הסוגריים המסולסלים) את ההצהרה בלבד על המשתנה המקומי שיצרנו ואת האתחול של המשנה השאיר באותו מקום.
+                בשלב הבא נפעיל את הפונקציה שרשמנו למעלה ומתחת לפני השטח ומבלי שנשים לב
+                ניתן לראות שjavascript העלה לראש הפונקציה (בתוך הסוגריים המסולסלים) את ההצהרה בלבד על המשתנה המקומי שיצרנו ואת האתחול של המשנה השאיר באותו מקום.
             <div><code class="javascropt">
                 var myvar = 'my value';<br>
                 (function () {<br>
@@ -174,7 +174,7 @@ Thank you !!
                 })();
             </code></div>
             </p>
-            <h2>ES6 const and let</h2>
+            <h3 class="center_header">ES6 const and let</h3>
             <p>
                 משתנים שמוצהרים ע"י let ו const פותרים את כל הסיפור עם hoisting בjavascript, בגלל שהם קשורים / תקועים לתחום המקומי שבו הם הוצהרו ולא לפונקציה, כשהצהרנו על משתנים בעזרת var המשתנים היו ניתנים לקישור בתחום המקומי וגם הגלובאלי.
                 לדוגמה:
@@ -189,25 +189,26 @@ Thank you !!
                 }<br>
                 }<br>
             </code></div>
-            המשתנים עליהם הצהרנו freezing ו hot "תקועים" בתוך הבלוק אליהם הם שייכים (התחום הוא הסוגריים {})
+            המשתנים עליהם הצהרנו freezing ו hot "תקועים" בתוך הscope אליהם הם שייכים (התחום הוא הסוגריים {})
             </p>
-            <h3>Hoisting and functions:
-            </h3>
+            <br>
+            <h2 class="center_header">Hoisting and functions
+            </h2>
             <p>
                 בשונה משפות תכנות אחרות שיש להצהיר ולאתחל את הפונקציה לפני שימוש
                 בJavaScript אם נציב את מימוש הפונקציה לפני שהגדרנו את הפונקציה עצמה, לא נקבל שגיאה או הערה undefined, המימוש יעבוד!
 
             </p>
             <p>
-                לגבי ההשפעה של hoisting  על פונקציות? ההתנהגות בהקשר לפונקציות זהה לזו של hoisting על משתנים וגם מעלה מחוץ לתחום הפונקציה את המימוש של פונקציה:
+                מה לגבי ההשפעה של hoisting  על פונקציות?<br> ההתנהגות של hoisting על פונקציות זהה לזו על משתנים, מעלה מחוץ לתחום הפונקציה את המימוש של פונקציה:
             </p>
             <p>
-                <b>לדוגמה:</b>
+                <b>דוגמה:</b>
 
             <div><code class="javascript">
-                (function isItHoisted () {<br>
-                console.log('yes');<br>
-                })();
+                function isItHoisted () {<br>
+                console.log('yes');//will print in console.log "yes"<br>
+                };
 
             </code></div>
             </p>
@@ -215,11 +216,25 @@ Thank you !!
         <p>
             <b>אחרי Hoisting:</b>
         <div><code class="javascript">
-            isItHoisted ();<br>
-            (function isItHoisted () {<br>
-            console.log('yes’); // will work!!<br>
-            })();
+            isItHoisted ();// will print in console.log "yes"<br>
+            function isItHoisted () {<br>
+            console.log('yes’); <br>
+            };
         </code></div>
+
+        </p>
+
+        <p>
+            לעומת זאת, במידה ונאתחל פונקציה בתוך משתנה לא נקבל את אותה תוצאה:
+            <div><code class="javascript">
+
+        // TypeError: undefined is not a function<br>
+        DevtipsNotHoisted();<br><br>
+
+        var DevtipsNotHoisted = function () {<br>
+        console.log("Devtips not hoisted!");<br>
+        };<br>
+    </code></div>
         </p>
         <!--footer Copy Paste-->
         <footer>
