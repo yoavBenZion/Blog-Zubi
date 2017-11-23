@@ -80,7 +80,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
     }
 
-    .box2,.box4,.box8,.box12,.box13{
+    .box2,.box4,.box8,.box12,.box13, .box11{
         display: none;
     }
     .photo{
@@ -280,13 +280,15 @@ RESPONSIVE Layout -Mobile - 1 article box
     }
 
 
-    .box11{
+
+ /*   .box11{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
     }
+*/
 
-    .box11-title{
+/*    .box11-title{
         grid-column: 1/2;
         grid-row:1/2;
         padding-top: 1rem;
@@ -295,7 +297,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         height:100%;
         cursor: default;
     }
-
+*/
     .box11-title span:first-child{
         font-size:3em;
     }
@@ -337,7 +339,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
     }
 
-    .box2,.box4,.box8,.box12,.box13{
+    .box2,.box4,.box8,.box12,.box13, .box11{
         display: none;
     }
 
@@ -536,7 +538,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         align-items: center;
     }
 
-    .box11{
+   /* .box11{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
@@ -549,6 +551,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         background: url(../img/coding-1841550_1920.jpg);
         background-size: cover;
         height:100%;
+        cursor: default;
     }
 
     .box11-title span:first-child{
@@ -564,8 +567,9 @@ RESPONSIVE Layout -Tablet - 2 article box
         padding: 0 1em;
         justify-content: space-between;
         align-items: center;
+        cursor: default;
     }
-
+*/
 }
 
 
@@ -839,6 +843,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box11;
         background: url(../img/coding-1841550_1920.jpg);
         background-size: cover;
+        cursor: default;
     }
 
     .box11-title{
@@ -848,6 +853,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         display: flex;
         flex-direction: column;
         justify-content: center;
+        cursor: default;
     }
 
     .box12{
