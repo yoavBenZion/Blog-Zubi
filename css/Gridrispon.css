@@ -538,7 +538,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         align-items: center;
     }
 
-    .box11{
+   /* .box11{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
@@ -569,7 +569,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         align-items: center;
         cursor: default;
     }
-
+*/
 }
 
 
