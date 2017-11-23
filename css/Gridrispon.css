@@ -689,6 +689,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box4;
         background: url(../img/jsbox.png);
         background-size: cover;
+        background-position: 50%;
 
     }
 
@@ -733,6 +734,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background-position: 50%;
 
     }
 
@@ -785,6 +787,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         grid-area: box8;
         background: url(../img/giphy4.gif);
         background-size: cover;
+        background-position: 50%;
     }
 
     .box8 a{
