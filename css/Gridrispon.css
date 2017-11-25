@@ -58,6 +58,9 @@ a.article_link:hover {
     cursor:pointer ;
 
 }
+#mainpage{
+    color:mediumblue;
+}
 .calander{
     width: 1.55rem;
     padding-bottom: 0.2em;
