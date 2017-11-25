@@ -54,6 +54,10 @@ ARRAY
   box-shadow: -1px -1px #8F8781;
 }
 
+kbd {
+  background-color: #BDBDC7;
+}
+
 /*
 #top{
   font-size: 2em;

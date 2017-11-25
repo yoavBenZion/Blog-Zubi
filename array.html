@@ -153,6 +153,11 @@ Thank you !!
               <br>
               <div class="es5">ES5</div>
               - המתודה היא חלק מהפיתוחים שנכנסו במסגרת ES5 .
+              <br>
+              <br>
+              <code class="javascript">
+               &raquo; undefined //When you declare an Array, you will allways get back undefined. 
+            </code>
             </p>
             <p class="center_header" id="goTop">You can look for the Array Method in the 
             <br> &darr; Serch BOX below &darr;</p>
@@ -174,7 +179,7 @@ Thank you !!
           <div >
             <code class="javascript">
               var boo = [1,2,3];
-              <br> &raquo; undefined
+              <br> &raquo; undefined 
               <br> boo;
               <br> &raquo; (3) [1,2,3]
               <br> Array.isArray(boo);
@@ -211,9 +216,7 @@ Thank you !!
            </li>
            <li id="indexof"> <kbd>()indexOf</kbd> 
        <div class="no-change">no change </div>
-        <p>Returns the First <kbd>index</kbd> value, where the element that is passed as an argument (inside the parenthesis), is found. <br>
-        if the element is not present, the return vaue will be <kbd>-1</kbd><br>
-        note, that you can pass a second argument, where the index position count will start.</p>
+        <p>מחזיר את ערך ה index של הפרמטר המועבר במתודה, אם הערך אינו נמצא במערך, מחזיר  1- . </p>
         <p>
             דוגמא א : <br>
              המתודה תחזיר את ה <kbd>index value</kbd> , הראשון של האלמנט שמועבר במתודה, (בתוך הסוגריים) . 
@@ -370,15 +373,18 @@ Thank you !!
         <p>מחזיר את המערך כ  <kbd>string</kbd>. כאשר הפרמטר המועבר בסוגריים, יהיה המפריד של ה <kbd>string</kbd>.<br>
         אם משתמשים במתודה ללא פרמטר, הערכים יחזרו כ <kbd>string</kbd>, מופרד ע"י פסיק . <br> 
         </p>
+        <p>ניתן גם להחליף את הפסיקים בסמן אחר, לדוגמא : - </p>
         <p>
           <div >
             <code class="javascript">
                var boo = [1,2,3];
               <br> &raquo; undefined
-              <br> boo.join();
+              <br> boo.join(); // Default.
               <br> &raquo; "1,2,3"
-              <br> boo.join('')
+              <br> boo.join(''); // No separator.
               <br> &raquo; "123"
+              <br>boo.join(-); // Changing the separator.
+              <br> &raquo; "1-2-3"
             </code>
           </div>
         </p>
@@ -502,7 +508,11 @@ Thank you !!
        <div  class="change">change</div>
         <p>
           במתודה זו משתמשים לשינוי המערך ע"י 
-            <kbd>הוספה</kbd> או <kbd>הסרה</kbd> של אלמנטים מהמערך המקורי
+            <kbd>הוספה</kbd> או <kbd>הסרה</kbd> של אלמנטים מהמערך המקורי.
+        </p>
+        <p>
+          בשונה מ pop או shift, 
+          ב splice, ניתן להשתמש כדי להוציא כל אלמנט, בכל אינדקס. 
         </p>
         <h3>הסרה</h3>
         <p>כאשר מסירים אלמנטים מהמערך,<br> יחזרו ה <kbd>Removed elments</kbd>.</p>
@@ -700,9 +710,16 @@ Thank you !!
        <div class="no-change">no change</div>
         <p>מחזיר  <kbd>True</kbd> או <kbd>False</kbd>. </p>
         <p>
-          הפונקציה רצה על כל אלמנט במערך,<br>
-         ובודקת <strong>if Some</strong> מהאלמנטים במערך,<br> עוברים את המשוואה שעברה ב <br> callback function.<br>
-        ומפסיקה באלמנט הראשון שמחזיר True.
+        עוברת על כל המערך, ובודקת האם יש אלמנט  
+        <strong> אחד בלבד</strong> 
+        שעונה לדרישת המשוואה שהוכנסה לפונקציה,
+        <br>
+        במידה וכן, המתודה מפסיקה את הבדיקה של המערך - ומחזירה 
+        <kbd> true</kbd> .
+        <br>
+        אחרת, במידה והריצה הגיעה לסיום המערך - יחזור 
+        <kbd>false</kbd>.
+        
         </p>
         <p>
           <div >
