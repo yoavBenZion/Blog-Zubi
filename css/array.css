@@ -18,10 +18,11 @@ ARRAY
 .change,
 .es5 {
   display: inline-block;
-  border: 1px solid blue;
-  border-radius: 25%;
+  border: 1px solid black;
+  font-size: 0.7em;
+  border-radius: 16%;
   margin: 4px 15px 2px 35px;
-  padding: 1px 1px;
+  padding: 1px;
 }
 
 .no-change {
