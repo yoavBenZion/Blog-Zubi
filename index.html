@@ -524,12 +524,29 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-<script src="js/nav-template.js"></script>
 <script src="js/subscribe.js"></script>
 <script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1508912257'></script>
 <script type="text/javascript">
     var sib_prefix = 'sib';
     var sib_dateformat = 'mm-dd-yyyy';
+    $(document).ready(function() {
+        $('div code').each(function(i, block) {
+            hljs.highlightBlock(block);
+
+        });
+        $('div pre').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+        var typed = new Typed("#typed", {
+            strings: ['<b>var</b> devTips = blogProject() {<br>&nbsp;console.log(<span style="color: #880000;">"Powerd by the Diggers Team"</span>);<br>}<br> &raquo; <span style="color: #78A960;">undefined</span>'],
+            typeSpeed:40,
+            startDelay:3000,
+            fadeOut: true
+
+        });
+        typed.start();
+
+    });
 
 </script>
 </body>
