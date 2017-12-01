@@ -142,8 +142,8 @@ page to the size of the content*/
   #overlay2{
     position: fixed; 
     width: 100%; 
-    height: 50%; 
-    top: 180px; 
+    height: 100%; 
+    top: 10px; 
     left: 0px; 
     background-color: #000; 
     opacity: 0.7;
@@ -215,8 +215,8 @@ RESPONSIVE Layout -Tablet - Medium
   #overlay2{
     position: fixed; 
     width: 100%; 
-    height: 80%; 
-    top: 50px; 
+    height: 100%; 
+    top: 0px; 
     left: 0px; 
     background-color: #000; 
     opacity: 0.7;
