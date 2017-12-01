@@ -150,11 +150,11 @@ Thank you !!
                       <p>
                         ו ES6? <br>
                         
-זה העדכון האחרון של הפיתוחים ע"י ECMA, שייכנסו לשימוש כסטנדרט בכל הדפדפנים. אז גם אם זה טיפה מבלבל, חשוב לדעת, להכיר ובעיקר לדעת איפה ואיך אפשר להשתמש בפיתוחים האלו. 
+זה העדכון האחרון של הפיתוחים ע"י ECMA, שנכנסו לשימוש כסטנדרט בכל הדפדפנים. אז גם אם זה טיפה מבלבל, חשוב לדעת, להכיר ובעיקר לדעת איפה ואיך אפשר להשתמש בפיתוחים האלו. 
 
                       </p>
+                      <h3>אז מה חדש ?</h3>
                       <p>
-                        אז מה חדש ? <br>
 
 אחלק את המאמר ל 2 חלקים, כדי שאוכל לדבר בהרחבה וחופשיות על כל אחד מהנושאים.
 
@@ -211,10 +211,16 @@ Thank you !!
               
               <p>אם ננסה לשנות משתנה קבוע, נקבל שגיאה, לדוגמא : </p>
 <!--img snnipet-->
-              <figure>
-              <a href="./img/const-error.png"> 
-                <img src="./img/const-error.png" alt="Const_Error" >
-              </a>
+             <figure>
+              <div ><code class="javascript">
+           &gt; pi
+           <br>&raquo;3.14 //The value of pi
+           
+           <br><br>&gt; pi = 31415;
+           <br>&raquo; //Uncaught TypeError: Assignment to constant variable.
+        </code></div>
+              <br>
+              
                 <figcaption>
                  קביעת משתנה קבוע, חשובה בבחירת משתנים ב dom ובשימוש במשתנים בפונקציה, והגבלה שלהם ל scope של הפונקציה בלבד. 
                 </figcaption>
@@ -222,7 +228,7 @@ Thank you !!
               
               <p>
                 לדוגמא: <br>
-                אם אנסה להריץ את הקוד הבא &gt;
+                אם אנסה להריץ את הקוד הבא :
               </p>
               
         <div ><code class="javascript">
@@ -248,11 +254,17 @@ Thank you !!
           </p>
            
               <figure>
-              <a href="./img/const_output.png"> 
-                <img src="./img/const_output.png" alt="Const_Error" >
-              </a>
+                 <div ><code class="javascript">
+           yoav
+           <br>donald trump
+           <br>
+           <br>&gt;name
+           <br>&raquo;"donald trump"
+        </code></div>
+               <br>
                 <figcaption>
-                אך אם אבדוק מה הערך הנוכחי של   המשתנה, אקבל את השם מהפונקציה. 
+                 אם אבדוק מה הערך הנוכחי של המשתנה, אקבל את השם מהפונקציה. 
+                 <br>
 מכיוון ש scope  הפונקציה, דורס את ההגדרה ב scope  הגלובלי. 
 בשורות קוד מעטות, זה לא נוראי לחפש את מקור הטעות, אבל בקבצים גדולים, זה יכול להיות קצת מייאש. 
                 </figcaption>
@@ -272,21 +284,28 @@ Thank you !!
         </code></div>
         
     <figure>
-              <a href="./img/const-error2.png"> 
-                <img src="./img/const-error2.png" alt="Const_Error" >
-              </a>
+              <div ><code class="javascript">
+           yoav
+           <br>&raquo; //Uncaught TypeError: Assignment to constant variable.
+        </code></div>
+               <br>
                 <figcaption>
             ונוכל לראות בדיוק את השורה בקוד שטעינו בה, כדי לתקן. 
                 </figcaption>
             </figure>
+        <div id="overlay"></div>
+          <div id="overlayContent">
+           <img id="imgBigError" src="" alt="">
+            </div>
              <figure>
-              <a href="./img/const-error-location.png"> 
-                <img src="./img/const-error-location.png" alt="Const_Error" >
-              </a>
+              
+                <img id="imgSmallError" src="./img/const-error-location.png" alt="Const_Error" >
+              
                 <figcaption>
  const-error-location
                 </figcaption>
             </figure>
+          </div>
               
               <p>הפיתרון :</p>
         <div ><code class="javascript">
