@@ -45,6 +45,9 @@ $(".ninja-btn").click(function () {
     }
 });
 
+/*Img click on example - switch the id's of the big and small*/
+
+//es6 img's
 $("#imgSmallError").click(function(){		                                        $("#imgBigError").attr("src","./img/const-error-location.png");
     $("#overlay").show();
     $("#overlayContent").show();
@@ -56,6 +59,50 @@ $("#imgBigError").click(function(){
     $("#overlay").hide();
     $("#overlayContent").hide();
     $("#imgSmallError").show();
+});
+
+//dom img's - html img 1
+$("#imgSmallhtml").click(function(){		                    $("#imgBightml").attr("src","./img/dom-art.png");
+    $("#overlay").show();
+    $("#overlayContent").show();
+    $("#imgSmallhtml").hide();
+});
+
+$("#imgBightml").click(function(){
+    $("#imgBightml").attr("src", "");
+    $("#overlay").hide();
+    $("#overlayContent").hide();
+    $("#imgSmallhtml").show();
+});
+
+/*Dom Diagram - img 2*/
+
+$("#imgSmallDgrm").click(function(){		                    $("#imgBigDgrm").attr("src","./img/dom-diagram.png");
+    $("#overlay1").show();
+    $("#overlayContent1").show();
+    $("#imgSmallDgrm").hide();
+});
+
+$("#imgBigDgrm").click(function(){
+    $("#imgBigDgrm").attr("src", "");
+    $("#overlay1").hide();
+    $("#overlayContent1").hide();
+    $("#imgSmallDgrm").show();
+});
+
+//Traversing img - img 3
+
+$("#imgSmallTrv").click(function(){		                    $("#imgBigTrv").attr("src","./img/dom-traverse.png");
+    $("#overlay2").show();
+    $("#overlayContent2").show();
+    $("#imgSmallTrv").hide();
+});
+
+$("#imgBigTrv").click(function(){
+    $("#imgBigTrv").attr("src", "");
+    $("#overlay2").hide();
+    $("#overlayContent2").hide();
+    $("#imgSmallTrv").show();
 });
 
 

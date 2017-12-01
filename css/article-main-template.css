@@ -120,6 +120,12 @@ code{
     direction: ltr;
     text-align: left;
 }
+
+#imgBigError, #imgSmallError, #imgBightml, #imgSmallhtml,
+  #imgSmallDgrm, #imgBigDgrm,#imgSmallTrv,#imgBigTrv{ 
+    cursor: pointer;
+ }
+
 /***************************
 RESPONSIVE Layout -Mobile 
 *****************************/
@@ -131,10 +137,12 @@ page to the size of the content*/
 
 @media  (max-width: 450px) {
   
-   #overlay{
+   #overlay,
+  #overlay1,
+  #overlay2{
     position: fixed; 
     width: 100%; 
-    height: 35%; 
+    height: 50%; 
     top: 180px; 
     left: 0px; 
     background-color: #000; 
@@ -145,7 +153,9 @@ page to the size of the content*/
     
 }
 
-#overlayContent{
+#overlayContent,
+ #overlayContent1,
+  #overlayContent2{
     position: fixed; 
     width: 80%;
     height: 100%;
@@ -156,14 +166,17 @@ page to the size of the content*/
     z-index: 100;
 }
 
-#contentGallery{
+#contentGallery,
+  #contentGallery1,
+  #contentGallery2{
     margin: 0px auto;
 }
 
-#imgBigError, #imgSmallError{
+#imgBigError, #imgSmallError, #imgBightml, #imgSmallhtml
+  #imgBigDgrm, #imgSmallDgrm,#imgSmallTrv,#imgBigTrv{
     cursor: pointer;
  }
-  #imgBigError {
+  #imgBigError, #imgBightml, #imgBigDgrm,#imgBigTrv {
     width: 100%;
     margin: 0 auto;
   }
@@ -196,8 +209,10 @@ RESPONSIVE Layout -Tablet - Medium
         grid-area: text;
         text-align: right;
     }
-  
-  #overlay{
+  /*img clikbl'e*/
+  #overlay,
+  #overlay1,
+  #overlay2{
     position: fixed; 
     width: 100%; 
     height: 80%; 
@@ -211,7 +226,9 @@ RESPONSIVE Layout -Tablet - Medium
     
 }
 
-#overlayContent{
+  #overlayContent,
+  #overlayContent1,
+  #overlayContent2{
     position: fixed; 
     width: 80%;
     height: 100%;
@@ -222,13 +239,16 @@ RESPONSIVE Layout -Tablet - Medium
     z-index: 100;
 }
 
-#contentGallery{
+  #contentGallery,
+  #contentGallery1,
+  #contentGallery2{
     margin: 0px auto;
 }
 
-#imgBigError, #imgSmallError{
+#imgBigError, #imgSmallError, #imgBightml, #imgSmallhtml,
+  #imgSmallDgrm, #imgBigDgrm,#imgSmallTrv,imgBigTrv{ 
     cursor: pointer;
-}
+ }
 
 }
     /*************************************************
