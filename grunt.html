@@ -112,15 +112,15 @@ Thank you !!
 <!--            <li class="menu"><a href="./articlesPage.html">מאמרים</a></li>-->
             <li class="menu"><a href="contact.html">צור קשר</a></li>
             <li class="menu subscribe">עקוב אחרינו</li>
-            <li class="text">טקסט נמצא בשורה 110</li>
-            <li class="text">שקשור למאמר</li>
+            <li class="text">Grunt</li>
+            <li class="text">The Task Runner</li>
         </ul>
     </div>
     <!--Article Body Grid-->
 
     <div class="grid_con">
 
-            <h1>Grunt - JavaScript Task Runner</h1>
+            <h1 class="center_header" >Grunt - JavaScript Task Runner</h1>
 
             <p>
                 המאמר הבא יעסוק בחבילה שימושית מאוד שנמצאת בתוך NODE.JS בשם grunt.
@@ -131,7 +131,7 @@ Thank you !!
             </p>
 
             <p>
-Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו עבורנו המקלים עלינו כמתכנתים בביצוע פעולות שיגרתיות ואוטומטיות כמו:
+Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו עבורנו, המקלים עלינו כמתכנתים בביצוע פעולות שיגרתיות והפיכתן לאוטומטיות כמו:
             <br><br>
                 JSHINT- תוסף שיודע לאתר SYNTAX ERROR ובעיות שעלולות והיווצר בקוד שלכם.<br>
                 MINIFY CSS/HTML- תוסף שמקטין את נפח הקבצים לשיפור ביצועים (זמן טעינת אתרים).<br>
@@ -139,7 +139,7 @@ Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו ע
             Watch - מעקב אחרי שינוי כלשהו בקבצים.<br>
 
             </p>
-        <p>את המשימות שניתן לשרת שלנו אנחנו נגדיר בתוך קובץ Gruntfile.js שעליו ארחיב בהמשך המאמר, הוא יכיל את כל ההגדרות של התוספים בהם אנחנו נשתמש בשרת שלנו.
+        <p>את המשימות שניתן לשרת שלנו, אנחנו נגדיר בתוך קובץ Gruntfile.js שעליו ארחיב בהמשך המאמר, הוא יכיל את כל ההגדרות של התוספים בהם אנחנו נשתמש בשרת שלנו.
         </p>
         <p>
             על מנת שנוכל להתקדם, חשוב שיהיה לכם קצת מושג מהו nodejs וכמובן שכבר התקנתם Node.js והרמתם שרת מקומי שעליו תוכלו לעבוד.
@@ -191,7 +191,8 @@ Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו ע
             htmlmin: {
                 dist: {
                     files: {
-                        'public/index.min.html': 'public/index.html', // 'destination': 'source'
+                    // 'destination': 'source'
+                        'public/index.min.html': 'public/index.html',
                     }
                 }
             },
@@ -200,7 +201,7 @@ Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו ע
                 tasks: ['htmlmin']
             }
         });
-        // Load the plugins that provides the "htmlmin" and "watch" tasks.
+   // Load the plugins that provides the "htmlmin" and "watch" tasks.
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
@@ -210,7 +211,7 @@ Grunt מאגדת בתוכה מלא תוספים שימושיים שנכתבו ע
 </code></pre>
             </p>
             <p>
-            initConfig מדובר בפונקציה שמקבלת אובייקט, שבמקרה הזה מכילה את ההגדרות של התוספים שאנחנו רוצים להריץ על השרת,
+            <kbd>initConfig</kbd> מדובר בפונקציה שמקבלת אובייקט, שבמקרה הזה מכילה את ההגדרות של התוספים שאנחנו רוצים להריץ על השרת,
                     נסביר קצת מה רשמנו בתוך האובייקט: ניתן לראות שישנם עוד 2 אובייקטים עיקריים, htmlmin ו watch.
             </p>
             <p>
@@ -231,16 +232,17 @@ htmlmin מקבל הגדרה של קובץ אליו אנחנו רוצים להפ�
             </code></div>
             </p>
 <p>
-    ברגע שנרשום את המשימה במודול כשנריץ בcmd: grunt אוטומטית grunt יפעיל את התוסף watch.
-          <br>
-            בלי שנרשום את התוסף, watch לא יפעל ולא יעקוב אחרי שינויים בקבצים.
+    ברגע שנרשום את המשימה במודול (בתוך הGruntfile.js) כשנריץ את הפקודה - grunt במסוף (CMD), אוטומטית grunt יפעיל את התוסף watch.
+</p>
+        <p>
+            בלי שנרשום את התוסף,<br> watch לא יפעל ולא יעקוב אחרי שינויים בקבצים.
             <div><code class="javascript">
             grunt.registerTask('default', ['watch']);
             </code></div>
 </p>
 
             <p>
-                הפעלת grunt דרך הcmd תגרום לwatch לפעול ולעקוב אחרי כל שינוי שיחול בקובץ index.html ויכווץ אותו לindex.min.html.
+                הפעלת grunt דרך הcmd תגרום לwatch לפעול ולעקוב אחרי כל שינוי שיחול בקובץ <kbd>index.html</kbd> ויכווץ אותו ל<kbd>index.min.html</kbd>.
             </p>
             <p>
                 ישנם עוד אלפי תוספים שימושיים שיקלו עליכם מצרף <a href="https://gruntjs.com/plugins" target="_blank">לכאן</a> קישור לתוספים הכי פופולארים בgrunt.
