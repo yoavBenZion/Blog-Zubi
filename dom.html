@@ -129,12 +129,24 @@ Thank you !!
         <section>
            ה DOM או Document Object Model  ב JavaScript , הוא אחד הכלים הכי חזקים איתם נעבוד בפיתוח Front End . <br>
          <p>
-           למעשה, את כל האינטראקטיביות של הדף, כגון שינויים בעיצוב כתלות בפעולות המשתמש כגון קליק, הזזה של העכבר או פתיחה של חלון חדש לפי זמן קבוע, כולן פעולות המבוססות על מניפולציות של JS על הDOM. 
+           למעשה, את כל האינטראקטיביות של הדף, כגון : 
+           <br> שינויים בעיצוב כתלות בפעולות המשתמש ע"י קליק, הזזה של העכבר או פתיחה של חלון חדש לפי זמן קבוע.
+            כולן פעולות המבוססות על מניפולציות של JS על הDOM. 
          </p>
          <p>
           כדי להתחיל לדבר על ה DOM , אכתוב ממש בקצרה מהו אובייקט ב JS   : <br>
-           Object - הדרך הנכונה להסתכל על אובייקטים, זה על פרט שיש לו Property & Methods. כאשר : 
+           Object - הדרך הנכונה להסתכל על אובייקטים, זה על פרט שיש לו name and value pairs כאשר : 
            
+           <p>דוגמא של object literal - * כשאנחנו פשוט רושמים את האובייקט.</p>
+              <pre ><code class="javascript">
+  var obj =  {
+    firstName: 'yoav',
+    lastName: 'Benzion'
+  }
+             </code></pre>
+         </p>
+         <p>
+           ואובייקטים מורכבים שמשמשים אותנו בכתיבה השוטפת, הם אובייקטים שה value הוא מתודה בה אנחנו יכולים להשתמש. 
          </p>
          <ul>
            <li>Property: ערך משתנה, ששייך לאובייקט. </li>
@@ -164,6 +176,7 @@ Thank you !!
         </section>
         
         <!--img snippet to change and modifay-->
+<!--Fix Img - close in one press-->
         <figure>
           <a href="./img/dom-art.png"> 
             <img src="./img/dom-art.png" alt="model1" >
@@ -221,7 +234,9 @@ Thank you !!
               אבל מה נותן ה DOM ? 
             </p>
             <p>
-              למעשה, מרגע שיש לנו מפה היררכית של מבנה העמוד. אנחנו יכולים להגיע לכל אלמנט בעמוד, ולבצע בו שינויים או פעולות בעזרת JavaScript . <br>
+              למעשה, מרגע שיש לנו מפה היררכית של מבנה העמוד.
+              <br>
+                אנחנו יכולים להגיע לכל אלמנט, ולבצע בו שינויים או פעולות בעזרת JavaScript . <br>
 אז באיזה אלמנטים אפשר לבצע שינויים ?  
             </p>
             <ul>
@@ -249,38 +264,45 @@ Thank you !!
           <br> (Selecting) :</h3>
           
           <!--code snippet to change and modifay-->
-            <p>
-                 ניקח את הקוד html  הבא כדוגמא : 
-           <figure>
-            <a href="./img/dom-h1.png"> 
-              <img src="./img/dom-h1.png" alt="model3" >
-            </a>
-           </figure>
+        
+           
+           <p>ניקח את הקוד html  הבא כדוגמא : </p>
+              <div ><code class="javascript">
+              &lt;h1 id="headline" class="header"&gt;
+              <br> this is a headline
+              <br>&lt;h1&#47;&gt;
+             </code></div>
+           
+           
            <p>אותו נבחר בעזרת javaScript</p>
               <div ><code class="javascript">
               document.querySelector('.header');
              </code></div>
-           </p>
+         
            
            <!--img snnipet for article-->
             <p>
               ונקבל את הפלט הבא ב console
             </p>
-           <figure>
-            <a href="./img/dom-queryselector.png"> 
-              <img src="./img/dom-queryselector.png" alt="model3" >
-            </a>
-           </figure>
+             
+              <div ><code class="javascript">
+              document.querySelector('.header');
+              <br>&raquo; &lt;h1 id="headline" class="header"&gt;
+              <br> this is a headline
+              <br>&lt;h1&#47;&gt;
+             </code></div>
            
-           <!--code snippet to change and modifay-->
+            
            <p>
-             באותה צורה אפשר לקבל רשימת ערכי LI של ARRAY , לדוגמא :
+             באותה צורה אפשר לקבל רשימה של כל ערכי LI של ARRAY , לדוגמא :
            </p>
            <div ><code class="javascript">
               document.querySelectorAll('li');
-              <br>>(3)[li,li,li]
+              <br>&raquo;(3)[li,li,li]
+              <br>
               <br>document.querySelectorAll('li')[0];
-              <br>> This will give us the first node of the li tag.
+              
+              <br>&raquo; //This will give us the first node of the li tag.
              </code></div>
            
   
@@ -297,8 +319,10 @@ Thank you !!
       <div ><code class="javascript">
               //creating an element
               <br>var para = document.createElement('p');
+              <br>
               <br> //creating a text node in the element
               <br>para.textContent = 'This is a color app, try to move your courser on the screen';
+              <br>
               <br>//apending the new element to the body
               <br>document.body.appendChild(para);
              </code></div>
@@ -317,6 +341,7 @@ Thank you !!
              <p>
               בעזרת JS אפשר להצמיד event  לכל אלמנט בעמוד . 
               לדוגמא, הוספת event מסוג <kbd>mousemove</kbd> יכול לשמור לנו את הקורדינטות של העכבר כל פעם שאנחנו מעבירים את העכבר על האלמנט הנבחר. 
+              <br>
               למטה, אני משתמש בקורדינטות האלו, כדי לשנות את צבע הרקע של העמוד לפי <kbd>()rgb</kbd> . 
 
              </p>
@@ -324,17 +349,24 @@ Thank you !!
         <div ><code class="javascript">
               //creating an element
           <br>  var div = document.createElement('DIV');
+          <br>
           <br>//setting it's height
           <br>div.style.height = '100vh';
+          <br>
           <br>// appending it to the page
           <br>document.body.appendChild(div);
+          <br>
           <br>// adding a mousemove Event listner
           <br>div.addEventListener('mousemove', function (e){
-          <br> var x = e.clientX;
-          <br> var y = e.clientY;
-          <br> div.textContent = ' R=' + x +' ' + ' G=' + y + ' B=' + (x-y);
-          <br> div.style.textAlign= 'center';
-          <br> div.style.backgroundColor = 'rgb('+ x + ',' + y + ',' + (x-y) +')';
+          <br>&emsp; var x = e.clientX;
+          <br>&emsp; var y = e.clientY;
+          <br>
+          <br> div.textContent =
+          <br> &emsp;' R=' + x +' ' + ' G=' + y + ' B=' + (x-y);
+          <br>&emsp; div.style.textAlign= 'center';
+          <br>
+          <br> div.style.backgroundColor =
+          <br>&emsp; 'rgb('+ x + ',' + y + ',' + (x-y) +')';
           <br> });
       </code></div>
             

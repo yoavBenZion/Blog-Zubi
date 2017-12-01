@@ -45,5 +45,18 @@ $(".ninja-btn").click(function () {
     }
 });
 
+$("#imgSmallError").click(function(){		                                        $("#imgBigError").attr("src","./img/const-error-location.png");
+    $("#overlay").show();
+    $("#overlayContent").show();
+    $("#imgSmallError").hide();
+});
+
+$("#imgBigError").click(function(){
+    $("#imgBigError").attr("src", "");
+    $("#overlay").hide();
+    $("#overlayContent").hide();
+    $("#imgSmallError").show();
+});
+
 
 
