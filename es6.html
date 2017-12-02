@@ -545,13 +545,15 @@ Thank you !!
                אני לא אכנס עכשיו לנושא של ה this יותר מידי. 
                אבל חשוב לדעת ש this = הקונטקסט או ההקשר . 
                <br>
-               פונקציה רגילה מחזיקה this משל עצמה.
+               פונקציה רגילה מצביעה על ה this של האובייקט שסובב אותה.
                <br>
-               arrow function, לא מחזיקה this, 
+                this, של ה arrow function, לא מושפעת מהאובייקט שסובב אותה,  
                אלה אוטומטית מצביעה על ה scope החיצוני . 
+               <br>
+               ל arrow function, אין this, אז הוא למעשה ישר פונה לשלב אחד למעלה ב scope chain  .
              </p>
              
-             <p>דוגמא לשימוש ב this :</p>
+             <p>דוגמא לשימוש ב this מתוך אובייקט:</p>
          <div ><code class="javascript">
            var obj = {
            <br>normal: function () { 
@@ -565,6 +567,31 @@ Thank you !!
           <br>
           <br>Obj.normal(); //obj
           <br>Obj.arrow(); //window
+         </code></div>
+           
+        <p>דוגמא לשימוש ב this ב nested functions + setTimeout :</p>
+         <div ><code class="javascript">
+           var person = {
+          <br> name:"Yoav",
+          <br>
+          <br> foo: function () { 
+          <br>//this will point to the setTimeout function
+          <br> setTimeout(function (){
+          <br> console.log(this.name); 
+          <br>}), 100);
+          <br>
+          <br>},
+          <br>
+          <br>boo: function () {
+          <br>//this will point to the person object
+          <br>setTimeout(() =&gt; {
+          <br>console.log(this.name) 
+          <br>}, 100);
+          <br>
+          <br>}
+          <br>
+          <br>person.foo(); //undefined
+          <br>person.boo(); //"yoav"
          </code></div>
             
              <br>
