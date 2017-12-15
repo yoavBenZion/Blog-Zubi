@@ -4,7 +4,9 @@
 /*****************************************
 RESPONSIVE Layout -Mobile - Small PopUp
 *****************************************/
-
+.overlay {
+  visibility: hidden;
+}
 
 /*Mobile Devices*/
 

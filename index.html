@@ -6,6 +6,18 @@
     <link rel="icon" sizes="192x192" href="./img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no;">
     <meta name="theme-color" content="#f8da59">
+<!--Meta tags for link preview in messages-->
+    <meta name="description" content="An Israeli web development blog"/>
+<!--Header in link-->
+    <meta property="og:title" content="Dev-Tips"/>
+<!--Text description in link-->
+    <meta property="og:description" content="Israeli Web Development Blog"/>
+    <meta property="og:url" content="http://devtips.co.il/"/>
+<!--Img on whatsapp-->
+    <meta property="og:image" content="/img/computer-2583383_1920.jpg"/>
+<!--Img on Facbook messanger-->
+    <link rel="shortcut icon" sizes="192x192" href="./img/favicon.ico"/>
+<!--End of meta tags for linking-->
     <title>Dev-Tips</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
           crossorigin="anonymous">
@@ -387,7 +399,7 @@
         </div>
     </div>
     <!--Shachar popup-->
-    <div id="popup2" class="overlay">
+    <div id="popup2" class="overlay" style="visibility: hidden;">
         <div class="popup">
             <h2>Shachar</h2>
             <a class="close" href="#footer">&times;</a>
@@ -482,7 +494,7 @@
     </div>
 
     <!--Chen popup-->
-    <div id="popup4" class="overlay">
+    <div id="popup4" class="overlay" style="visibility: hidden;">
         <div class="popup">
             <h2>Chen Ginsberg</h2>
             <a class="close" href="#footer">&times;</a>
@@ -516,7 +528,11 @@
             </div>
         </div>
     </div>
-
+<style>
+  .overlay {
+  visibility: hidden;
+}
+</style>
 
 
     <div class="footer-bottem" dir="ltr">&copy; All righets reserved </div>
