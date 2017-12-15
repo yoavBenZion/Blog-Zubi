@@ -229,9 +229,9 @@ Thank you !!
                 <b>דוגמה:</b>
 
             <div><code class="javascript">
-                function isItHoisted () {<br>
-                console.log('yes');//will print in console.log "yes"<br>
-                };
+            (function isItHoisted() {
+            console.log('yes');//will print in console.log "yes"
+            })();
 
             </code></div>
             </p>
@@ -239,10 +239,9 @@ Thank you !!
         <p>
             <b>אחרי Hoisting:</b>
         <div><code class="javascript">
-            isItHoisted ();// will print in console.log "yes"<br>
-            function isItHoisted () {<br>
-            console.log('yes’); <br>
-            };
+        isHoisted =(function () {
+        console.log('yes');//will print in console.log "yes"
+        })()
         </code></div>
 
         </p>
