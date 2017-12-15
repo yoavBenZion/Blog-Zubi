@@ -137,13 +137,14 @@ Thank you !!
             <p>
                 נתחיל מהדוגמא הפשוטה ביותר ונפתח אותה בהדרגה:<br>
 
-                נעטוף את ה alert  בפונקציה אנונימית (פונקציה שניתן להשתמש בה מבלי שנגדיר לה שם, לאחר שהיא נוצרת קוראים לה פעם אחת.)
+                נעטוף את ה alert  בפונקציה בשם devtips ובסוף נבצע קריאה לאותה פונקציה.
 
             <div><code class="javascript">
                 var myvar = 'my value';<br>
-                (function () {<br>
+                function devtips () {<br>
                 alert(myvar); // my value<br>
-                })();
+                }<br>
+            devtips();
             </code></div>
             </p>
             <p>
@@ -229,9 +230,9 @@ Thank you !!
                 <b>דוגמה:</b>
 
             <div><code class="javascript">
-            (function isItHoisted() {
-            console.log('yes');//will print in console.log "yes"
-            })();
+            function isItHoisted() {<br>
+            console.log('yes');//will print in console.log "yes"<br>
+            };
 
             </code></div>
             </p>
@@ -239,9 +240,10 @@ Thank you !!
         <p>
             <b>אחרי Hoisting:</b>
         <div><code class="javascript">
-        isHoisted =(function () {
-        console.log('yes');//will print in console.log "yes"
-        })()
+        isHoisted();<br>
+        function isHoisted() {<br>
+        console.log('yes');//will print in console.log "yes"<br>
+        }
         </code></div>
 
         </p>
