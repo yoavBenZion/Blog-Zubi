@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.overlay {
+  visibility: hidden;
+}
 .main{
     cursor: default;
     font-family: 'Roboto', sans-serif;
