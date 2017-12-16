@@ -29,6 +29,18 @@ Thank you !!
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <!--fixing risponsive view on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Meta tags for link preview in messages-->
+    <meta name="description" content="An Israeli web development blog"/>
+    <!--Header in link-->
+    <meta property="og:title" content="Dev-Tips: Hoisting Article"/>
+    <!--Text description in link-->
+    <meta property="og:description" content="Understand deeply how the JavaScript works"/>
+    <meta property="og:url" content="http://devtips.co.il/hoisting.html"/>
+    <!--Img on whatsapp-->
+    <meta property="og:image" content="/img/computer-2583383_1920.jpg"/>
+    <!--Img on Facbook messanger-->
+    <link rel="shortcut icon" sizes="192x192" href="/img/computer-2583383_1920.jpg"/>
+    <!--End of meta tags for linking-->
     <title>Javascript-Hoisting</title>
 </head>
 
@@ -137,13 +149,14 @@ Thank you !!
             <p>
                 נתחיל מהדוגמא הפשוטה ביותר ונפתח אותה בהדרגה:<br>
 
-                נעטוף את ה alert  בפונקציה אנונימית (פונקציה שניתן להשתמש בה מבלי שנגדיר לה שם, לאחר שהיא נוצרת קוראים לה פעם אחת.)
+                נעטוף את ה alert  בפונקציה בשם devtips ובסוף נבצע קריאה לאותה פונקציה.
 
             <div><code class="javascript">
                 var myvar = 'my value';<br>
-                (function () {<br>
+                function devtips () {<br>
                 alert(myvar); // my value<br>
-                })();
+                }<br>
+            devtips();
             </code></div>
             </p>
             <p>
@@ -161,11 +174,12 @@ Thank you !!
             </p>
             <div><code class="javascript">
                 var myvar = 'my value';<br>
-                (function () {<br>
+                function devtips () {<br>
                 alert(myvar); <br>
                 var myvar = 'local value';<br>
                 <br>
-                })();
+                };<br>
+                devtips();
             </code></div>
             כבר נתחיל לראות איך Hoisting פועל מאחורי הקלעים בJavaScript.
             </p>
@@ -179,12 +193,13 @@ Thank you !!
         </p>
             <div><code class="javascropt">
                 var myvar = 'my value';<br>
-                (function () {<br>
+                function devtips () {<br>
                 var myvar; // declare<br>
                 alert(myvar); // undefined<br>
                 myvar = 'local value'; // initialization<br>
                 <br>
-                })();
+                };<br>
+                devtips();
             </code></div>
             </p>
             <h3 class="center_header">ES6 const and let</h3>
@@ -229,9 +244,9 @@ Thank you !!
                 <b>דוגמה:</b>
 
             <div><code class="javascript">
-            (function isItHoisted() {
-            console.log('yes');//will print in console.log "yes"
-            })();
+            function isItHoisted() {<br>
+            console.log('yes');//will print in console.log "yes"<br>
+            };
 
             </code></div>
             </p>
@@ -239,9 +254,10 @@ Thank you !!
         <p>
             <b>אחרי Hoisting:</b>
         <div><code class="javascript">
-        isHoisted =(function () {
-        console.log('yes');//will print in console.log "yes"
-        })()
+        isHoisted();<br>
+        function isHoisted() {<br>
+        console.log('yes');//will print in console.log "yes"<br>
+        }
         </code></div>
 
         </p>
