@@ -1,39 +1,16 @@
-const main_nav = document.querySelectorAll('.main_nav li');
-
-const selected_nav = document.querySelector('.selected');
-
-for (let i=0; i <main_nav.length; i++) {
-  main_nav[i].addEventListener('mouseover', ()=>{
-    main_nav[i].textContent = 
-    main_nav[i].textContent.toUpperCase();
-    
-}); 
-
-main_nav[i].addEventListener('mouseout', ()=>{
-  if (main_nav[i] != selected_nav) {
-  main_nav[i].textContent = main_nav[i].textContent.toLowerCase();
-  }
-}); 
-}
-
-
-/*function that shows in the console, any element on the page that we press on*/
-document.addEventListener('click', (event) => {
-  console.log(event.target);
-});
-
-
 /**************************
 serch button array methods
 ***************************/
-
 
 const arrayButton = document.querySelector('.arrayButton');
 const arraySerchInput = document.querySelector('.arraySerchInput');
 const list_array = document.querySelectorAll('.orderd-list li');
 
 var nothing = true ;
-arrayButton.addEventListener('click', ()=>{
+
+//serch function
+
+function serch() {
   for (let i=0; i<list_array.length; i++) {
   if ((arraySerchInput.value).toLowerCase() == (list_array[i].id).toLowerCase()) {
     let foo = '#';
@@ -48,21 +25,17 @@ arrayButton.addEventListener('click', ()=>{
         alert('write only the method NAME (like length)');
       } arraySerchInput.value = '';
   
+}
+
+//click event on serch
+arrayButton.addEventListener('click', serch);
+
+// keydown event on serch 
+window.addEventListener('keydown', (e)=> {
+  if (e.keyCode === 13 && arraySerchInput.value) {
+  serch();
+  }
 });
-//
-//// ===== Scroll to Top ==== 
-//$(window).scroll(function() {
-//    if ($(this).scrollTop() >= 800) { 
-//      // If page is scrolled more than 800px
-//        $('#top').fadeIn(500);    // Fade in the arrow
-//    } else {
-//        $('#top').fadeOut(400);   // Else fade out the arrow
-//    }
-//});
-//
-
-
-
 
 
 
