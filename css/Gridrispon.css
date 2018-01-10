@@ -139,7 +139,7 @@ RESPONSIVE Layout -Mobile - 1 article box
         grid-column: 1/2;
         grid-row:1/2;
         grid-area: box3;
-        background: url(../img/computer-2557644_1920.jpg);
+        background: url(../img/board-game-2235455_1920.jpg);
         text-shadow: 1px 1px 4px black;
 
         background-size: cover;
@@ -401,7 +401,7 @@ RESPONSIVE Layout -Tablet - 2 article box
         grid-column: 1/2;
         grid-row:1/2;
         grid-area: box3;
-        background: url(../img/computer-2557644_1920.jpg);
+        background: url(../img/board-game-2235455_1920.jpg);
         text-shadow: 1px 1px 4px black;
 
         background-size: cover;
