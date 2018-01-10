@@ -682,7 +682,7 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
 
     .box3{
         grid-area: box3;
-        background: url(../img/computer-2557644_1920.jpg);
+        background: url(../img/../img/board-game-2235455_1920.jpg);
         background-size: cover;
         display: flex;
         flex-direction: column;
