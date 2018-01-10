@@ -892,7 +892,12 @@ RESPONSIVE Layout -DeskTop and Big Fucking Screens *3
         color:white;
     }
 
-
+    .hover-zoom{
+        -moz-transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+        transition: all 0.7s ease-out;
+    }
     .hover-zoom:hover {
         -moz-transform: scale(1.15,1.15);
         -webkit-transform: scale(1.15,1.15);
