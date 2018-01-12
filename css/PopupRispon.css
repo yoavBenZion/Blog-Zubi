@@ -9,7 +9,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 }
 
 /*Dealing with Xsmll devices 290 - 354*/
-@media (min-device-width:290px) and (max-device-width: 350px) {
+@media (min-device-width:290px) and (max-device-width: 370px) {
     .button {
         font-size: 1em;
         color: #000;
@@ -208,7 +208,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 
 /*Desktop Resizing - Small*/
 
-@media (min-width: 290px) and (max-width: 350px) {
+@media (min-width: 290px) and (max-width: 370px) {
     .button {
         font-size: 1em;
         color: #000;
@@ -414,7 +414,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 
 /*Mobile Devices*/
 
-@media (min-device-width:351px) and (max-device-width: 479px) {
+@media (min-device-width:371px) and (max-device-width: 479px) {
     .button {
         font-size: 1em;
         color: #000;
@@ -609,7 +609,7 @@ RESPONSIVE Layout -Mobile - Small PopUp
 
 /*Desktop Resizing - Small*/
 
-@media (min-width: 351px) and (max-width: 479px) {
+@media (min-width: 371px) and (max-width: 479px) {
     .button {
         font-size: 1em;
         color: #000;
